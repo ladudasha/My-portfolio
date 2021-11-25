@@ -1,0 +1,36 @@
+@import "./abstracts/normalize.scss";
+@import "./abstracts/vars";
+@import './abstracts/mixins';
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 0px 40px;
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding: 0 16px;
+    @media screen and (min-width: 1280px) {
+        max-width: 1140px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 0 50px;
+    }
+    @media screen and (min-width: 576px) {
+        padding: 0 35px;
+    }
+}
+
+@import './components/text';
+@import "./layout/header";
+@import "./components/blocks/home";
+@import "./components/social";
+@import "./components/blocks/about";
+@import "./components/contacts";
+@import "./components/connection";
+@import "./components/form";
+@import "./layout/footer";

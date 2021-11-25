@@ -1,0 +1,36 @@
+        .connection {
+            width: 100%;
+            float: left;
+            &__list {
+                margin: 0px 0px 23px 0px;
+                width: 100%;
+                float: left;
+            }
+            &__link {
+                width: 100%;
+                height: auto;
+                clear: both;
+                float: left;
+                position: relative;
+                padding-left: 30px;
+            }
+            &__icon1,
+            &__icon2,
+            &__icon3 {
+                fill: #ff4522;
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                left: 0px;
+                width: 18px;
+                height: 18px;
+                top: 50%;
+                margin-top: -1px;
+                transform: translateY(-50%);
+            }
+            &__text {
+                font-size: 20px;
+                font-weight: 500;
+                color: #000;
+            }
+        }

@@ -1,0 +1,23 @@
+.about {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding: 110px 0px 110px 0px;
+    // width: 100%;
+    // min-height: 100vh;
+    // display: flex;
+    // align-items: center;
+    // position: relative;
+    &__subtitle {
+        margin: 0 0 56px;
+        font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+        font-size: 55px;
+        line-height: 50px;
+        font-weight: 500;
+        text-align: left;
+    }
+    &__text {
+        margin: 0 0 32px;
+    }
+}

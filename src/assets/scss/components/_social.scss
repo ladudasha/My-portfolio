@@ -1,0 +1,17 @@
+.social {
+    display: flex;
+    &__item {
+        margin: 0px 20px 0px 0px;
+        display: inline-block;
+    }
+    &__icon {
+        width: 17px;
+        height: 17px;
+        fill: rgb(0, 0, 0);
+        &:hover {
+            fill: #ff4522;
+            transform: scale(1.5);
+            transition: all .3s ease;
+        }
+    }
+}
