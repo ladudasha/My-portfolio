@@ -1,0 +1,58 @@
+.skills {
+    background-color: #1d1d1d;
+    color: #fff;
+    height: auto;
+    position: relative;
+    padding: 140px 0px 150px 0px;
+    // &::after {
+    //     @include pseudo($content: 'body');
+    //     font-family: 'La Belle Aurore', cursive;
+    //     color: #515152;
+    //     top: 15px;
+    //     left: 20px;
+    //     margin-left: 2rem;
+    // }
+    // &::before {
+    //     @include pseudo($content: '</html>');
+    //     font-family: 'La Belle Aurore', cursive;
+    //     color: #515152;
+    //     top: 0;
+    //     left: 0;
+    //     margin-left: 2rem;
+    // }
+    &__name {
+        color: #ff4522;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 32px;
+        position: relative;
+        &::after {
+            @include pseudo($content: 'body');
+            font-family: 'La Belle Aurore', cursive;
+            color: #515152;
+            top: 15px;
+            left: 20px;
+            margin-left: 2rem;
+        }
+        &::before {
+            @include pseudo($content: '</html>');
+            font-family: 'La Belle Aurore', cursive;
+            color: #515152;
+            top: 0;
+            left: 0;
+            margin-left: 2rem;
+        }
+    }
+    &__title {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+    &__text {
+        color: #bbb;
+    }
+}

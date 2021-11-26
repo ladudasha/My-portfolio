@@ -1,8 +1,6 @@
 .contacts {
     width: 100%;
     height: auto;
-    clear: both;
-    float: left;
     background-color: rgb(241, 241, 241);
     padding: 140px 0px 119px 0px;
     &__title {
@@ -22,8 +20,6 @@
     &__wrapper {
         width: 100%;
         height: auto;
-        clear: both;
-        float: left;
         display: flex;
         margin-top: 40px;
     }
@@ -33,12 +29,10 @@
     }
     &__text {
         width: 100%;
-        float: left;
         margin-bottom: 42px;
     }
     &__short {
         width: 100%;
-        float: left;
     }
     &__right {
         width: 50%;

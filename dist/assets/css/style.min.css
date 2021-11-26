@@ -28,7 +28,7 @@ a,
 i {
   border: none;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-  color: #222222;
+  color: inherit;
   text-decoration: none; }
 
 ul {
@@ -40,7 +40,7 @@ body {
   min-width: 960px;
   font-size: 16px;
   line-height: 32px;
-  color: #222222;
+  color: inherit;
   background-color: #f2f4f6; }
 
 a,
@@ -60,7 +60,7 @@ h6 {
   font-weight: 500;
   line-height: 1.2;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-  color: #000;
+  color: inherit;
   margin: 0;
   padding: 0; }
 
@@ -358,24 +358,24 @@ template {
   clear: both;
   margin: 0 auto;
   padding: 0 16px; }
+  @media screen and (min-width: 576px) {
+    .container {
+      padding: 0 40px; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
     .container {
       max-width: 1140px;
       padding: 0;
       margin: 0 auto; } }
-  @media screen and (min-width: 768px) {
-    .container {
-      padding: 0 50px; } }
-  @media screen and (min-width: 576px) {
-    .container {
-      padding: 0 35px; } }
 
 .text {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   margin: 0;
   font-size: 16px;
   line-height: 32px;
-  color: #222222; }
+  color: inherit; }
 
 .header {
   position: fixed;
@@ -393,16 +393,21 @@ template {
   .header__inner {
     width: 100%;
     height: auto;
-    clear: both;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 37px 30px 50px;
     transition: all .3s ease; }
+  .header__left {
+    width: 40px;
+    height: 40px; }
+  .header__logo {
+    width: 40px;
+    height: 40px; }
   .header__menu {
     display: flex;
     align-items: center; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       .header__menu {
         display: none; } }
   .header__list {
@@ -428,7 +433,6 @@ template {
 
 .home__avatar {
   position: relative;
-  overflow: hidden;
   width: 300px;
   height: 300px; }
 
@@ -438,31 +442,20 @@ template {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-image: url(./../../../images/home/leo.jpg);
+  width: 300px;
+  height: 300px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  animation: morph 8s ease-in-out infinite 1s;
+  animation: border-user 8s ease-in-out infinite 1s;
   background-blend-mode: multiply;
   -webkit-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
   -moz-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
   box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3); }
 
-.home__user {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border: solid 0.5em #000000;
-  padding: 0.5em;
-  animation-name: border-user duration timing-function delay iteration-count direction fill-mode; }
-
 .home__details {
   text-align: left;
-  margin-left: 100px;
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
   gap: 20px; }
@@ -501,8 +494,6 @@ template {
 .about {
   width: 100%;
   height: auto;
-  clear: both;
-  float: left;
   padding: 110px 0px 110px 0px; }
   .about__subtitle {
     margin: 0 0 56px;
@@ -517,8 +508,6 @@ template {
 .contacts {
   width: 100%;
   height: auto;
-  clear: both;
-  float: left;
   background-color: #f1f1f1;
   padding: 140px 0px 119px 0px; }
   .contacts__title {
@@ -536,8 +525,6 @@ template {
   .contacts__wrapper {
     width: 100%;
     height: auto;
-    clear: both;
-    float: left;
     display: flex;
     margin-top: 40px; }
   .contacts__left {
@@ -545,18 +532,15 @@ template {
     padding-right: 100px; }
   .contacts__text {
     width: 100%;
-    float: left;
     margin-bottom: 42px; }
   .contacts__short {
-    width: 100%;
-    float: left; }
+    width: 100%; }
   .contacts__right {
     width: 50%;
     padding-left: 100px; }
 
 .connection {
-  width: 100%;
-  float: left; }
+  width: 100%; }
   .connection__list {
     margin: 0px 0px 23px 0px;
     width: 100%;
@@ -636,10 +620,51 @@ template {
 .form__row {
   position: absolute;
   top: 10px;
-  right: 190px;
+  right: 155px;
   width: 17px;
   height: 17px;
   fill: white; }
+
+.skills {
+  background-color: #1d1d1d;
+  color: #fff;
+  height: auto;
+  position: relative;
+  padding: 140px 0px 150px 0px; }
+  .skills__name {
+    color: #ff4522;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 32px;
+    position: relative; }
+    .skills__name::after {
+      content: "body";
+      display: block;
+      position: absolute;
+      font-family: 'La Belle Aurore', cursive;
+      color: #515152;
+      top: 15px;
+      left: 20px;
+      margin-left: 2rem; }
+    .skills__name::before {
+      content: "</html>";
+      display: block;
+      position: absolute;
+      font-family: 'La Belle Aurore', cursive;
+      color: #515152;
+      top: 0;
+      left: 0;
+      margin-left: 2rem; }
+  .skills__title {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 40px; }
+  .skills__text {
+    color: #bbb; }
 
 .footer {
   width: 100%;

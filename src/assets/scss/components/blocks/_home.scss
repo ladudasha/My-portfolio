@@ -8,13 +8,8 @@
     }
     &__avatar {
         position: relative;
-        overflow: hidden;
         width: 300px;
         height: 300px;
-        // position: relative;
-        // overflow: hidden;
-        // width: 300px;
-        // height: 300px;
     }
     &__image {
         position: absolute;
@@ -22,31 +17,21 @@
         bottom: 0px;
         left: 0px;
         right: 0px;
-        background-image: url(./../../../images/home/leo.jpg);
+        // background-image: url(./../../../images/home/leo.jpg);
+        width: 300px;
+        height: 300px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        animation: morph 8s ease-in-out infinite 1s;
+        animation: border-user 8s ease-in-out infinite 1s;
         background-blend-mode: multiply;
         -webkit-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
         -moz-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
         box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
     }
-    &__user {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border: solid 0.5em #000000;
-        padding: 0.5em;
-        animation-name: border-user duration timing-function delay iteration-count direction fill-mode;
-    }
     &__details {
         text-align: left;
-        margin-left: 100px;
+        margin-left: 200px;
         display: flex;
         flex-direction: column;
         gap: 20px;

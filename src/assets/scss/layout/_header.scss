@@ -1,48 +1,55 @@
-.header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 10;
-    border-bottom: 2px solid #ebebeb;
-    background-color: #f2f4f6;
-    &__wrapper {
-        width: 100%;
-        height: auto;
-        clear: both;
-        float: left;
-    }
-    &__inner {
-        width: 100%;
-        height: auto;
-        clear: both;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 30px 37px 30px 50px;
-        transition: all .3s ease;
-    }
-    &__menu {
-        display: flex;
-        align-items: center;
-        @media screen and (max-width: 768px) {
-            display: none;
+    .header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 10;
+        border-bottom: 2px solid #ebebeb;
+        background-color: #f2f4f6;
+        &__wrapper {
+            width: 100%;
+            height: auto;
+            clear: both;
+            float: left;
+        }
+        &__inner {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 37px 30px 50px;
+            transition: all .3s ease;
+        }
+        &__left {
+            width: 40px;
+            height: 40px;
+        }
+        &__logo {
+            width: 40px;
+            height: 40px;
+        }
+        &__menu {
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+        &__list {
+            padding-right: 40px;
+        }
+        &__item {
+            opacity: 1;
+            visibility: visible;
+            left: 0px;
+            margin: 0px 20px 0px 0px;
+            display: inline-block;
+            list-style-type: none;
+        }
+        &__link:hover {
+            color: #ff4522;
+            transition: all .3s ease;
+            transform: scale(1.5);
         }
     }
-    &__list {
-        padding-right: 40px;
-    }
-    &__item {
-        opacity: 1;
-        visibility: visible;
-        left: 0px;
-        margin: 0px 20px 0px 0px;
-        display: inline-block;
-        list-style-type: none;
-    }
-    &__link:hover {
-        color: #ff4522;
-        transition: all .3s ease;
-        transform: scale(1.5);
-    }
-}

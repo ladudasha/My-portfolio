@@ -40,7 +40,7 @@ a,
 i {
     border: none;
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    color: #222222;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ body {
     min-width: 960px;
     font-size: 16px;
     line-height: 32px;
-    color: #222222;
+    color: inherit;
     background-color: #f2f4f6;
 }
 
@@ -81,7 +81,7 @@ h6 {
     font-weight: 500;
     line-height: 1.2;
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    color: #000;
+    color: inherit;
     margin: 0;
     padding: 0;
 }

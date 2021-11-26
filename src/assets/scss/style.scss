@@ -12,16 +12,16 @@
     clear: both;
     margin: 0 auto;
     padding: 0 16px;
-    @media screen and (min-width: 1280px) {
-        max-width: 1140px;
-        padding: 0;
-        margin: 0 auto;
+    @media screen and (min-width: 576px) {
+        padding: 0 40px;
     }
     @media screen and (min-width: 768px) {
         padding: 0 50px;
     }
-    @media screen and (min-width: 576px) {
-        padding: 0 35px;
+    @media screen and (min-width: 1280px) {
+        max-width: 1140px;
+        padding: 0;
+        margin: 0 auto;
     }
 }
 
@@ -33,4 +33,5 @@
 @import "./components/contacts";
 @import "./components/connection";
 @import "./components/form";
+@import "./components/blocks/skills";
 @import "./layout/footer";

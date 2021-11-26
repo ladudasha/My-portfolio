@@ -400,26 +400,23 @@ template {
     padding: 0 16px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
     .container {
         max-width: 1140px;
         padding: 0;
         margin: 0 auto;
-        background-color: blue;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         padding: 0 50px;
-        background-color: green;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
     .container {
         padding: 0 35px;
-        background-color: red;
     }
 }
 
@@ -460,6 +457,16 @@ template {
     justify-content: space-between;
     padding: 30px 37px 30px 50px;
     transition: all .3s ease;
+}
+
+.header__left {
+    width: 40px;
+    height: 40px;
+}
+
+.header__logo {
+    width: 40px;
+    height: 40px;
 }
 
 .header__menu {
@@ -507,30 +514,30 @@ template {
 
 .home__avatar {
     position: relative;
-    overflow: hidden;
     width: 300px;
     height: 300px;
 }
 
-.home__user {
+.home__image {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     width: 300px;
     height: 300px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border: solid 0.5em #000000;
-    padding: 0.5em;
-    -webkit-animation-name: border-user duration timing-function delay iteration-count direction fill-mode;
-    animation-name: border-user duration timing-function delay iteration-count direction fill-mode;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-animation: border-user 8s ease-in-out infinite 1s;
+    animation: border-user 8s ease-in-out infinite 1s;
+    background-blend-mode: multiply;
+    box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
 }
 
 .home__details {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 200px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -780,7 +787,7 @@ template {
 .form__row {
     position: absolute;
     top: 10px;
-    right: 190px;
+    right: 155px;
     width: 17px;
     height: 17px;
     fill: white;

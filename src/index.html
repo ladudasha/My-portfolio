@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>My portfolio</title>
 </head>
 
 <body>
+
+    <!-- HEADER -->
+
     <header class="header">
         <div class="header__wrapper">
             <div class="header__inner">
-                <div class="header__logo">
-                    <a href="">LD</a>
+                <div class="header__left">
+                    <img class="header__logo" src="./assets/images/logo/logo2.png" alt="">
+                    <!-- <a class="header__logo-My" href="">LD</a> -->
                 </div>
                 <div class="header__menu">
                     <div class="header__list">
@@ -33,10 +40,10 @@
                                 <a class="header__link" href="#skills">SKILLS</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="price">PRICE</a>
+                                <a class="header__link" href="#price">PRICE</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="news">NEWS</a>
+                                <a class="header__link" href="#news">NEWS</a>
                             </li>
                             <li class="header__item">
                                 <a class="header__link" href="#contacts">CONTACT</a>
@@ -48,39 +55,41 @@
         </div>
     </header>
 
+    <!-- HOME -->
+
     <section class="home" id="home">
         <div class="container">
             <div class="home__content">
                 <div class="home__avatar">
-                    <div class="home__image"></div>
+                    <!-- <div class="home__image"></div> -->
+                    <div class="home__image" style="background-image: url(&quot;./assets/images/home/leo.jpg&quot;);">
+                    </div>
                 </div>
-                <!-- <div class="home__avatar ">
-                    <img class="home__user " src="./assets/images/home/leo.JPG " alt=" user-photo ">
-                </div> -->
+
                 <div class="home__details">
                     <h1 class="home__title">Darya Ladudo</h1>
                     <p class="home__job">Web developer from Minsk. Sometimes works as a freelancer.</p>
-                    <div class="home__social social ">
+                    <div class="home__social social">
                         <ul class="social__list ">
-                            <li class="social__item ">
+                            <li class="social__item">
                                 <a href=" ">
-                                    <svg class="social__icon ">
-                                        <use xlink:href="./assets/images/social/sprite.svg#fb "/>
-                                    </svg>
+                                    <svg class="social__icon">
+                                            <use xlink:href="./assets/images/social/sprite.svg#fb "/>
+                                        </svg>
                                 </a>
                             </li>
-                            <li class="social__item ">
+                            <li class="social__item">
                                 <a href=" ">
-                                    <svg class="social__icon ">
-                                        <use xlink:href="./assets/images/social/sprite.svg#in "/>
-                                    </svg>
+                                    <svg class="social__icon">
+                                            <use xlink:href="./assets/images/social/sprite.svg#in "/>
+                                        </svg>
                                 </a>
                             </li>
-                            <li class="social__item ">
+                            <li class="social__item">
                                 <a href=" ">
-                                    <svg class="social__icon ">
-                                        <use xlink:href="./assets/images/social/sprite.svg#insta "/>
-                                    </svg>
+                                    <svg class="social__icon">
+                                            <use xlink:href="./assets/images/social/sprite.svg#insta "/>
+                                        </svg>
                                 </a>
                             </li>
                             <li class="social__item ">!</li>
@@ -88,11 +97,16 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
+
+        </div>
         </div>
     </section>
 
-    <section class="about " id="about ">
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
         <div class="container ">
             <h2 class="about__subtitle ">About me</h2>
             <p class="about__text text ">
@@ -125,22 +139,50 @@
     </section>
 
 
-
-    <section class="skills "></section>
-    <section class="portfolio "></section>
+    <section class="portfolio" id="portfolio">SECTION PORTFOLIO</section>
 
 
+    <!-- SKILLS -->
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="skills__wrap">
+                <div class="skills__left">
+                    <span class="skills__name">SKILLS</span>
+                    <!-- <html class="skills__tag tag">
+
+                    </html> -->
+                    </span>
+                    <h3 class="skills__title">PROGRAMMING SKILLS</h3>
+                    <p class="skills__text text">For more than 20 years our experts have been accomplishing enough with modern Web Development, new generation web and app programming language.
+                    </p>
+                </div>
+                <div class="skills__right"></div>
+            </div>
+
+        </div>
+    </section>
 
 
 
-    <section class="contacts " id="contacts ">
-        <div class="container ">
 
-            <h2 class="contacts__title ">CONTACT</h2>
-            <h3 class="contacts__subtitle ">Get in Touch</h3>
-            <div class="contacts__wrapper ">
-                <div class="contacts__left ">
-                    <div class="contacts__text ">
+
+    <section class="price" id="price">SECTION PRICE</section>
+    <section class="news" id="news">SECTION NEWS</section>
+
+
+
+
+    <!-- CONTACTS -->
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+
+            <h2 class="contacts__title">CONTACT</h2>
+            <h3 class="contacts__subtitle">Get in Touch</h3>
+            <div class="contacts__wrapper">
+                <div class="contacts__left">
+                    <div class="contacts__text">
                         <p>I’m interested in web developer opportunities – especially interesnyye i kreativnyye interesting and creative (ambitious or large) projects. However, if you have other request or question, please fill out the form on this section
                             to contact with me.
                         </p>
@@ -196,7 +238,7 @@
                                 <span>Submit</span>
                                 <svg class="form__row " xmlns="http://www.w3.org/2000/svg " id="Layer " enable-background="new 0 0 64 64 " height="512 " viewBox="0 0 64 64 " width="512 " class="svg replaced-svg ">
                                     <path d="m37.379 12.552c-.799-.761-2.066-.731-2.827.069-.762.8-.73 2.066.069 2.828l15.342 14.551h-39.963c-1.104 0-2 .896-2 2s.896 2 2 2h39.899l-15.278 14.552c-.8.762-.831 2.028-.069 2.828.393.412.92.62 1.448.62.496
-                        0 .992-.183 1.379-.552l17.449-16.62c.756-.755 1.172-1.759 1.172-2.828s-.416-2.073-1.207-2.862z "></path>
+        0 .992-.183 1.379-.552l17.449-16.62c.756-.755 1.172-1.759 1.172-2.828s-.416-2.073-1.207-2.862z "></path>
                                     </svg>
                                 
                             </a>
