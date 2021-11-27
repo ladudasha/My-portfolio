@@ -30,7 +30,7 @@ a,
 i {
     border: none;
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    color: #222222;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -44,7 +44,7 @@ body {
     min-width: 960px;
     font-size: 16px;
     line-height: 32px;
-    color: #222222;
+    color: inherit;
     background-color: #f2f4f6;
 }
 
@@ -66,7 +66,7 @@ h6 {
     font-weight: 500;
     line-height: 1.2;
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    color: #000;
+    color: inherit;
     margin: 0;
     padding: 0;
 }
@@ -400,11 +400,9 @@ template {
     padding: 0 16px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 576px) {
     .container {
-        max-width: 1140px;
-        padding: 0;
-        margin: 0 auto;
+        padding: 0 40px;
     }
 }
 
@@ -414,9 +412,11 @@ template {
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 1280px) {
     .container {
-        padding: 0 35px;
+        max-width: 1250px;
+        padding: 0;
+        margin: 0 auto;
     }
 }
 
@@ -425,7 +425,7 @@ template {
     margin: 0;
     font-size: 16px;
     line-height: 32px;
-    color: #222222;
+    color: inherit;
 }
 
 .header {
@@ -448,7 +448,6 @@ template {
 .header__inner {
     width: 100%;
     height: auto;
-    clear: both;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -476,7 +475,7 @@ template {
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .header__menu {
         display: none;
     }
@@ -514,6 +513,7 @@ template {
 
 .home__avatar {
     position: relative;
+    min-width: 300px;
     width: 300px;
     height: 300px;
 }
@@ -537,7 +537,7 @@ template {
 
 .home__details {
     text-align: left;
-    margin-left: 200px;
+    margin-left: 100px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -610,8 +610,6 @@ template {
 .about {
     width: 100%;
     height: auto;
-    clear: both;
-    float: left;
     padding: 110px 0px 110px 0px;
 }
 
@@ -631,8 +629,6 @@ template {
 .contacts {
     width: 100%;
     height: auto;
-    clear: both;
-    float: left;
     background-color: #f1f1f1;
     padding: 140px 0px 119px 0px;
 }
@@ -656,8 +652,6 @@ template {
 .contacts__wrapper {
     width: 100%;
     height: auto;
-    clear: both;
-    float: left;
     display: -ms-flexbox;
     display: flex;
     margin-top: 40px;
@@ -670,13 +664,11 @@ template {
 
 .contacts__text {
     width: 100%;
-    float: left;
     margin-bottom: 42px;
 }
 
 .contacts__short {
     width: 100%;
-    float: left;
 }
 
 .contacts__right {
@@ -686,7 +678,6 @@ template {
 
 .connection {
     width: 100%;
-    float: left;
 }
 
 .connection__list {
@@ -791,6 +782,106 @@ template {
     width: 17px;
     height: 17px;
     fill: white;
+}
+
+.skills {
+    background-color: #1d1d1d;
+    color: #fff;
+    height: auto;
+    position: relative;
+    padding: 140px 0px 150px 0px;
+}
+
+.skills::after {
+    content: "<body>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 35px;
+    left: 105px;
+    font-size: 15px;
+}
+
+.skills::before {
+    content: "</html>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 0px;
+    left: 0px;
+    font-size: 15px;
+}
+
+.skills__wrap {
+    max-width: 670px;
+}
+
+.skills__name {
+    color: #ff4522;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 32px;
+    position: relative;
+}
+
+.skills__name::before {
+    content: "<h3>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: -25px;
+    left: -20px;
+    font-size: 12px;
+}
+
+.skills__name::after {
+    content: "</h3>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 10px;
+    left: 105px;
+    font-size: 12px;
+}
+
+.skills__title {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.skills__text {
+    color: #bbb;
+}
+
+.skills__text::before {
+    content: "<p>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 100px;
+    left: -24px;
+    font-size: 12px;
+}
+
+.skills__text::after {
+    content: "</p>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 180px;
+    left: -25px;
+    font-size: 12px;
 }
 
 .footer {

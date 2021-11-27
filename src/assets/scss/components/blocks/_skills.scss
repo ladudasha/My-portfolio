@@ -1,58 +1,123 @@
-.skills {
-    background-color: #1d1d1d;
-    color: #fff;
-    height: auto;
-    position: relative;
-    padding: 140px 0px 150px 0px;
-    // &::after {
-    //     @include pseudo($content: 'body');
-    //     font-family: 'La Belle Aurore', cursive;
-    //     color: #515152;
-    //     top: 15px;
-    //     left: 20px;
-    //     margin-left: 2rem;
-    // }
-    // &::before {
-    //     @include pseudo($content: '</html>');
-    //     font-family: 'La Belle Aurore', cursive;
-    //     color: #515152;
-    //     top: 0;
-    //     left: 0;
-    //     margin-left: 2rem;
-    // }
-    &__name {
-        color: #ff4522;
-        font-weight: 500;
-        display: inline-block;
-        margin-bottom: 10px;
-        font-size: 16px;
-        line-height: 32px;
+    .skills {
+        background-color: #1d1d1d;
+        color: #fff;
+        height: auto;
         position: relative;
+        padding: 140px 0px 150px 0px;
         &::after {
-            @include pseudo($content: 'body');
+            @include pseudo($content: '<body>');
             font-family: 'La Belle Aurore', cursive;
             color: #515152;
-            top: 15px;
-            left: 20px;
-            margin-left: 2rem;
+            top: 35px;
+            left: 105px;
+            font-size: 15px;
         }
         &::before {
             @include pseudo($content: '</html>');
             font-family: 'La Belle Aurore', cursive;
             color: #515152;
-            top: 0;
-            left: 0;
-            margin-left: 2rem;
+            top: 0px;
+            left: 0px;
+            font-size: 15px;
+        } // &::after {
+        //     @include pseudo($content: 'body');
+        //     font-family: 'La Belle Aurore', cursive;
+        //     color: #515152;
+        //     top: 15px;
+        //     left: 20px;
+        //     margin-left: 2rem;
+        // }
+        // &::before {
+        //     @include pseudo($content: '</html>');
+        //     font-family: 'La Belle Aurore', cursive;
+        //     color: #515152;
+        //     top: 0;
+        //     left: 0;
+        //     margin-left: 2rem;
+        // }
+        &__wrap {
+            max-width: 670px;
+        }
+        &__name {
+            color: #ff4522;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 32px;
+            position: relative;
+            &::before {
+                @include pseudo($content: '<h3>');
+                font-family: 'La Belle Aurore', cursive;
+                color: #515152;
+                top: -25px;
+                left: -20px;
+                font-size: 12px;
+            }
+            &::after {
+                @include pseudo($content: '</h3>');
+                font-family: 'La Belle Aurore', cursive;
+                color: #515152;
+                top: 10px;
+                left: 105px;
+                font-size: 12px;
+            } // &::after {
+            //     @include pseudo($content: '<body>');
+            //     font-family: 'La Belle Aurore', cursive;
+            //     color: #515152;
+            //     top: -100px;
+            //     left: -110px;
+            //     margin-left: 2rem;
+            // }
+            // &::before {
+            //     @include pseudo($content: '</html>');
+            //     font-family: 'La Belle Aurore', cursive;
+            //     color: #515152;
+            //     top: -130px;
+            //     left: -130px;
+            //     margin-left: 2rem;
+            // }
+        }
+        &__title {
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            // &::before {
+            //     @include pseudo($content: '<h3>');
+            //     font-family: 'La Belle Aurore', cursive;
+            //     color: #515152;
+            //     top: 33px;
+            //     left: -20px;
+            //     font-size: 30px;
+            // }
+            // &::after {
+            //     @include pseudo($content: '</h3>');
+            //     font-family: 'La Belle Aurore', cursive;
+            //     color: #515152;
+            //     top: 10px;
+            //     left: 105px;
+            //     font-size: 12px;
+            // }
+        }
+        &__text {
+            color: #bbb;
+            &::before {
+                @include pseudo($content: '<p>');
+                font-family: 'La Belle Aurore', cursive;
+                color: #515152;
+                top: 100px;
+                left: -24px;
+                font-size: 12px;
+            }
+            &::after {
+                @include pseudo($content: '</p>');
+                font-family: 'La Belle Aurore', cursive;
+                color: #515152;
+                top: 180px;
+                left: -25px;
+                font-size: 12px;
+            }
         }
     }
-    &__title {
-        font-weight: 800;
-        text-transform: uppercase;
-        font-size: 30px;
-        line-height: 1.2;
-        margin-bottom: 40px;
-    }
-    &__text {
-        color: #bbb;
-    }
-}
