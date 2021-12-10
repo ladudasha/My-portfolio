@@ -859,7 +859,7 @@ template {
 }
 
 .skills__text {
-    color: #bbb;
+    margin-bottom: 30px;
 }
 
 .skills__text::before {
@@ -871,6 +871,7 @@ template {
     top: 100px;
     left: -24px;
     font-size: 12px;
+    margin-bottom: 20px;
 }
 
 .skills__text::after {
@@ -882,6 +883,112 @@ template {
     top: 180px;
     left: -25px;
     font-size: 12px;
+}
+
+.skills__block-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.skills__inner {
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.skills__progress1, .skills__progress2, .skills__progress3 {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.09);
+    min-width: 100%;
+    position: relative;
+    height: 8px;
+}
+
+.skills__progress-line1 {
+    background-color: red;
+    height: 100%;
+    -webkit-animation: progress1 3s forwards;
+    animation: progress1 3s forwards;
+}
+
+.skills__progress-line2 {
+    background-color: red;
+    height: 100%;
+    -webkit-animation: progress2 3s forwards;
+    animation: progress2 3s forwards;
+}
+
+.skills__progress-line3 {
+    background-color: red;
+    height: 100%;
+    -webkit-animation: progress3 3s forwards;
+    animation: progress3 3s forwards;
+}
+
+@-webkit-keyframes progress1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes progress1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@-webkit-keyframes progress2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes progress2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@-webkit-keyframes progress3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progress3 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
 }
 
 .footer {

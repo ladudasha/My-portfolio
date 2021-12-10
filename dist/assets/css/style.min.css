@@ -598,6 +598,16 @@ template {
   float: left;
   position: relative;
   border: none; }
+  .form__btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(./../../images/form/row-btn.svg);
+    top: 0;
+    right: 200px;
+    width: 17px;
+    height: 17px;
+    color: white; }
 
 .form__link {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
@@ -621,7 +631,7 @@ template {
 .form__row {
   position: absolute;
   top: 10px;
-  right: 155px;
+  right: 200px;
   width: 17px;
   height: 17px;
   fill: white; }
@@ -685,7 +695,7 @@ template {
     line-height: 1.2;
     margin-bottom: 40px; }
   .skills__text {
-    color: #bbb; }
+    margin-bottom: 30px; }
     .skills__text::before {
       content: "<p>";
       display: block;
@@ -694,7 +704,8 @@ template {
       color: #515152;
       top: 100px;
       left: -24px;
-      font-size: 12px; }
+      font-size: 12px;
+      margin-bottom: 20px; }
     .skills__text::after {
       content: "</p>";
       display: block;
@@ -704,34 +715,37 @@ template {
       top: 180px;
       left: -25px;
       font-size: 12px; }
-  .skills__wrapper {
+  .skills__block-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .skills__inner {
     width: 100%;
     height: 100%;
-    padding: 20px; }
-  .skills__progress1, .skills__progress2, .skills__progress3 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px; }
+  .skills__ampty {
     overflow: hidden;
     background: rgba(255, 255, 255, 0.09);
     min-width: 100%;
     position: relative;
     height: 8px; }
-  .skills__progress-line1 {
+  .skills__fill {
     background-color: red;
-    height: 100%;
+    height: 100%; }
+  .skills__progress-line1 {
     animation: progress1 3s forwards; }
   .skills__progress-line2 {
-    background-color: red;
-    height: 100%;
     animation: progress2 3s forwards; }
   .skills__progress-line3 {
-    background-color: red;
-    height: 100%;
     animation: progress3 3s forwards; }
 
 @keyframes progress1 {
   0% {
     width: 0%; }
   100% {
-    width: 40%; } }
+    width: 90%; } }
 
 @keyframes progress2 {
   0% {
@@ -743,7 +757,7 @@ template {
   0% {
     width: 0%; }
   100% {
-    width: 90%; } }
+    width: 50%; } }
 
 .footer {
   width: 100%;
