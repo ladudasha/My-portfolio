@@ -56,6 +56,7 @@ const path = {
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
     srcPath + 'assets/js/main.js',
+    srcPath + 'assets/js/wow.js',
 ]
 
 

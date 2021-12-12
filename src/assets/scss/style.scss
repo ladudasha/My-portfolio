@@ -26,12 +26,16 @@
 }
 
 @import './components/text';
+@import './components/title';
+@import './components/subtitle';
 @import "./layout/header";
 @import "./components/blocks/home";
 @import "./components/social";
-@import "./components/blocks/about";
 @import "./components/contacts";
+@import "./components/blocks/about";
+@import "./components/blocks/portfolio";
 @import "./components/connection";
 @import "./components/form";
 @import "./components/blocks/skills";
 @import "./layout/footer";
+@import "./animate.scss";
