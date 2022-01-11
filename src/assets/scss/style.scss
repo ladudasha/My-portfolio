@@ -2,26 +2,17 @@
 @import "./abstracts/vars";
 @import './abstracts/mixins';
 .container {
-    max-width: 1250px;
+    max-width: 1400px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    padding: 0px 40px;
-    position: relative;
-    clear: both;
     margin: 0 auto;
-    padding: 0 16px;
-    @media screen and (min-width: 576px) {
-        padding: 0 40px;
+    @media screen and (max-width: 1500px) {
+        padding: 0;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
         padding: 0 50px;
     }
-    @media screen and (min-width: 1280px) {
-        max-width: 1250px;
-        padding: 0;
-        margin: 0 auto;
+    @media screen and (max-width: 576px) {
+        padding: 0 40px;
     }
 }
 
@@ -38,4 +29,4 @@
 @import "./components/form";
 @import "./components/blocks/skills";
 @import "./layout/footer";
-@import "./animate.scss";
+@import "./components/swiper";

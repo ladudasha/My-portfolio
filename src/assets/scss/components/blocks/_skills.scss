@@ -43,7 +43,6 @@
                     // }
                     &__wrap {
                         display: flex;
-                        gap: 200px;
                     }
                     &__title {
                         position: relative;
@@ -150,11 +149,12 @@
                     &__progress-line4 {
                         animation: progress4 3s forwards;
                     }
-                    // &__right {
-                    //     position: absolute;
-                    //     top: 0;
-                    //     right: 0;
-                    // }
+                    &__right {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 20px;
+                    }
                     &__img {
                         width: 100%;
                     }

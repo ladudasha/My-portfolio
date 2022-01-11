@@ -9,6 +9,9 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>My portfolio</title>
 </head>
@@ -105,7 +108,7 @@
     </section>
 
 
-
+<!-- PORTFOLIO -->
 
     <section class="portfolio" id="portfolio">
         <div class="container">
@@ -113,7 +116,7 @@
                 <h2 class="title">PORTFOLIO</h2>
                 <h3 class="subtitle">SELECTED WORKS</h3>
             </div>
-        </div>
+        
 
         <div class="portfolio__gallery">
             <div class="portfolio__grid">
@@ -151,11 +154,7 @@
 
             </div>
         </div>
-
-
-
-
-        <!-- </div> -->
+        </div>
     </section>
 
 
@@ -183,8 +182,8 @@
                     </div>
 
                     <div class="skills__inner ">
-                        <div class="wow animated progress1 skills__progress1 skills__ampty ">
-                            <div class="skills__progress-line1 skills__fill "></div>
+                        <div class=" skills__progress1 skills__ampty">
+                            <div class="wow skills__progress-line1 skills__fill "></div>
                         </div>
                     </div>
 
@@ -196,7 +195,7 @@
 
                     <div class="skills__inner ">
                         <div class="skills__progress2 skills__ampty ">
-                            <div class="skills__progress-line2 skills__fill "></div>
+                            <div class="wow skills__progress-line2 skills__fill "></div>
                         </div>
                     </div>
 
@@ -209,19 +208,19 @@
 
                     <div class="skills__inner ">
                         <div class="skills__progress3 skills__ampty ">
-                            <div class="skills__progress-line3 skills__fill "></div>
+                            <div class="wow skills__progress-line3 skills__fill "></div>
                         </div>
                     </div>
 
 
-                    <div class="skills__block-text ">
-                        <span class="skills__label ">JAVASCRIPT</span>
-                        <span class="skills__number ">40%</span>
+                    <div class="skills__block-text">
+                        <span class="skills__label">JAVASCRIPT</span>
+                        <span class="skills__number">40%</span>
                     </div>
 
-                    <div class="skills__inner ">
+                    <div class="skills__inner">
                         <div class="skills__progress4 skills__ampty ">
-                            <div class="skills__progress-line4 skills__fill "></div>
+                            <div class="wow skills__progress-line4 skills__fill "></div>
                         </div>
                     </div>
                 </div>
@@ -245,6 +244,26 @@
             <h2 class="about__subtitle ">About me</h2>
             <p class="about__text text ">
                 Hello, I am a web developer based in Minsk, Belarus. I code and create web elements....... I like work with new people. I will gladly become a part of your team New people are new experiences.</p>
+
+
+                <div class="slider-my mySwiper">
+                    <div class="slider-my__wrapper swiper-wrapper">
+                      <div class="slider-my__slide swiper-slide">Slide 1</div>
+                      <div class="slider-my__slide swiper-slide">Slide 2</div>
+                      <div class="slider-my__slide swiper-slide">Slide 3</div>
+                      <div class="slider-my__slide swiper-slide">Slide 4</div>
+                      <div class="slider-my__slide swiper-slide">Slide 5</div>
+                      <div class="slider-my__slide swiper-slide">Slide 6</div>
+                      <div class="slider-my__slide swiper-slide">Slide 7</div>
+                      <div class="slider-my__slide swiper-slide">Slide 8</div>
+                      <div class="slider-my__slide swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div> 
+
+
+              
             <!-- <h2 class="about__subtitle ">Чем могу быть полезен</h2>
             <p class="about__text text ">Я начинающий верстальщик. В 2020 г. закончила Базовый интенсив по HTML и CSS в HTML Academy а также Практический
                 онлайн-курс по основам верстки и разработки сайтов в Way up. Весь 2021 год посвятила изучению верстки в IT-INCUBATOR. В дальнейшем планирую развиваться в профессии Fronend Developer. Проживаю и ищу работу в Минске, Республика Беларусь. 
@@ -372,8 +391,8 @@
 
 
 
-
-    <script src="assets/js/main.js "></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js "></script>
     <script>
         new WOW().init();
     </script>

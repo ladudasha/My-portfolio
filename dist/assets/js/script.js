@@ -1,23 +1,9 @@
-// var $div = $('skills'), //Блок, доскроллив до которого анимация должна стартовать.
-//     inited = false;
-
-// $(window).scroll(function() {
-//     if (inited) return;
-
-//     var $t = $(this),
-//         s_top = $t.scrollTop();
-
-//     if (s_top + $t.height() + 50 < $div.offset().top)
-//         return;
-
-//     /*
-//      * Тут твой код.
-//      * Еще можно весь твой код затолкать в функцию, а здесь её просто вызвать.
-//      * Разницы нет.
-//      */
-
-//     inited = true
-// });
+var swiper = new Swiper(".slider-my", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+  });
 
 
 function onEntry(entry) {
@@ -37,6 +23,9 @@ let elements = document.querySelectorAll('.skills__inner');
 for (let elm of elements) {
     observer.observe(elm);
 }
+
+
+
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['module', 'exports'], factory);
