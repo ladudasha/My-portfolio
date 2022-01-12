@@ -393,9 +393,9 @@ template {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1500px) {
     .container {
-        padding: 0 40px;
+        padding: 0;
     }
 }
 
@@ -405,9 +405,9 @@ template {
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 576px) {
     .container {
-        padding: 0;
+        padding: 0 40px;
     }
 }
 
@@ -934,7 +934,6 @@ template {
 .skills__wrap {
     display: -ms-flexbox;
     display: flex;
-    gap: 200px;
 }
 
 .skills__title {
@@ -1039,13 +1038,14 @@ template {
     animation: progress4 3s forwards;
 }
 
-.skills__right-part {
+.skills__right {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-left: 20px;
 }
 
 .skills__img {
@@ -1144,10 +1144,20 @@ template {
 }
 
 /* SWIPER */
-.swiper {
-    max-width: 800px;
+.slider-my {
     width: 100%;
     position: relative;
+    margin: auto;
+}
+
+.slider-my__slide {
+    text-align: center;
 }
 
 /* стрелки */
+.slider-my .swiper-button-next::after,
+.slider-my .swiper-button-prev::after {
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+}
