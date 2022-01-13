@@ -1,12 +1,32 @@
 /* SWIPER */
 
 .slider-my {
-    width:100%;
     position: relative;
-    margin: auto;
-    &__slide {
-        text-align: center;
-    }
+    top: 50%;
+        &__wrapper {
+            height: 100%;            
+        }
+        &__slide {
+            text-align: center;
+            font-size: 20px;
+            line-height: 36px;
+        }
+        &__text {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            &::after {
+                content:'01';
+                position: absolute;
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-right: -50%;
+                font-size: 100px;
+                z-index: 0;
+                opacity: 0.1;
+            }
+        }
 }
 
 /* стрелки */

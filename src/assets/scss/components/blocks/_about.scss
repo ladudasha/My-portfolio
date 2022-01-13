@@ -13,4 +13,10 @@
     &__text {
         margin: 0 0 32px;
     }
+    &__slider-block {
+        width: 850px;
+        height: 200px;
+        overflow: hidden;
+        margin: 10px auto 10px;
+    }
 }

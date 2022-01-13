@@ -673,6 +673,13 @@ template {
     margin: 0 0 32px;
 }
 
+.about__slider-block {
+    width: 830px;
+    height: 300px;
+    overflow: hidden;
+    margin: 140px auto 40px;
+}
+
 .portfolio {
     margin-right: 30px;
     margin-left: 30px;
@@ -1145,12 +1152,38 @@ template {
 
 /* SWIPER */
 .slider-my {
-    width: 100%;
     position: relative;
-    margin: auto;
+    display: block;
+    top: 50%;
+}
+
+.slider-my__wrapper {
+    height: 100%;
 }
 
 .slider-my__slide {
+    text-align: center;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.slider-my__number {
+    margin: 0;
+    position: absolute;
+    /* 2 */
+    top: 50%;
+    /* 3 */
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 0;
+    opacity: 0.1;
+    font-size: 100px;
+    text-align: center;
+}
+
+.slider-my__text {
+    position: relative;
+    z-index: 1;
     text-align: center;
 }
 
