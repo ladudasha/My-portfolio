@@ -26,27 +26,24 @@
                     outline: none;
                     border: 1px solid rgba(0, 0, 0, .3);
                 }
-                &__submite {
+                &__submit {
                     position: relative;
                     &::after {
                         @include pseudo ();
-                        background-image: url(./../../images/form/row-btn.svg);
+                        background-image: url(./assets/images/form/row-btn.svg);
                         top: 0;
                         right: 200px;
                         width: 17px;
                         height: 17px;
-                        color: white;
+                        background-size: contain;
+                        // color: white;
                     }
                 }
                 &__btn {
                     width: 100%;
                     height: auto;
-                    float: left;
                     position: relative;
                     border: none;
-                }
-
-                &__link {
                     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
                     text-decoration: none;
                     color: #fff;
@@ -54,7 +51,6 @@
                     display: block;
                     text-align: center;
                     padding: 10px;
-                    position: relative;
                     background: #ff4522;
                     transform: none;
                     transition: all .3s ease;

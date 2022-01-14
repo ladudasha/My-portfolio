@@ -674,10 +674,10 @@ template {
 }
 
 .about__slider-block {
-    width: 830px;
-    height: 300px;
+    width: 850px;
+    height: 200px;
     overflow: hidden;
-    margin: 140px auto 40px;
+    margin: 10px auto 10px;
 }
 
 .portfolio {
@@ -843,7 +843,7 @@ template {
 }
 
 .form__message {
-    max-height: 100px;
+    min-height: 100px;
     height: 137px;
     resize: vertical;
 }
@@ -853,27 +853,27 @@ template {
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.form__btn {
-    width: 100%;
-    height: auto;
-    float: left;
+.form__submit {
     position: relative;
-    border: none;
 }
 
-.form__btn::after {
+.form__submit::after {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(./../../images/form/row-btn.svg);
+    background-image: url(./assets/images/form/row-btn.svg);
     top: 0;
     right: 200px;
     width: 17px;
     height: 17px;
-    color: white;
+    background-size: contain;
 }
 
-.form__link {
+.form__btn {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border: none;
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
     text-decoration: none;
     color: #fff;
@@ -881,19 +881,18 @@ template {
     display: block;
     text-align: center;
     padding: 10px;
-    position: relative;
     background: #ff4522;
     -webkit-transform: none;
     transform: none;
     transition: all .3s ease;
 }
 
-.form__link:hover {
+.form__btn:hover {
     color: #fff;
     background-color: #000;
 }
 
-.form__link:hover .form__row {
+.form__btn:hover .form__row {
     -webkit-transform: rotate(-50deg);
     transform: rotate(-50deg);
     transition: all .3s ease;
@@ -902,7 +901,7 @@ template {
 .form__row {
     position: absolute;
     top: 10px;
-    right: 200px;
+    right: 230px;
     width: 17px;
     height: 17px;
     fill: white;
@@ -1153,7 +1152,6 @@ template {
 /* SWIPER */
 .slider-my {
     position: relative;
-    display: block;
     top: 50%;
 }
 
@@ -1167,24 +1165,23 @@ template {
     line-height: 36px;
 }
 
-.slider-my__number {
-    margin: 0;
-    position: absolute;
-    /* 2 */
-    top: 50%;
-    /* 3 */
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    z-index: 0;
-    opacity: 0.1;
-    font-size: 100px;
-    text-align: center;
-}
-
 .slider-my__text {
     position: relative;
     z-index: 1;
     text-align: center;
+}
+
+.slider-my__text::after {
+    content: '01';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    font-size: 100px;
+    z-index: 0;
+    opacity: 0.1;
 }
 
 /* стрелки */

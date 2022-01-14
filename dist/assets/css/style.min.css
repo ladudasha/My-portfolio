@@ -661,27 +661,24 @@ template {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.3); }
 
-.form__submite {
+.form__submit {
   position: relative; }
-  .form__submite::after {
+  .form__submit::after {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(./../../images/form/row-btn.svg);
+    background-image: url(./assets/images/form/row-btn.svg);
     top: 0;
     right: 200px;
     width: 17px;
     height: 17px;
-    color: white; }
+    background-size: contain; }
 
 .form__btn {
   width: 100%;
   height: auto;
-  float: left;
   position: relative;
-  border: none; }
-
-.form__link {
+  border: none;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   text-decoration: none;
   color: #fff;
@@ -689,14 +686,13 @@ template {
   display: block;
   text-align: center;
   padding: 10px;
-  position: relative;
   background: #ff4522;
   transform: none;
   transition: all .3s ease; }
-  .form__link:hover {
+  .form__btn:hover {
     color: #fff;
     background-color: #000; }
-    .form__link:hover .form__row {
+    .form__btn:hover .form__row {
       transform: rotate(-50deg);
       transition: all .3s ease; }
 
@@ -733,7 +729,13 @@ template {
     left: 0px;
     font-size: 15px; }
   .skills__wrap {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px; }
+  .skills__left {
+    width: 65%; }
   .skills__title {
     position: relative; }
     .skills__title::before {
@@ -802,12 +804,10 @@ template {
   .skills__progress-line4 {
     animation: progress4 3s forwards; }
   .skills__right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px; }
+    width: 30%; }
   .skills__img {
-    width: 100%; }
+    width: 360px;
+    margin-left: 150px; }
 
 @keyframes progress1 {
   0% {

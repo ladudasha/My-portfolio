@@ -43,6 +43,14 @@
                     // }
                     &__wrap {
                         display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 60px;
+
+                    }
+                    &__left {
+                        width:65%;
                     }
                     &__title {
                         position: relative;
@@ -150,15 +158,14 @@
                         animation: progress4 3s forwards;
                     }
                     &__right {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-left: 20px;
+                        width:30%
                     }
                     &__img {
-                        width: 100%;
+                        width: 360px;
+                        margin-left: 150px;
                     }
-                }
+                    }
+                
                 
                 @keyframes progress1 {
                     0% {
