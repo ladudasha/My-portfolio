@@ -940,6 +940,17 @@ template {
 .skills__wrap {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.skills__left {
+    width: 65%;
 }
 
 .skills__title {
@@ -1045,17 +1056,12 @@ template {
 }
 
 .skills__right {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: 20px;
+    width: 30%;
 }
 
 .skills__img {
-    width: 100%;
+    width: 360px;
+    margin-left: 150px;
 }
 
 @-webkit-keyframes progress1 {

@@ -842,6 +842,24 @@ template {
   background-color: black;
   padding: 20px 0;
   color: #ffffff; }
+  .footer__scroll-go-top {
+    background-color: red;
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    line-height: 45px;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: 0.5s; }
+    .footer__scroll-go-top:hover {
+      background-color: #282828;
+      color: #fff; }
 
 /* SWIPER */
 .slider-my {
@@ -857,22 +875,22 @@ template {
     position: relative;
     z-index: 1;
     text-align: center; }
-    .slider-my__text::after {
-      content: '01';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin-right: -50%;
-      font-size: 100px;
-      z-index: 0;
-      opacity: 0.1; }
+  .slider-my_bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    font-size: 100px;
+    z-index: 0;
+    opacity: 0.1; }
 
 /* стрелки */
 .slider-my .swiper-button-next::after,
 .slider-my .swiper-button-prev::after {
   color: black;
   font-size: 20px;
-  font-weight: 800; }
+  font-weight: 800;
+  z-index: 0 !important; }
 
 /*# sourceMappingURL=style.min.css.map */

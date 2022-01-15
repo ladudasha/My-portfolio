@@ -15,17 +15,17 @@
             position: relative;
             z-index: 1;
             text-align: center;
-            &::after {
-                content:'01';
-                position: absolute;
-                top: 50%; 
-                left: 50%;
-                transform: translate(-50%, -50%);
-                margin-right: -50%;
-                font-size: 100px;
-                z-index: 0;
-                opacity: 0.1;
-            }
+
+        }
+        &_bg {
+            position: absolute;
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-right: -50%;
+            font-size: 100px;
+            z-index: 0;
+            opacity: 0.1;
         }
 }
 
@@ -36,5 +36,6 @@
     color:black;
     font-size: 20px;
     font-weight: 800;
+    z-index: 0 !important;
 }
 
