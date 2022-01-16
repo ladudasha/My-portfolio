@@ -1,23 +1,18 @@
     .footer {
         width: 100%;
         height: auto;
-        clear: both;
-        float: left;
         text-align: right;
         background-color: black;
         padding: 20px 0;
         color: #ffffff;
         &__scroll-go-top {
-            background-color: red;
-            // display: none;
-            display: block;
+            background-color: #ff4522;
+            opacity: 0;
+            transition: opasity 1s;
             width: 45px;
             height: 45px;
             text-align: center;
-            font-size: 14px;
             border-radius: 50%;
-            line-height: 45px;
-            color: #fff;
             position: fixed;
             bottom: 20px;
             right: 20px;

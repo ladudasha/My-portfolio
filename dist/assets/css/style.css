@@ -443,15 +443,8 @@ template {
     left: 0px;
     right: 0px;
     z-index: 10;
-    border-bottom: 2px solid #ebebeb;
     background-color: #f9f9f9;
-}
-
-.header__wrapper {
-    width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
+    transition: all .3s ease;
 }
 
 .header__inner {
@@ -467,12 +460,7 @@ template {
     transition: all .3s ease;
 }
 
-.header__left {
-    width: 40px;
-    height: 40px;
-}
-
-.header__logo {
+.header__left, .header__logo {
     width: 40px;
     height: 40px;
 }
@@ -512,6 +500,7 @@ template {
 
 .home {
     background-color: #f9f9f9;
+    min-height: 100vh;
 }
 
 .home__content {
@@ -1031,7 +1020,7 @@ template {
 }
 
 .skills__fill {
-    background-color: red;
+    background-color: #ff4522;
     height: 100%;
 }
 
@@ -1147,12 +1136,30 @@ template {
 .footer {
     width: 100%;
     height: auto;
-    clear: both;
-    float: left;
     text-align: right;
     background-color: black;
     padding: 20px 0;
     color: #ffffff;
+}
+
+.footer__scroll-go-top {
+    background-color: #ff4522;
+    opacity: 0;
+    transition: opasity 1s;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.footer__scroll-go-top:hover {
+    background-color: #282828;
+    color: #fff;
 }
 
 /* SWIPER */
@@ -1177,8 +1184,7 @@ template {
     text-align: center;
 }
 
-.slider-my__text::after {
-    content: '01';
+.slider-my_bg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1196,4 +1202,5 @@ template {
     color: black;
     font-size: 20px;
     font-weight: 800;
+    z-index: 0 !important;
 }

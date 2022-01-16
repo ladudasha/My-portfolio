@@ -115,6 +115,9 @@ function css(cb) {
     cb();
 }
 
+
+
+
 // Для быстрой компиляции CSS во время разработки 
 function cssWatch(cb) {
     return src(srcPath + 'assets/scss/style.scss') // если порядок файлов не важен, то: return src(path.src.css, {base: srcPath + 'assets/scss/'})  

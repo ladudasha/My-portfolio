@@ -3,16 +3,9 @@
         top: 0px;
         left: 0px;
         right: 0px;
-        z-index: 10;
-        border-bottom: 2px solid #ebebeb;
+        z-index: 10;        
         background-color: #f9f9f9;
-        // background-color: #f2f4f6;
-        &__wrapper {
-            width: 100%;
-            height: auto;
-            clear: both;
-            float: left;
-        }
+        transition: all .3s ease;
         &__inner {
             width: 100%;
             height: auto;
@@ -21,11 +14,9 @@
             justify-content: space-between;
             padding: 30px 37px 30px 50px;
             transition: all .3s ease;
+            
         }
-        &__left {
-            width: 40px;
-            height: 40px;
-        }
+        &__left,
         &__logo {
             width: 40px;
             height: 40px;

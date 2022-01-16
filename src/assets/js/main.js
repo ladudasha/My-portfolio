@@ -25,6 +25,31 @@ var swiper = new Swiper(".slider-my", {
   }
 
 
+
+  let goTop = document.querySelector('.footer__scroll-go-top')
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 400) {
+      goTop.style.opacity = 1
+    } else {
+      goTop.style.opacity = 0
+    }
+  })
+
+
+  let shadowHeader  = document.querySelector('.header')
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      shadowHeader.style.boxShadow = '0 0px 5px rgba(0,0,0,0.25), 0 7px 17px rgba(0,0,0,0.10)'
+    } else {
+      shadowHeader.style.boxShadow = 0
+    }
+  })
+
+
+
+
 // function onEntry(entry) {
 //     entry.forEach(change => {
 //         if (change.isIntersecting) {
