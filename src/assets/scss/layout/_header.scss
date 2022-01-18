@@ -24,7 +24,7 @@
         &__menu {
             display: flex;
             align-items: center;
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1045px) {
                 display: none;
             }
         }
@@ -43,5 +43,43 @@
             color: #ff4522;
             transition: all .3s ease;
             transform: scale(1.5);
+        }  
+    }
+    .burger {
+        &__icon {
+            background: url(../images/header/menu.svg) no-repeat center;
+            cursor: pointer;
+            display: none;
+            width: 40px;
+            height: 35px;
+                @media screen and (max-width: 1045px) {
+                    display: block;
+                }
+                &:hover {
+                    fill:#ff4522;
+                }
         }
+        &__menu {
+            background-color: #9ecfe7;
+            width: 420px;
+            height: 483px;
+            position: fixed;
+            top: 0;
+            right: -420px;
+            z-index: 999;
+            transition: .3s;
+            &-active {
+                right: 0;
+            }
+        }
+        &__close {
+            background: url(../images/header/close_111152.svg) no-repeat center;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
     }

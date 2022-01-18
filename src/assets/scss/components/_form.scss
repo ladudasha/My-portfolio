@@ -30,19 +30,26 @@
                     position: relative;
                     &::after {
                         @include pseudo ();
-                        background-image: url(./assets/images/form/row-btn.svg);
-                        top: 0;
-                        right: 200px;
+                        background-image: url(../images/form/row-btn.svg);
+                        top: 2px;
+                        left: 75px;
                         width: 17px;
                         height: 17px;
                         background-size: contain;
+                        display: block;
+                        position: absolute;    
                     }
+                    &:hover::after {
+                            transform: rotate(-50deg);
+                            transition: all .5s ease;
+                        }
                 }
                 &__btn {
                     width: 100%;
                     height: auto;
                     position: relative;
                     border: none;
+                    cursor: pointer;
                     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
                     text-decoration: none;
                     color: #fff;
@@ -56,18 +63,6 @@
                     &:hover {
                         color: #fff;
                         background-color: #000;
-                        .form__row {
-                            transform: rotate(-50deg);
-                            transition: all .3s ease;
-                        }
                     }
-                }
-                &__row {
-                    position: absolute;
-                    top: 10px;
-                    right: 230px;
-                    width: 17px;
-                    height: 17px;
-                    fill: white;
                 }
             }
