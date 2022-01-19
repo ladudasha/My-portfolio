@@ -14,8 +14,11 @@
     @media screen and (max-width: 576px) {
         padding: 0 40px;
     }
+    @media screen and (max-width: 360px) {
+        padding: 0 20px;
+    }
 }
-
+@import './components/nav';
 @import './components/text';
 @import './components/title';
 @import './components/subtitle';
