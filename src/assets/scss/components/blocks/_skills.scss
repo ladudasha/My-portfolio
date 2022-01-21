@@ -47,18 +47,17 @@
                     &__wrap {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: space-between;
                         flex-wrap: wrap;
-                        gap: 60px;
-                        @media screen and (max-width: 360px) {
-                            gap: 0;
-                        }
+                        // gap: 60px;
+                        // @media screen and (max-width: 360px) {
+                        //     gap: 0;
+                        // }
 
                     }
                     &__left {
                         width:65%;
-                        
-                        @media screen and (max-width: 1630px) {
+                        @media screen and (max-width: 1280px) {
                             width:55%;
                         }
                         @media screen and (max-width: 920px) {
@@ -181,16 +180,17 @@
                         animation: progress4 3s forwards;
                     }
                     &__right {
-                        width:30%
+                        width: 360px;
                     }
                     &__img {
                         width: 360px;
-                        margin-left: 150px;
-                        @media screen and (max-width: 1630px) {
-                            margin-left: 100px;
-                        }
+                        width:100%;
+                        flex-grow: 1;
                         @media screen and (max-width: 1280px) {
-                            margin-left: 0;
+                            width: 310px;
+                        }
+                        @media screen and (max-width: 1100px) {
+                           margin-left: 20px;
                         }
                         @media screen and (max-width: 920px) {
                             display: none;

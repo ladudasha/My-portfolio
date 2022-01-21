@@ -4,4 +4,7 @@
     font-size: 16px;
     line-height: 32px;
     color: inherit;
+    @media screen and (max-width: 576px) {
+        font-size: 20px;
+    }
 }

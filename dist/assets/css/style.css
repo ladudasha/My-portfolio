@@ -42,7 +42,6 @@ ul {
 body {
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
     margin: 0;
-    min-width: 960px;
     font-size: 16px;
     line-height: 32px;
     color: inherit;
@@ -395,7 +394,7 @@ template {
 
 @media screen and (max-width: 1500px) {
     .container {
-        padding: 0 20px;
+        padding: 0 40px;
     }
 }
 
@@ -441,6 +440,12 @@ template {
     color: inherit;
 }
 
+@media screen and (max-width: 576px) {
+    .text {
+        font-size: 20px;
+    }
+}
+
 .title {
     color: #ff4522;
     font-weight: 500;
@@ -451,6 +456,12 @@ template {
     position: relative;
 }
 
+@media screen and (max-width: 576px) {
+    .title {
+        font-size: 18px;
+    }
+}
+
 .subtitle {
     font-weight: 800;
     text-transform: uppercase;
@@ -459,9 +470,9 @@ template {
     margin-bottom: 40px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 576px) {
     .subtitle {
-        font-size: 20px;
+        font-size: 27px;
     }
 }
 
@@ -562,8 +573,8 @@ template {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    -ms-flex-align: start;
+    align-items: flex-start;
     gap: 30px;
     font-size: 20px;
     font-weight: 500;
@@ -628,12 +639,13 @@ template {
 }
 
 .home__image {
-    right: 0px;
+    max-width: 100%;
     width: 300px;
     height: 300px;
-    background-image: url(../images/home/leo.jpg);
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-image: url(../images/home/IMG_color.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     -webkit-animation: border-user 8s ease-in-out infinite 1s;
     animation: border-user 8s ease-in-out infinite 1s;
@@ -644,6 +656,20 @@ template {
     .home__image {
         width: 400px;
         height: 400px;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .home__image {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .home__image {
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -671,9 +697,9 @@ template {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 976px) {
     .home__details {
-        margin-left: 0;
+        margin: 0 auto;
     }
 }
 
@@ -685,7 +711,21 @@ template {
 
 @media screen and (max-width: 1180px) {
     .home__title {
-        font-size: 78px;
+        font-size: 73px;
+    }
+}
+
+@media screen and (max-width: 687px) {
+    .home__title {
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .home__title {
+        font-size: 50px;
+        max-width: 250px;
+        line-height: 76px;
     }
 }
 
@@ -696,20 +736,27 @@ template {
     }
 }
 
-.home__job {
+.home__text {
     font-size: 32px;
     line-height: 48px;
 }
 
 @media screen and (max-width: 1180px) {
-    .home__job {
+    .home__text {
         font-size: 25px;
         line-height: 42px;
     }
 }
 
+@media screen and (max-width: 440px) {
+    .home__text {
+        font-size: 22px;
+        max-width: 240px;
+    }
+}
+
 @media screen and (max-width: 360px) {
-    .home__job {
+    .home__text {
         font-size: 20px;
         max-width: 250px;
     }
@@ -779,6 +826,8 @@ template {
     display: -ms-flexbox;
     display: flex;
     margin-top: 40px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .contacts__left {
@@ -786,7 +835,19 @@ template {
     padding-right: 100px;
 }
 
-.contacts__text {
+@media screen and (max-width: 1170px) {
+    .contacts__left {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts__left {
+        width: 100%;
+    }
+}
+
+.contacts__text-block {
     width: 100%;
     margin-bottom: 42px;
 }
@@ -798,6 +859,19 @@ template {
 .contacts__right {
     width: 50%;
     padding-left: 100px;
+}
+
+@media screen and (max-width: 1170px) {
+    .contacts__right {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts__right {
+        padding-left: 0;
+        width: 100%;
+    }
 }
 
 .about {
@@ -820,7 +894,7 @@ template {
 }
 
 .about__slider-block {
-    width: 850px;
+    max-width: 850px;
     height: 200px;
     overflow: hidden;
     margin: 10px auto 10px;
@@ -844,17 +918,6 @@ template {
     grid-auto-columns: 1fr;
     grid-template-columns: 1.5fr 1fr 1.5fr;
     grid-template-rows: auto auto;
-}
-
-@media screen and (max-width: 360px) {
-    .portfolio__grid {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
 }
 
 .portfolio__block1 {
@@ -882,12 +945,6 @@ template {
     background-size: cover;
 }
 
-@media screen and (max-width: 360px) {
-    .portfolio__work1, .portfolio__work2, .portfolio__work3, .portfolio__work4 {
-        width: 270px;
-    }
-}
-
 .portfolio__block2 {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -913,7 +970,6 @@ template {
 }
 
 .portfolio__block4 {
-    height: 500px;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -1116,21 +1172,26 @@ template {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 60px;
-}
-
-@media screen and (max-width: 360px) {
-    .skills__wrap {
-        gap: 0;
-    }
 }
 
 .skills__left {
     width: 65%;
+}
+
+@media screen and (max-width: 1280px) {
+    .skills__left {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .skills__left {
+        width: 90%;
+    }
 }
 
 .skills__title {
@@ -1255,15 +1316,29 @@ template {
 }
 
 .skills__right {
-    width: 30%;
+    width: 360px;
 }
 
 .skills__img {
     width: 360px;
-    margin-left: 150px;
+    width: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1280px) {
+    .skills__img {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .skills__img {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 920px) {
     .skills__img {
         display: none;
     }
@@ -1389,6 +1464,7 @@ template {
 }
 
 .slider-my__slide {
+    width: 100%;
     text-align: center;
     font-size: 20px;
     line-height: 36px;
@@ -1398,6 +1474,22 @@ template {
     position: relative;
     z-index: 1;
     text-align: center;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 968px) {
+    .slider-my__text {
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .slider-my__text {
+        font-size: 15px;
+    }
 }
 
 .slider-my_bg {

@@ -11,11 +11,11 @@
             grid-auto-columns: 1fr;
             grid-template-columns: 1.5fr 1fr 1.5fr;
             grid-template-rows: auto auto;
-            @media screen and (max-width: 360px) {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
+            // @media screen and (max-width: 360px) {
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: center;
+            // }
         }
         &__block1 {
             grid-column-start: 1;
@@ -37,16 +37,16 @@
             background-image: url("https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5cdbececb102f913e509144f_portfolio%201%20-%20wide.svg");
             background-size: cover;
         }
-        &__work1,
-        &__work2,
-        &__work3,
-        &__work4 {
-            @media screen and (max-width: 360px) {
-                width: 270px;
-            }
+        // &__work1,
+        // &__work2,
+        // &__work3,
+        // &__work4 {
+        //     @media screen and (max-width: 360px) {
+        //         width: 270px;
+        //     }
 
 
-        }
+        
         &__block2 {
             grid-column-start: 3;
             grid-column-end: 4;

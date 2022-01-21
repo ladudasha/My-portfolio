@@ -12,11 +12,20 @@
     }
     &__text {
         margin: 0 0 32px;
+        // @media screen and (max-width: 576px) {
+        //     font-size: 20px;
+        // }
     }
     &__slider-block {
-        width: 850px;
+        max-width: 850px;
         height: 200px;
         overflow: hidden;
         margin: 10px auto 10px;
+        // @media screen and (max-width: 968px) {
+        //     width: 460px;
+        // }
+        // @media screen and (max-width: 576px) {
+        //     width: 260px;
+        // }
     }
 }

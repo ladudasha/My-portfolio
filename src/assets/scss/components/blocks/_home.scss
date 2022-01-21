@@ -30,21 +30,36 @@
     }
     
     &__image {
-        right: 0px;
+        // right: 0px;
+        max-width: 100%;
         width: 300px;
         height: 300px;
+        object-fit: contain;
         background-image: url(../images/home/leo.jpg);
         background-repeat: no-repeat;
-        background-position: center;
         background-size: cover;
         animation: border-user 8s ease-in-out infinite 1s;
         -webkit-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
         -moz-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
         box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
+        // box-shadow: 10px 5px 5px black;
+        // box-shadow: 3px 3px red, -1em 0 .4em red;
         @media screen and (max-width: 972px) {
             width: 400px;
             height: 400px;
         }
+        @media screen and (max-width: 695px) {
+            width: 350px;
+            height: 350px;
+        }
+        @media screen and (max-width: 440px) {
+            width: 300px;
+            height: 300px;
+        }
+        // @media screen and (max-width: 370px) {
+        //     width: 200px;
+        //     height: 200px;
+        // }
         @media screen and (max-width: 360px) {
             width: 200px;
             height: 200px;
@@ -60,9 +75,11 @@
         @media screen and (max-width: 1180px) {
             margin-left: 55px;
         }
-        @media screen and (max-width: 360px) {
-            margin-left: 0;
+        @media screen and (max-width: 976px) {
+            margin: 0 auto;
         }
+        
+        
     }
     
     &__title {
@@ -70,7 +87,15 @@
         line-height: 96px;
         font-weight: 500;
         @media screen and (max-width: 1180px) {
-            font-size: 78px;
+            font-size: 73px;
+        }
+        @media screen and (max-width: 687px) {
+            font-size: 65px;            
+        }
+        @media screen and (max-width: 440px) {
+            font-size: 50px;
+            max-width: 250px;
+            line-height: 76px;
         }
         @media screen and (max-width: 360px) {
             font-size: 30px;
@@ -78,12 +103,16 @@
         }
     
     }
-    &__job {
+    &__text {
         font-size: 32px;
         line-height: 48px;
         @media screen and (max-width: 1180px) {
             font-size: 25px;
             line-height: 42px;
+        }
+        @media screen and (max-width: 440px) {
+            font-size: 22px;
+            max-width: 240px;
         }
         @media screen and (max-width: 360px) {
             font-size: 20px;
