@@ -66,10 +66,10 @@ const jsFiles = [
 // объявляем функции под сборки (все пути относительные)
 
 
-// gulp.task('deploy', function() {
-//     return gulp.src('./dist/**/*')
-//         .pipe(ghPages());
-// });
+gulp.task('deploy', function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
 
 
 
