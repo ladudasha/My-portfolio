@@ -644,7 +644,7 @@ template {
     height: 300px;
     -o-object-fit: contain;
     object-fit: contain;
-    background-image: url(../images/home/IMG_color.jpg);
+    background-image: url(../images/home/leo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-animation: border-user 8s ease-in-out infinite 1s;
@@ -911,7 +911,7 @@ template {
     }
 }
 
-.portfolio__grid {
+.portfolio__gallery {
     display: grid;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
@@ -933,15 +933,16 @@ template {
     height: 460px;
     margin-bottom: 40px;
     background-position: 50% 50%;
+    opacity: 0.8;
 }
 
 .portfolio__img:hover {
-    opacity: 0.8;
+    opacity: 1;
     transition: 0.5s;
 }
 
 .portfolio__work1 {
-    background-image: url("https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5cdbececb102f913e509144f_portfolio%201%20-%20wide.svg");
+    background-image: url("../images/portfolio/fly.png");
     background-size: cover;
 }
 
@@ -953,7 +954,7 @@ template {
 }
 
 .portfolio__work2 {
-    background-image: url("https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5cdbececb102f96f5809144e_portfolio%202%20-%20wide.svg");
+    background-image: url("../images/portfolio/productivity.png");
     background-size: cover;
 }
 
@@ -1007,15 +1008,79 @@ template {
     font-size: 20px;
     line-height: 34px;
     font-weight: 400;
+    opacity: 0.6;
 }
 
 .portfolio__name:hover {
-    opacity: 0.6;
+    opacity: 1;
     transition: 0.2s;
 }
 
-.portfolio__paragraph {
-    opacity: 0.6;
+.portfolio__git {
+    width: 30px;
+    height: 30px;
+}
+
+.portfolio__git:hover {
+    fill: #ff4522;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: all .3s ease;
+}
+
+.portfolio__link-more {
+    width: 200px;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #ff4522;
+    -webkit-transform: none;
+    transform: none;
+    transition: all .3s ease;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.portfolio__link-more:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.portfolio__link-text {
+    position: relative;
+}
+
+.portfolio__link-text::after {
+    content: "";
+    display: block;
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/seeMore/seeMoreRow.svg);
+    width: 17px;
+    height: 17px;
+    top: 8px;
+    right: -28px;
+}
+
+.portfolio__link-text:hover::after {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    transition: all 1s ease;
 }
 
 .connection {
@@ -1461,6 +1526,8 @@ template {
 
 .slider-my__wrapper {
     height: 100%;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .slider-my__slide {
@@ -1483,6 +1550,19 @@ template {
         margin: 0 auto;
         font-size: 20px;
         font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .slider-my__text {
+        max-width: 265px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .slider-my__text {
+        max-width: 248px;
+        font-size: 18px;
     }
 }
 
@@ -1511,4 +1591,9 @@ template {
     font-size: 20px;
     font-weight: 800;
     z-index: 0 !important;
+}
+
+.pagePortfolio__linkOnMain {
+    font-size: 30px;
+    color: brown;
 }
