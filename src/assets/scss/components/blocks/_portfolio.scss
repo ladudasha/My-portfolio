@@ -142,7 +142,7 @@
 
 .test-link {
     display: block;
-    width: 600px;
+    // width: 600px;
     margin: 20px;
 }
 
@@ -166,8 +166,8 @@
     }
 
     &:hover .test-title {
-        font-size: 1.2rem;
-        height: 2rem;;
+        font-size: 20px;
+        height: 35px;
         opacity: 1;
     }
     }
@@ -177,19 +177,20 @@
     transition: top 2s ease-in-out;
     position: relative;
     top: 0;
+    opacity: 1;
+            &:hover {
+                opacity: 0.8;
+            }
     }
 
     .test-title {
         text-align: center;
         width: 100%;
         color: white;
-        font-size: 0;
         height: 0;
         opacity: 0;
         background-color: rgba(0, 0,  0, .7);
-        transition: opacity .9s linear,
-        font-size .2s linear,
-        height .2s linear;
+        transition: opacity .9s linear, font-size .2s linear, height .2s linear;
         position: absolute;
         bottom: 0;
     }

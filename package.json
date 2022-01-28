@@ -30,6 +30,7 @@
   ],
   "main": "gulpfile.js",
   "dependencies": {
+    "caniuse-lite": "^1.0.30001303",
     "gulp-gh-pages": "^0.5.4",
     "wow.js": "^1.2.2"
   },
