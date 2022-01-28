@@ -1,18 +1,22 @@
+
+
 var swiper = new Swiper(".slider-my", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-  });
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+});
 
 // плавный скролл
+const homePageScroll = document.querySelector(".home");
 
+if( homePageScroll ) {
   let anchors = document.querySelectorAll("a[href*='#']")
-
+  console.log(anchors);
   for(let anchor of anchors) {
     anchor.addEventListener("click", function(event) {
       event.preventDefault()
-
+      
       let blockID  = anchor.getAttribute('href');
       document.querySelector(blockID).scrollIntoView({
         behavior: "smooth",
@@ -20,35 +24,58 @@ var swiper = new Swiper(".slider-my", {
       })
     })
   }
+}
+
+
+    const goToTop = document.querySelector(".goTopPortfolio")
+    if (goToTop) {
+      goToTop.addEventListener("click", function(event) {
+        event.preventDefault()
+        
+        let blockID  = goToTop.getAttribute('href');
+        console.log(blockID);
+        document.querySelector(blockID).scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        })
+      })
+    } 
+    /// Скролл для кнопки goTop на portfolio page
+  
+
+
+
+
+
 
 // кнопка go top
 
-  let goTop = document.querySelector('.footer__scroll-go-top')
+let goTop = document.querySelector('.footer__scroll-go-top')
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 400) {
-      goTop.style.opacity = 1
-    } else {
-      goTop.style.opacity = 0
-    }
-  })
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 400) {
+    goTop.style.opacity = 1
+  } else {
+    goTop.style.opacity = 0
+  }
+})
 
 
 // тень в меню при скролле
 
-  let shadowHeader  = document.querySelector('.header')
+let shadowHeader  = document.querySelector('.header')
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      shadowHeader.style.boxShadow = '0 0px 5px rgba(0,0,0,0.25), 0 7px 17px rgba(0,0,0,0.10)'
-    } else {
-      shadowHeader.style.boxShadow = '0 0 0 rgba(0,0,0,0), 0 0 0 rgba(0,0,0,0)'
-    }
-  })
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    shadowHeader.style.boxShadow = '0 0px 5px rgba(0,0,0,0.25), 0 7px 17px rgba(0,0,0,0.10)'
+  } else {
+    shadowHeader.style.boxShadow = '0 0 0 rgba(0,0,0,0), 0 0 0 rgba(0,0,0,0)'
+  }
+})
 
 
 // печатная машинка
-
+if(document.querySelector('.home')) {
   const text = [
     'Darya Ladudo\n',
   ];
@@ -77,10 +104,12 @@ var swiper = new Swiper(".slider-my", {
       }, getRandomInt(getRandomInt(250*2.5)))
     }
     typeLine();
-  
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-  }
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+}
+
+
 
 
 
@@ -102,15 +131,15 @@ var swiper = new Swiper(".slider-my", {
 let burgerMenu = document.getElementById("burger__menu");
 
 function toggleBurgerMenu() {
-  let burgerIcon = document.querySelector(".burger__icon");
-  let burgerClose = document.getElementById("burger__close");
+let burgerIcon = document.querySelector(".burger__icon");
+let burgerClose = document.getElementById("burger__close");
 
-  burgerIcon.addEventListener("click", toggleMenu)
-  burgerClose.addEventListener("click", toggleMenu)
+burgerIcon.addEventListener("click", toggleMenu)
+burgerClose.addEventListener("click", toggleMenu)
 }
 
 function toggleMenu() {
-  burgerMenu.classList.toggle("burger__menu-active")
+burgerMenu.classList.toggle("burger__menu-active")
 }
 
 toggleBurgerMenu()
@@ -159,5 +188,3 @@ toggleBurgerMenu()
 // for (let elm of elements) {
 //     observer.observe(elm);
 // }
-
-

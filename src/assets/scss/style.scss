@@ -1,6 +1,7 @@
 @import "./abstracts/normalize.scss";
 @import "./abstracts/vars";
 @import './abstracts/mixins';
+@import './animate.scss ';
 .container {
     max-width: 1400px;
     width: 100%;
@@ -33,4 +34,5 @@
 @import "./components/blocks/skills";
 @import "./layout/footer";
 @import "./components/swiper";
+
 @import "./components/pagePortfolio";

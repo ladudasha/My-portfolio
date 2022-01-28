@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.min.css">    
     <title>My portfolio</title>
 </head>
@@ -190,18 +189,21 @@
             </div>
         
 
-            <div class="portfolio__gallery">            
+            <div class="portfolio__gallery">
+                
+<!-- block1 -->
                 <div class="portfolio__block1">
                     <a target="blank" class="portfolio__work1 portfolio__img" href="https://ladudasha.github.io/HelyFly/"></a>
                     <div class="portfolio__description">
-                        <a target="_blank" class="portfolio__name" href="https://ladudasha.github.io/HelyFly/">Project 1</a>
+                        <a target="_blank" class="portfolio__name" href="https://github.com/ladudasha/HelyFly">Project 1</a>
+                        <p class="portfolio__paragraph">описание</p>
                         <a target="_blank" href="https://github.com/ladudasha/HelyFly/blob/master/dist/index.html">
                             <svg class="portfolio__git">
                                     <use xlink:href="./assets/images/social/sprite.svg#git"/>
                             </svg>
                     </div>
                 </div>
-
+<!-- block2 -->
                 <div class="portfolio__block2">
                     <a target="_blank" class="portfolio__work2 portfolio__img" href="https://ladudasha.github.io/Productivity/"></a>
                     <div class="portfolio__description">
@@ -212,7 +214,7 @@
                             </svg>
                     </div>
                 </div>
-
+<!-- block3 -->
                 <div class="portfolio__block3">
                     <a class="portfolio__work3 portfolio__img" href=""></a>
                     <div class="portfolio__description">
@@ -220,7 +222,7 @@
                         <p class="portfolio__paragraph">описание</p>
                     </div>
                 </div>
-
+<!-- block4 -->
                 <div class="portfolio__block4">
                     <a class="portfolio__work4 portfolio__img" href=""></a>
                     <div class="portfolio__description">
@@ -229,6 +231,22 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+<!-- test view project -->
+
+<a class="test-link" href="">
+<div class="test-wrap">
+    <img class="test-img" src="./assets/images/portfolio/ThriveTalk Landing Page.png" alt="">
+    <div  class="test-title">Project 3 ThriveTalk</div>
+</figure>
+</div>
+</a>
+
+<!-- end -->
+
 
             <a target="_blank" class="portfolio__link-more" href="./pagePortfolio.html"><span class="portfolio__link-text">See projects</span></a>
 
@@ -243,16 +261,14 @@
             <div class="skills__wrap">
                 <div class="skills__left">
                     <h2 class="skills__title title">SKILLS</h2>
-                    <!-- <html class="skills__tag tag">
+                    <!-- <html class="skills__tag tag skills__subtitle subtitle  data-wow-offset="200px" ">
                     </html> -->
                     <h3 class="skills__subtitle subtitle">PROGRAMMING SKILLS</h3>
-                    <!-- <div data-wow-offset="100px" class="wow fadeInUp "> -->
                         
-                        <p class="skills__text text">Starting my journey into the world of programming in 2020, I studied every day, acquiring new skills. My main area of ​​expertise is HTML CSS. Having become a student of the best IT school in Minsk, I created web products that raised my level.
+                        <p  class="animated wow bounceInUp skills__text text">Starting my journey into the world of programming in 2020, I studied every day, acquiring new skills. My main area of ​​expertise is HTML CSS. Having become a student of the best IT school in Minsk, I created web products that raised my level.
                         </p>
                         <!-- <p>Начав свой путь в мир программирования в 2020 году, я училась каждый день, приобретая новые навыки. Моя основная область знаний — HTML CSS. Став студентом лучшей IT-школы Минска, я создавал веб-продукты, которые подняли мой уровень.
                         </p> -->
-                    <!-- </div> -->
 
 
                     <div class="skills__block-text ">
@@ -262,7 +278,7 @@
 
                     <div class="skills__inner ">
                         <div class=" skills__progress1 skills__ampty">
-                            <div class="wow skills__progress-line1 skills__fill "></div>
+                            <div class="wow animated skills__progress-line1 skills__fill "></div>
                         </div>
                     </div>
 
@@ -274,7 +290,7 @@
 
                     <div class="skills__inner ">
                         <div class="skills__progress2 skills__ampty ">
-                            <div class="wow skills__progress-line2 skills__fill "></div>
+                            <div class="wow animated skills__progress-line2 skills__fill "></div>
                         </div>
                     </div>
 
@@ -287,7 +303,7 @@
 
                     <div class="skills__inner ">
                         <div class="skills__progress3 skills__ampty ">
-                            <div class="wow skills__progress-line3 skills__fill "></div>
+                            <div class="wow animated skills__progress-line3 skills__fill "></div>
                         </div>
                     </div>
 
@@ -299,7 +315,7 @@
 
                     <div class="skills__inner">
                         <div class="skills__progress4 skills__ampty ">
-                            <div class="wow skills__progress-line4 skills__fill "></div>
+                            <div class="wow animated skills__progress-line4 skills__fill "></div>
                         </div>
                     </div>
                 </div>
@@ -483,7 +499,7 @@
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/script.js "></script>
+    <script src="./assets/js/script.js "></script>
     <script>
         new WOW().init();
     </script>
@@ -491,4 +507,3 @@
 
 </html>
 
-</html>

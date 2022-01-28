@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <main  class="pagePortfolio" >
+
 
         <!-- HEADER -->
 
@@ -24,7 +24,7 @@
                                 <a class="nav__link" href="index.html#home">HOME</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="index.html#portfolio">PORTFOLIO</a>
+                                <a class="nav__link" href="#portfolio">PORTFOLIO</a>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="index.html#skills">SKILLS</a>
@@ -44,19 +44,19 @@
                     <div class="burger__list">
                         <ul class="burger__nav nav">
                             <li class="nav__item">
-                                <a class="nav__link" href="#home">HOME</a>
+                                <a class="nav__link" href="index.html#home">HOME</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#portfolio">PORTFOLIO</a>
+                                <a class="nav__link" href="index.html#portfolio">PORTFOLIO</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#skills">SKILLS</a>
+                                <a class="nav__link" href="index.html#skills">SKILLS</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#about">ABOUT ME</a>
+                                <a class="nav__link" href="index.html#about">ABOUT ME</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#contact">CONTACT</a>
+                                <a class="nav__link" href="index.html#contact">CONTACT</a>
                             </li>
                         </ul>
                     </div>
@@ -117,7 +117,7 @@
                 </div>
             
 
-                <div class="portfolio__gallery">            
+                <div class="portfolio__gallery portfolio__secondPage ">            
                     <div class="portfolio__block1">
                         <a target="blank" class="portfolio__work1 portfolio__img" href="https://ladudasha.github.io/HelyFly/"></a>
                         <div class="portfolio__description">
@@ -155,22 +155,70 @@
                             <p class="portfolio__paragraph">описание</p>
                         </div>
                     </div>
+                
+
+                    <div class="portfolio__block5">
+                        <a target="blank" class="portfolio__work5 portfolio__img" href=""></a>
+                        <div class="portfolio__description">
+                            <a target="_blank" class="portfolio__name" href="">Project 5</a>
+                            <a target="_blank" href="">
+                                <svg class="portfolio__git">
+                                        <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                </svg>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__block6">
+                        <a target="_blank" class="portfolio__work6 portfolio__img" href=""></a>
+                        <div class="portfolio__description">
+                            <a target="_blank" class="portfolio__name" href="">Project 6</a>
+                            <a target="_blank" href="">
+                                <svg class="portfolio__git">
+                                        <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                </svg>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__block7">
+                        <a class="portfolio__work7 portfolio__img" href=""></a>
+                        <div class="portfolio__description">
+                            <a class="portfolio__name" href="">Project 7</a>
+                            <a target="_blank" href="">
+                                <svg class="portfolio__git">
+                                        <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                </svg>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__block8">
+                        <a class="portfolio__work8 portfolio__img" href=""></a>
+                        <div class="portfolio__description">
+                            <a class="portfolio__name" href="">Project 8</a>
+                            <p class="portfolio__paragraph">описание</p>
+                            <a target="_blank" href="">
+                                <svg class="portfolio__git">
+                                        <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                </svg>
+                        </div>
+                    </div>
+                
+                
+                
+                
                 </div>
 
-                <a target="blank" class="portfolio__link-more" href="./pagePortfolio.html"><span class="portfolio__link-text">See more</span></a>
+                <!-- <a target="blank" class="portfolio__link-more" href="./pagePortfolio.html"><span class="portfolio__link-text">See more</span></a> -->
 
             </div>
+
+            <a href="#portfolio" class="goTopPortfolio"><img src="./assets/images/form/scroll.svg" class="footer__scroll-go-top" alt=""></a>
         </section>
 
 
-    </main>
+  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js "></script>
 
 
-
-     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/script.js "></script>
-    <script>
-        new WOW().init();
-    </script>
 </body>
 </html>
