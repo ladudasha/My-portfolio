@@ -1,11 +1,11 @@
-
-
 var swiper = new Swiper(".slider-my", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   },
 });
+
+
 
 // плавный скролл
 const homePageScroll = document.querySelector(".home");
@@ -27,19 +27,19 @@ if( homePageScroll ) {
 }
 
 
-    const goToTop = document.querySelector(".goTopPortfolio")
-    if (goToTop) {
-      goToTop.addEventListener("click", function(event) {
-        event.preventDefault()
+    // const goToTop = document.querySelector(".goTopPortfolio")
+    // if (goToTop) {
+    //   goToTop.addEventListener("click", function(event) {
+    //     event.preventDefault()
         
-        let blockID  = goToTop.getAttribute('href');
-        console.log(blockID);
-        document.querySelector(blockID).scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        })
-      })
-    } 
+    //     let blockID  = goToTop.getAttribute('href');
+    //     console.log(blockID);
+    //     document.querySelector(blockID).scrollIntoView({
+    //       behavior: "smooth",
+    //       block: "start"
+    //     })
+    //   })
+    // } 
     /// Скролл для кнопки goTop на portfolio page
   
 
@@ -146,7 +146,48 @@ toggleBurgerMenu()
 
 
 
+// GALLERY
 
+const gallery = document.querySelectorAll(".portfolio--hide");
+const showMore = document.querySelector(".portfolio__link-more");
+
+showMore.addEventListener('click', () => {
+    galleryHide()
+    showMoreBtn()
+    
+})
+
+function galleryHide() {
+    gallery.forEach((photo) => {
+        photo.classList.toggle('portfolio--hide');
+    })
+}
+function showMoreBtn() {
+    showMore.classList.toggle('portfolio__link-text');
+    showMore.innerHTML = (showMore.className != 'portfolio__link-more portfolio__link-text') ? 'View more' : 'Hide projects';
+}
+
+
+// GALLERY
+
+// const gallery = document.querySelectorAll(".gallery--hide");
+// const showMore = document.querySelector(".gallery__btn");
+
+// showMore.addEventListener('click', () => {
+//     galleryHide()
+//     showMoreBtn()
+    
+// })
+
+// function galleryHide() {
+//     gallery.forEach((photo) => {
+//         photo.classList.toggle('gallery--hide');
+//     })
+// }
+// function showMoreBtn() {
+//     showMore.classList.toggle('btn--show');
+//     showMore.innerHTML = (showMore.className != 'gallery__btn btn--show') ? 'Показать все фото' : 'Скрыть все фото';
+// }
 
 
 

@@ -3466,58 +3466,99 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     grid-row-gap: 30px;
     grid-auto-columns: 1fr;
     grid-template-columns: 1.5fr 1fr 1.5fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto auto;
 }
 
 .portfolio__block1 {
     grid-area: 1/1/2/3;
 }
 
-.portfolio__img {
-    display: -ms-flexbox;
-    display: flex;
-    height: 460px;
-    margin-bottom: 40px;
-    background-position: 50% 50%;
-    opacity: 1;
-}
-
-.portfolio__img:hover {
-    opacity: 0.8;
-    transition: 0.5s;
-}
-
-.portfolio__work1 {
-    background-image: url("../images/portfolio/fly.png");
-    background-size: cover;
-}
-
 .portfolio__block2 {
     grid-area: 1/3/2/4;
-}
-
-.portfolio__work2 {
-    background-image: url("../images/portfolio/productivity.png");
-    background-size: cover;
 }
 
 .portfolio__block3 {
     grid-area: 2/1/3/2;
 }
 
-.portfolio__work3 {
-    background-image: url("../images/portfolio/ThriveTalk Landing Page.png");
-    background-size: cover;
-}
-
 .portfolio__block4 {
     grid-area: 2/2/3/4;
 }
 
-.portfolio__work4 {
-    background-image: url("https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5cdbececded4a0184e7de84b_portfolio%203%20-%20wide.svg");
-    background-position: 50% 50%;
-    background-size: cover;
+.portfolio__block5 {
+    grid-area: 3/1/4/3;
+}
+
+.portfolio__block6 {
+    grid-area: 3/3/4/4;
+}
+
+.portfolio__block7 {
+    grid-area: 4/1/5/2;
+}
+
+.portfolio__block8 {
+    grid-area: 4/2/5/4;
+}
+
+.portfolio--hide {
+    display: none;
+}
+
+.portfolio__project {
+    display: block;
+    margin: 20px;
+}
+
+.portfolio__wrap {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    transition: margin .5s linear, width .5s linear, height .5s linear, box-shadow .5s linear;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.portfolio__wrap:hover {
+    margin: -10px;
+    width: calc(100% + 20px);
+    height: 420px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio__wrap:hover .portfolio__img {
+    top: -100%;
+}
+
+.portfolio__wrap:hover .portfolio__name-project {
+    font-size: 20px;
+    height: 35px;
+    opacity: 1;
+}
+
+.portfolio__img {
+    width: 100%;
+    transition: top 2s ease-in-out;
+    position: relative;
+    top: 0;
+    opacity: 1;
+}
+
+.portfolio__img:hover {
+    opacity: 0.8;
+}
+
+.portfolio__name-project {
+    text-align: center;
+    width: 100%;
+    color: white;
+    height: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity .9s linear, font-size .2s linear, height .2s linear;
+    position: absolute;
+    bottom: 0;
 }
 
 .portfolio__description {
@@ -3540,8 +3581,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
+.portfolio__paragraph {
+    margin-bottom: 15px;
+}
+
 .portfolio__name {
     margin-bottom: 5px;
+    color: #ff4522;
     font-size: 20px;
     line-height: 34px;
     font-weight: 400;
@@ -3618,62 +3664,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
     transition: all 1s ease;
-}
-
-.test-link {
-    display: block;
-    margin: 20px;
-}
-
-.test-wrap {
-    width: 100%;
-    height: 400px;
-    margin: 0;
-    transition: margin .5s linear, width .5s linear, height .5s linear, box-shadow .5s linear;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-}
-
-.test-wrap:hover {
-    margin: -10px;
-    width: calc(100% + 20px);
-    height: 420px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-.test-wrap:hover .test-img {
-    top: -100%;
-}
-
-.test-wrap:hover .test-title {
-    font-size: 20px;
-    height: 35px;
-    opacity: 1;
-}
-
-.test-img {
-    width: 100%;
-    transition: top 2s ease-in-out;
-    position: relative;
-    top: 0;
-    opacity: 1;
-}
-
-.test-img:hover {
-    opacity: 0.8;
-}
-
-.test-title {
-    text-align: center;
-    width: 100%;
-    color: white;
-    height: 0;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    transition: opacity .9s linear, font-size .2s linear, height .2s linear;
-    position: absolute;
-    bottom: 0;
 }
 
 .connection {
@@ -4184,49 +4174,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-size: 20px;
     font-weight: 800;
     z-index: 0 !important;
-}
-
-.portfolio__secondPage {
-    display: grid;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1.5fr 1fr 1.5fr;
-    grid-template-rows: auto auto auto auto;
-}
-
-.portfolio__block5 {
-    grid-area: 3/1/4/3;
-}
-
-.portfolio__work5 {
-    background-image: url("../images/portfolio/fly.png");
-    background-size: cover;
-}
-
-.portfolio__block6 {
-    grid-area: 3/3/4/4;
-}
-
-.portfolio__work6 {
-    background-image: url("../images/portfolio/fly.png");
-    background-size: cover;
-}
-
-.portfolio__block7 {
-    grid-area: 4/1/5/2;
-}
-
-.portfolio__work7 {
-    background-image: url("../images/portfolio/fly.png");
-    background-size: cover;
-}
-
-.portfolio__block8 {
-    grid-area: 4/2/5/4;
-}
-
-.portfolio__work8 {
-    background-image: url("../images/portfolio/fly.png");
-    background-size: cover;
 }
