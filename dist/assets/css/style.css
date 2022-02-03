@@ -3799,13 +3799,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
-    top: 35px;
-    left: 105px;
+    top: 5%;
+    left: 2%;
     font-size: 15px;
 }
 
 .skills::before {
-    content: "</html>";
+    content: "<html>";
     display: block;
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
@@ -3827,7 +3827,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .skills__left {
-    width: 65%;
+    width: 55%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -3844,28 +3844,55 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .skills__title {
     position: relative;
+    margin-bottom: 25px;
 }
 
 .skills__title::before {
-    content: "<h3>";
+    content: "<h2>";
     display: block;
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
     top: -25px;
     left: -20px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .skills__title::after {
+    content: "</h2>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 20px;
+    left: -20px;
+    font-size: 15px;
+}
+
+.skills__subtitle {
+    position: relative;
+}
+
+.skills__subtitle::before {
+    content: "<h3>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: -12px;
+    left: -20px;
+    font-size: 15px;
+}
+
+.skills__subtitle::after {
     content: "</h3>";
     display: block;
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
-    top: 10px;
-    left: 105px;
-    font-size: 12px;
+    top: 38px;
+    left: -20px;
+    font-size: 15px;
 }
 
 .skills__text {
@@ -3878,10 +3905,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
-    top: 100px;
-    left: -24px;
-    font-size: 12px;
-    margin-bottom: 20px;
+    top: -18px;
+    left: -15px;
+    font-size: 15px;
 }
 
 .skills__text::after {
@@ -3890,9 +3916,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
-    top: 180px;
-    left: -25px;
-    font-size: 12px;
+    bottom: -20px;
+    left: -16px;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 360px) {
@@ -3900,6 +3926,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         font-size: 15px;
         max-width: 250px;
     }
+}
+
+.skills__diagramm-block {
+    position: relative;
+}
+
+.skills__diagramm-block::before {
+    content: "<div>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: -18px;
+    left: -15px;
+    font-size: 15px;
+}
+
+.skills__diagramm-block::after {
+    content: "</div>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    bottom: -20px;
+    left: -16px;
+    font-size: 15px;
 }
 
 .skills__block-text {
@@ -3965,6 +4017,41 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .skills__right {
     width: 360px;
+    position: relative;
+}
+
+.skills__right::before {
+    content: "<img>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: -27px;
+    left: -15px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 920px) {
+    .skills__right::before {
+        display: none;
+    }
+}
+
+.skills__right::after {
+    content: "</img>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    bottom: -20px;
+    left: -16px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 920px) {
+    .skills__right::after {
+        display: none;
+    }
 }
 
 .skills__img {

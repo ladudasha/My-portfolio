@@ -27,27 +27,6 @@ if( homePageScroll ) {
 }
 
 
-    // const goToTop = document.querySelector(".goTopPortfolio")
-    // if (goToTop) {
-    //   goToTop.addEventListener("click", function(event) {
-    //     event.preventDefault()
-        
-    //     let blockID  = goToTop.getAttribute('href');
-    //     console.log(blockID);
-    //     document.querySelector(blockID).scrollIntoView({
-    //       behavior: "smooth",
-    //       block: "start"
-    //     })
-    //   })
-    // } 
-    /// Скролл для кнопки goTop на portfolio page
-  
-
-
-
-
-
-
 // кнопка go top
 
 let goTop = document.querySelector('.footer__scroll-go-top')
@@ -77,7 +56,8 @@ window.addEventListener("scroll", function () {
 // печатная машинка
 if(document.querySelector('.home')) {
   const text = [
-    'Darya Ladudo\n',
+    // 'Darya Ladudo\n',
+    'Web developer from Minsk. Sometimes works as a freelancer.\n',
   ];
   
   let line = 0;
@@ -148,8 +128,32 @@ toggleBurgerMenu()
 
 // GALLERY
 
+// const gallery = document.querySelectorAll(".portfolio--hide");
+// const showMore = document.querySelector(".portfolio__link-more");
+// const showMoreText = document.querySelector(".portfolio__link-text");
+
+// showMore.addEventListener('click', () => {
+//     galleryHide()
+//     showMoreBtn()
+    
+// })
+
+// function galleryHide() {
+//     gallery.forEach((photo) => {
+//         photo.classList.toggle('portfolio--hide');
+//     })
+// }
+// function showMoreBtn() {
+//   showMoreText.classList.toggle('show');
+//   showMoreText.innerHTML = (showMoreText.className == 'show') ? 'Hide projects'  : 'View more';
+// }
+
+
+// GALLERY
+
 const gallery = document.querySelectorAll(".portfolio--hide");
 const showMore = document.querySelector(".portfolio__link-more");
+const showMoreText = document.querySelector(".portfolio__link-text");
 
 showMore.addEventListener('click', () => {
     galleryHide()
@@ -163,31 +167,9 @@ function galleryHide() {
     })
 }
 function showMoreBtn() {
-    showMore.classList.toggle('portfolio__link-text');
-    showMore.innerHTML = (showMore.className != 'portfolio__link-more portfolio__link-text') ? 'View more' : 'Hide projects';
+    showMoreText.classList.toggle('btn--show');
+    showMoreText.innerHTML = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects ' : 'View more';
 }
-
-
-// GALLERY
-
-// const gallery = document.querySelectorAll(".gallery--hide");
-// const showMore = document.querySelector(".gallery__btn");
-
-// showMore.addEventListener('click', () => {
-//     galleryHide()
-//     showMoreBtn()
-    
-// })
-
-// function galleryHide() {
-//     gallery.forEach((photo) => {
-//         photo.classList.toggle('gallery--hide');
-//     })
-// }
-// function showMoreBtn() {
-//     showMore.classList.toggle('btn--show');
-//     showMore.innerHTML = (showMore.className != 'gallery__btn btn--show') ? 'Показать все фото' : 'Скрыть все фото';
-// }
 
 
 

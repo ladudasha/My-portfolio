@@ -58,6 +58,7 @@ const path = {
 const jsFiles = [
     srcPath + 'assets/js/wow.js',
     srcPath + 'assets/js/main.js',
+    srcPath + 'assets/js/vanilla-tilt.js'
 ]
 
 
