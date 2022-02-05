@@ -169,27 +169,11 @@ function galleryHide() {
 function showMoreBtn() {
     showMoreText.classList.toggle('btn--show');
     showMoreText.innerHTML = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects ' : 'View more';
+    // showMoreText.setAttribute = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects ' : 'View more';
+  
+    showMoreText.setAttribute('href', '#link-more')
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

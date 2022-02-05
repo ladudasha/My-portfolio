@@ -11,7 +11,7 @@
         @include pseudo($content: '<body>');
         font-family: 'La Belle Aurore', cursive;
         color: #515152;
-        top: 5%;
+        top: 3%;
         left: 2%;
         font-size: 15px;
     }
@@ -174,8 +174,8 @@
         &::before {
             @include pseudo($content: '<img>');
             font-family: 'La Belle Aurore', cursive;
-            color: #515152;
-            top: -27px;
+            color: #db7b7b;
+            top: -40px;
             left: -15px;
             font-size: 15px;
             @media screen and (max-width: 920px) {
@@ -185,8 +185,8 @@
         &::after {
             @include pseudo($content: '</img>');
             font-family: 'La Belle Aurore', cursive;
-            color: #515152;
-            bottom: -20px;
+            color: #db7b7b;
+            bottom: -29px;
             left: -16px;
             font-size: 15px;
             @media screen and (max-width: 920px) {
@@ -207,6 +207,38 @@
         @media screen and (max-width: 920px) {
             display: none;
         }
+    &:hover {
+            box-shadow:
+            1px 1px rgb(255, 69, 34),
+            2px 2px rgb(255, 69, 34),
+            3px 3px rgb(255, 69, 34),
+            4px 4px rgb(255, 69, 34),
+            5px 5px rgb(255, 69, 34),
+            6px 6px rgb(255, 69, 34),
+            7px 7px rgb(255, 69, 34);
+            -webkit-transform: translateX(-7px);
+            transform: translateX(-7px);
+        }
+    }
+    &__tegs {
+        position: relative;
+        &::after {
+            @include pseudo($content: '</body>');
+            font-family: 'La Belle Aurore', cursive;
+            color: #515152;
+            top: 75px;
+            left: 35px;
+            font-size: 15px;
+        }
+        &::before {
+            @include pseudo($content: '</html>');
+            font-family: 'La Belle Aurore', cursive;
+            color: #515152;
+            top: 115px;
+            left: 0;
+            font-size: 15px;
+        }
+
     }
 }
                 

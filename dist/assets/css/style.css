@@ -3013,7 +3013,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .subtitle {
     font-weight: 800;
-    text-transform: uppercase;
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 40px;
@@ -3193,7 +3192,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 300px;
     -o-object-fit: contain;
     object-fit: contain;
-    background-image: url(../images/home/leo.jpg);
+    background-image: url(../images/home/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-animation: border-user 8s ease-in-out infinite 1s;
@@ -3450,6 +3449,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .portfolio {
+    opacity: 1;
+    visibility: visible;
     height: auto;
     padding: 140px 0px 140px 0px;
 }
@@ -3502,7 +3503,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .portfolio--hide {
-    display: none;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .55s opacity, .55s visibility;
 }
 
 .portfolio__project {
@@ -4025,8 +4029,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
-    color: #515152;
-    top: -27px;
+    color: #db7b7b;
+    top: -40px;
     left: -15px;
     font-size: 15px;
 }
@@ -4042,8 +4046,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
-    color: #515152;
-    bottom: -20px;
+    color: #db7b7b;
+    bottom: -29px;
     left: -16px;
     font-size: 15px;
 }
@@ -4077,6 +4081,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .skills__img {
         display: none;
     }
+}
+
+.skills__img:hover {
+    box-shadow: 1px 1px #ff4522, 2px 2px #ff4522, 3px 3px #ff4522, 4px 4px #ff4522, 5px 5px #ff4522, 6px 6px #ff4522, 7px 7px #ff4522;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
 }
 
 @-webkit-keyframes progress1 {

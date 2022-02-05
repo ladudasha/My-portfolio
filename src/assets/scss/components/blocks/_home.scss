@@ -35,7 +35,7 @@
         width: 300px;
         height: 300px;
         object-fit: contain;
-        background-image: url(../images/home/leo.jpg);
+        background-image: url(../images/home/1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         animation: border-user 8s ease-in-out infinite 1s;
@@ -102,6 +102,29 @@
             max-width: 220px;
         }
     
+    }
+
+    // test
+    &__title-block {
+        display:flex;
+        gap: 25px;
+
+    }
+    &__title-name,
+    &__title-surname {
+        display: flex;
+
+    }
+    &__letter {
+        font-size: 88px;
+        line-height: 96px;
+        font-weight: 500;
+        &:hover {
+            transform: scale(1.2);
+            transition-duration: .3s;
+            color:#ff4522;
+          }
+
     }
     &__text {
         font-size: 32px;
