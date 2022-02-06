@@ -3284,6 +3284,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
+.home__title-block {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 25px;
+}
+
+.home__title-name, .home__title-surname {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.home__letter {
+    font-size: 88px;
+    line-height: 96px;
+    font-weight: 500;
+}
+
+.home__letter:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: .3s;
+    color: #ff4522;
+}
+
 .home__text {
     font-size: 32px;
     line-height: 48px;
@@ -3470,36 +3494,90 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     grid-template-rows: auto auto auto auto;
 }
 
+@media screen and (max-width: 1024px) {
+    .portfolio__gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .portfolio__block1 {
     grid-area: 1/1/2/3;
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio__block1 {
+        grid-area: 1/1/2/2;
+    }
 }
 
 .portfolio__block2 {
     grid-area: 1/3/2/4;
 }
 
+@media screen and (max-width: 1024px) {
+    .portfolio__block2 {
+        grid-area: 1/2/2/3;
+    }
+}
+
 .portfolio__block3 {
     grid-area: 2/1/3/2;
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio__block3 {
+        grid-area: 2/1/3/2;
+    }
 }
 
 .portfolio__block4 {
     grid-area: 2/2/3/4;
 }
 
+@media screen and (max-width: 1024px) {
+    .portfolio__block4 {
+        grid-area: 2/2/3/3;
+    }
+}
+
 .portfolio__block5 {
     grid-area: 3/1/4/3;
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio__block5 {
+        grid-area: 3/1/4/2;
+    }
 }
 
 .portfolio__block6 {
     grid-area: 3/3/4/4;
 }
 
+@media screen and (max-width: 1024px) {
+    .portfolio__block6 {
+        grid-area: 3/2/4/3;
+    }
+}
+
 .portfolio__block7 {
     grid-area: 4/1/5/2;
 }
 
+@media screen and (max-width: 1024px) {
+    .portfolio__block7 {
+        grid-area: 4/1/5/2;
+    }
+}
+
 .portfolio__block8 {
-    grid-area: 4/2/5/4;
+    grid-area: 4/1/5/2;
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio__block8 {
+        grid-area: 4/2/5/3;
+    }
 }
 
 .portfolio--hide {
@@ -3803,7 +3881,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
-    top: 5%;
+    top: 3%;
     left: 2%;
     font-size: 15px;
 }
@@ -4087,6 +4165,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     box-shadow: 1px 1px #ff4522, 2px 2px #ff4522, 3px 3px #ff4522, 4px 4px #ff4522, 5px 5px #ff4522, 6px 6px #ff4522, 7px 7px #ff4522;
     -webkit-transform: translateX(-7px);
     transform: translateX(-7px);
+}
+
+.skills__tegs {
+    position: relative;
+}
+
+.skills__tegs::after {
+    content: "</body>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 75px;
+    left: 35px;
+    font-size: 15px;
+}
+
+.skills__tegs::before {
+    content: "</html>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 115px;
+    left: 0;
+    font-size: 15px;
 }
 
 @-webkit-keyframes progress1 {

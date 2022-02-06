@@ -22,7 +22,7 @@
         position: relative;        
         @media screen and (max-width: 972px) {
             margin: 0 auto;
-            margin-top: 100px;
+            margin-top: 200px;
         }
         @media screen and (max-width: 360px) {
             margin: 0;
@@ -82,32 +82,40 @@
         
     }
     
-    &__title {
-        font-size: 88px;
-        line-height: 96px;
-        font-weight: 500;
-        @media screen and (max-width: 1180px) {
-            font-size: 73px;
-        }
-        @media screen and (max-width: 687px) {
-            font-size: 65px;            
-        }
-        @media screen and (max-width: 440px) {
-            font-size: 50px;
-            max-width: 250px;
-            line-height: 76px;
-        }
-        @media screen and (max-width: 360px) {
-            font-size: 30px;
-            max-width: 220px;
-        }
+    // &__title {
+    //     font-size: 88px;
+    //     line-height: 96px;
+    //     font-weight: 500;
+    //     @media screen and (max-width: 1180px) {
+    //         font-size: 73px;
+    //     }
+    //     @media screen and (max-width: 687px) {
+    //         font-size: 65px;            
+    //     }
+    //     @media screen and (max-width: 550px) {
+    //         font-size: 50px;
+    //         max-width: 250px;
+    //         line-height: 76px;
+    //     }
+    //     @media screen and (max-width: 360px) {
+    //         font-size: 30px;
+    //         max-width: 220px;
+    //     }
     
-    }
+    // }
 
     // test
     &__title-block {
         display:flex;
         gap: 25px;
+        @media screen and (max-width: 440px) {
+            flex-direction: column;
+            gap: 0;           
+        }
+        @media screen and (max-width: 360px) {
+            flex-direction: row;
+            gap: 15px;
+        }
 
     }
     &__title-name,
@@ -123,7 +131,20 @@
             transform: scale(1.2);
             transition-duration: .3s;
             color:#ff4522;
-          }
+        }
+        @media screen and (max-width: 1180px) {
+            font-size: 73px;
+        }
+        @media screen and (max-width: 687px) {
+            font-size: 65px;            
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 50px;
+            line-height: 76px;
+        }
+        @media screen and (max-width: 360px) {
+            font-size: 30px;
+        }
 
     }
     &__text {

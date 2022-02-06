@@ -2524,7 +2524,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     @media screen and (max-width: 972px) {
       .home__avatar {
         margin: 0 auto;
-        margin-top: 100px; } }
+        margin-top: 200px; } }
     @media screen and (max-width: 360px) {
       .home__avatar {
         margin: 0; } }
@@ -2569,28 +2569,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     @media screen and (max-width: 976px) {
       .home__details {
         margin: 0 auto; } }
-  .home__title {
-    font-size: 88px;
-    line-height: 96px;
-    font-weight: 500; }
-    @media screen and (max-width: 1180px) {
-      .home__title {
-        font-size: 73px; } }
-    @media screen and (max-width: 687px) {
-      .home__title {
-        font-size: 65px; } }
-    @media screen and (max-width: 440px) {
-      .home__title {
-        font-size: 50px;
-        max-width: 250px;
-        line-height: 76px; } }
-    @media screen and (max-width: 360px) {
-      .home__title {
-        font-size: 30px;
-        max-width: 220px; } }
   .home__title-block {
     display: flex;
     gap: 25px; }
+    @media screen and (max-width: 440px) {
+      .home__title-block {
+        flex-direction: column;
+        gap: 0; } }
+    @media screen and (max-width: 360px) {
+      .home__title-block {
+        flex-direction: row;
+        gap: 15px; } }
   .home__title-name, .home__title-surname {
     display: flex; }
   .home__letter {
@@ -2601,6 +2590,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       transform: scale(1.2);
       transition-duration: .3s;
       color: #ff4522; }
+    @media screen and (max-width: 1180px) {
+      .home__letter {
+        font-size: 73px; } }
+    @media screen and (max-width: 687px) {
+      .home__letter {
+        font-size: 65px; } }
+    @media screen and (max-width: 550px) {
+      .home__letter {
+        font-size: 50px;
+        line-height: 76px; } }
+    @media screen and (max-width: 360px) {
+      .home__letter {
+        font-size: 30px; } }
   .home__text {
     font-size: 32px;
     line-height: 48px; }
@@ -2709,22 +2711,49 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     grid-auto-columns: 1fr;
     grid-template-columns: 1.5fr 1fr 1.5fr;
     grid-template-rows: auto auto auto auto; }
+    @media screen and (max-width: 1024px) {
+      .portfolio__gallery {
+        grid-template-columns: repeat(2, 1fr); } }
   .portfolio__block1 {
     grid-area: 1/1/2/3; }
+    @media screen and (max-width: 1024px) {
+      .portfolio__block1 {
+        grid-area: 1/1/2/2; } }
   .portfolio__block2 {
     grid-area: 1/3/2/4; }
+    @media screen and (max-width: 1024px) {
+      .portfolio__block2 {
+        grid-area: 1/2/2/3; } }
   .portfolio__block3 {
     grid-area: 2/1/3/2; }
+    @media screen and (max-width: 1024px) {
+      .portfolio__block3 {
+        grid-area: 2/1/3/2; } }
   .portfolio__block4 {
     grid-area: 2/2/3/4; }
+    @media screen and (max-width: 1024px) {
+      .portfolio__block4 {
+        grid-area: 2/2/3/3; } }
   .portfolio__block5 {
     grid-area: 3/1/4/3; }
+    @media screen and (max-width: 1024px) {
+      .portfolio__block5 {
+        grid-area: 3/1/4/2; } }
   .portfolio__block6 {
     grid-area: 3/3/4/4; }
+    @media screen and (max-width: 1024px) {
+      .portfolio__block6 {
+        grid-area: 3/2/4/3; } }
   .portfolio__block7 {
     grid-area: 4/1/5/2; }
+    @media screen and (max-width: 1024px) {
+      .portfolio__block7 {
+        grid-area: 4/1/5/2; } }
   .portfolio__block8 {
     grid-area: 4/2/5/4; }
+    @media screen and (max-width: 1024px) {
+      .portfolio__block8 {
+        grid-area: 4/2/5/3; } }
   .portfolio--hide {
     height: 0px;
     opacity: 0;
@@ -2781,7 +2810,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         align-items: self-start;
         margin-bottom: 15px; } }
   .portfolio__paragraph {
-    margin-bottom: 15px; }
+    min-height: 100px;
+    display: flex;
+    align-items: center; }
   .portfolio__name {
     margin-bottom: 5px;
     color: #ff4522;

@@ -126,28 +126,6 @@ toggleBurgerMenu()
 
 
 
-// GALLERY
-
-// const gallery = document.querySelectorAll(".portfolio--hide");
-// const showMore = document.querySelector(".portfolio__link-more");
-// const showMoreText = document.querySelector(".portfolio__link-text");
-
-// showMore.addEventListener('click', () => {
-//     galleryHide()
-//     showMoreBtn()
-    
-// })
-
-// function galleryHide() {
-//     gallery.forEach((photo) => {
-//         photo.classList.toggle('portfolio--hide');
-//     })
-// }
-// function showMoreBtn() {
-//   showMoreText.classList.toggle('show');
-//   showMoreText.innerHTML = (showMoreText.className == 'show') ? 'Hide projects'  : 'View more';
-// }
-
 
 // GALLERY
 
@@ -176,22 +154,3 @@ function showMoreBtn() {
 }
 
 
-
-
-// function onEntry(entry) {
-//     entry.forEach(change => {
-//         if (change.isIntersecting) {
-//             change.target.classList.add('element-show');
-//         }
-//     });
-// }
-
-// let options = {
-//     threshold: [0.5]
-// };
-// let observer = new IntersectionObserver(onEntry, options);
-// let elements = document.querySelectorAll('.skills__inner');
-
-// for (let elm of elements) {
-//     observer.observe(elm);
-// }
