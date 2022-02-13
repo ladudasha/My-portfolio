@@ -3013,7 +3013,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .subtitle {
     font-weight: 800;
-    text-transform: uppercase;
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 40px;
@@ -3026,7 +3025,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -3177,7 +3176,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media screen and (max-width: 972px) {
     .home__avatar {
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 200px;
     }
 }
 
@@ -3193,7 +3192,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 300px;
     -o-object-fit: contain;
     object-fit: contain;
-    background-image: url(../images/home/leo.jpg);
+    background-image: url(../images/home/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-animation: border-user 8s ease-in-out infinite 1s;
@@ -3252,36 +3251,69 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
-.home__title {
+.home__title-block {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 25px;
+}
+
+@media screen and (max-width: 440px) {
+    .home__title-block {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .home__title-block {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+.home__title-name, .home__title-surname {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.home__letter {
     font-size: 88px;
     line-height: 96px;
     font-weight: 500;
+    color: dimgrey;
+}
+
+.home__letter:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: .3s;
+    color: #ff4522;
 }
 
 @media screen and (max-width: 1180px) {
-    .home__title {
+    .home__letter {
         font-size: 73px;
     }
 }
 
 @media screen and (max-width: 687px) {
-    .home__title {
+    .home__letter {
         font-size: 65px;
     }
 }
 
-@media screen and (max-width: 440px) {
-    .home__title {
+@media screen and (max-width: 550px) {
+    .home__letter {
         font-size: 50px;
-        max-width: 250px;
         line-height: 76px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .home__title {
+    .home__letter {
         font-size: 30px;
-        max-width: 220px;
     }
 }
 
@@ -3450,6 +3482,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .portfolio {
+    opacity: 1;
+    visibility: visible;
     height: auto;
     padding: 140px 0px 140px 0px;
 }
@@ -3469,40 +3503,103 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     grid-template-rows: auto auto auto auto;
 }
 
+@media screen and (max-width: 1280px) {
+    .portfolio__gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .portfolio__gallery {
+        display: block;
+    }
+}
+
 .portfolio__block1 {
     grid-area: 1/1/2/3;
+}
+
+@media screen and (max-width: 1280px) {
+    .portfolio__block1 {
+        grid-area: 1/1/2/2;
+    }
 }
 
 .portfolio__block2 {
     grid-area: 1/3/2/4;
 }
 
+@media screen and (max-width: 1280px) {
+    .portfolio__block2 {
+        grid-area: 1/2/2/3;
+    }
+}
+
 .portfolio__block3 {
     grid-area: 2/1/3/2;
+}
+
+@media screen and (max-width: 1280px) {
+    .portfolio__block3 {
+        grid-area: 2/1/3/2;
+    }
 }
 
 .portfolio__block4 {
     grid-area: 2/2/3/4;
 }
 
+@media screen and (max-width: 1280px) {
+    .portfolio__block4 {
+        grid-area: 2/2/3/3;
+    }
+}
+
 .portfolio__block5 {
     grid-area: 3/1/4/3;
+}
+
+@media screen and (max-width: 1280px) {
+    .portfolio__block5 {
+        grid-area: 3/1/4/2;
+    }
 }
 
 .portfolio__block6 {
     grid-area: 3/3/4/4;
 }
 
+@media screen and (max-width: 1280px) {
+    .portfolio__block6 {
+        grid-area: 3/2/4/3;
+    }
+}
+
 .portfolio__block7 {
     grid-area: 4/1/5/2;
+}
+
+@media screen and (max-width: 1280px) {
+    .portfolio__block7 {
+        grid-area: 4/1/5/2;
+    }
 }
 
 .portfolio__block8 {
     grid-area: 4/2/5/4;
 }
 
+@media screen and (max-width: 1280px) {
+    .portfolio__block8 {
+        grid-area: 4/2/5/3;
+    }
+}
+
 .portfolio--hide {
-    display: none;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .55s opacity, .55s visibility;
 }
 
 .portfolio__project {
@@ -3512,7 +3609,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .portfolio__wrap {
     width: 100%;
-    height: 400px;
+    max-height: 400px;
     margin: 0;
     transition: margin .5s linear, width .5s linear, height .5s linear, box-shadow .5s linear;
     overflow: hidden;
@@ -3529,6 +3626,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .portfolio__wrap:hover .portfolio__img {
     top: -100%;
+}
+
+.portfolio__wrap:hover .portfolio__img--slow {
+    top: -50%;
+}
+
+@media screen and (max-width: 1440px) {
+    .portfolio__wrap:hover .portfolio__img--slow {
+        top: -0%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .portfolio__wrap:hover .portfolio__img--slow {
+        top: -0%;
+    }
 }
 
 .portfolio__wrap:hover .portfolio__name-project {
@@ -3573,19 +3686,49 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-bottom: 60px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1024px) {
     .portfolio__description {
-        -ms-flex-align: self-start;
-        align-items: self-start;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 }
 
 .portfolio__paragraph {
-    margin-bottom: 15px;
+    min-height: 100px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    word-break: break-word;
 }
 
-.portfolio__name {
+.portfolio__title {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio__title {
+        display: block;
+    }
+}
+
+.portfolio__usePrograms {
+    list-style-type: square;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 10px;
+    gap: 20px;
+}
+
+.portfolio__usePrograms-link {
+    margin-right: 15px;
+}
+
+.portfolio__name, .portfolio__title {
     margin-bottom: 5px;
     color: #ff4522;
     font-size: 20px;
@@ -3594,7 +3737,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
 }
 
-.portfolio__name:hover {
+.portfolio__name:hover, .portfolio__title:hover {
     opacity: 0.6;
     transition: 0.2s;
 }
@@ -3799,13 +3942,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
-    top: 35px;
-    left: 105px;
+    top: 3%;
+    left: 2%;
     font-size: 15px;
 }
 
 .skills::before {
-    content: "</html>";
+    content: "<html>";
     display: block;
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
@@ -3827,7 +3970,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .skills__left {
-    width: 65%;
+    width: 55%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -3844,28 +3987,55 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .skills__title {
     position: relative;
+    margin-bottom: 25px;
 }
 
 .skills__title::before {
-    content: "<h3>";
+    content: "<h2>";
     display: block;
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
     top: -25px;
     left: -20px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .skills__title::after {
+    content: "</h2>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 20px;
+    left: -20px;
+    font-size: 15px;
+}
+
+.skills__subtitle {
+    position: relative;
+}
+
+.skills__subtitle::before {
+    content: "<h3>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: -12px;
+    left: -20px;
+    font-size: 15px;
+}
+
+.skills__subtitle::after {
     content: "</h3>";
     display: block;
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
-    top: 10px;
-    left: 105px;
-    font-size: 12px;
+    top: 38px;
+    left: -20px;
+    font-size: 15px;
 }
 
 .skills__text {
@@ -3878,10 +4048,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
-    top: 100px;
-    left: -24px;
-    font-size: 12px;
-    margin-bottom: 20px;
+    top: -18px;
+    left: -15px;
+    font-size: 15px;
 }
 
 .skills__text::after {
@@ -3890,9 +4059,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
-    top: 180px;
-    left: -25px;
-    font-size: 12px;
+    bottom: -20px;
+    left: -16px;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 360px) {
@@ -3900,6 +4069,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         font-size: 15px;
         max-width: 250px;
     }
+}
+
+.skills__diagramm-block {
+    position: relative;
+}
+
+.skills__diagramm-block::before {
+    content: "<div>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: -18px;
+    left: -15px;
+    font-size: 15px;
+}
+
+.skills__diagramm-block::after {
+    content: "</div>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    bottom: -20px;
+    left: -16px;
+    font-size: 15px;
 }
 
 .skills__block-text {
@@ -3965,6 +4160,41 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .skills__right {
     width: 360px;
+    position: relative;
+}
+
+.skills__right::before {
+    content: "<img>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #db7b7b;
+    top: -40px;
+    left: -15px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 920px) {
+    .skills__right::before {
+        display: none;
+    }
+}
+
+.skills__right::after {
+    content: "</img>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #db7b7b;
+    bottom: -29px;
+    left: -16px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 920px) {
+    .skills__right::after {
+        display: none;
+    }
 }
 
 .skills__img {
@@ -3990,6 +4220,38 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .skills__img {
         display: none;
     }
+}
+
+.skills__img:hover {
+    box-shadow: 1px 1px #ff4522, 2px 2px #ff4522, 3px 3px #ff4522, 4px 4px #ff4522, 5px 5px #ff4522, 6px 6px #ff4522, 7px 7px #ff4522;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
+.skills__tegs {
+    position: relative;
+}
+
+.skills__tegs::after {
+    content: "</body>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 75px;
+    left: 35px;
+    font-size: 15px;
+}
+
+.skills__tegs::before {
+    content: "</html>";
+    display: block;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    top: 115px;
+    left: 0;
+    font-size: 15px;
 }
 
 @-webkit-keyframes progress1 {
