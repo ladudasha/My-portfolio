@@ -135,6 +135,7 @@ const showMoreText = document.querySelector(".portfolio__link-text");
 
 showMore.addEventListener('click', () => {
     galleryHide()
+
     showMoreBtn()
     
 })
@@ -145,11 +146,18 @@ function galleryHide() {
     })
 }
 function showMoreBtn() {
+  if (showMoreText.classList.contains('btn--show')) {
+    showMore.setAttribute('href', '#skills')
+    setTimeout(() => {
+      showMore.removeAttribute('href')
+    },1000)
+  } 
     showMoreText.classList.toggle('btn--show');
     showMoreText.innerHTML = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects ' : 'View more';
-    // showMoreText.setAttribute = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects ' : 'View more';
   
-    showMoreText.setAttribute('href', '#link-more')
+
+  
+    
     
 }
 
