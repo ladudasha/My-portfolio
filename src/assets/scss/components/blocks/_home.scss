@@ -82,27 +82,29 @@
         
     }
     
-    // &__title {
-    //     font-size: 88px;
-    //     line-height: 96px;
-    //     font-weight: 500;
-    //     @media screen and (max-width: 1180px) {
-    //         font-size: 73px;
-    //     }
-    //     @media screen and (max-width: 687px) {
-    //         font-size: 65px;            
-    //     }
-    //     @media screen and (max-width: 550px) {
-    //         font-size: 50px;
-    //         max-width: 250px;
-    //         line-height: 76px;
-    //     }
-    //     @media screen and (max-width: 360px) {
-    //         font-size: 30px;
-    //         max-width: 220px;
-    //     }
-    
-    // }
+    &__title {
+        font-size: 88px;
+            line-height: 96px;
+            font-weight: 500;
+            color: dimgrey;
+            @media screen and (max-width: 1180px) {
+                    font-size: 73px;
+                }
+                @media screen and (max-width: 687px) {
+                    font-size: 65px;            
+                }
+                @media screen and (max-width: 550px) {
+                    font-size: 50px;
+                    line-height: 76px;
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: 30px;
+                }    
+    }
+    &__letter {
+        color:#ff4522;
+
+    }
 
     // test
     &__title-block {
@@ -123,31 +125,7 @@
         display: flex;
 
     }
-    &__letter {
-        font-size: 88px;
-        line-height: 96px;
-        font-weight: 500;
-        color: dimgrey;
-        &:hover {
-            transform: scale(1.2);
-            transition-duration: .3s;
-            color:#ff4522;
-        }
-        @media screen and (max-width: 1180px) {
-            font-size: 73px;
-        }
-        @media screen and (max-width: 687px) {
-            font-size: 65px;            
-        }
-        @media screen and (max-width: 550px) {
-            font-size: 50px;
-            line-height: 76px;
-        }
-        @media screen and (max-width: 360px) {
-            font-size: 30px;
-        }
-
-    }
+    
     &__text {
         font-size: 32px;
         line-height: 48px;

@@ -2569,6 +2569,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     @media screen and (max-width: 976px) {
       .home__details {
         margin: 0 auto; } }
+  .home__title {
+    font-size: 88px;
+    line-height: 96px;
+    font-weight: 500;
+    color: dimgrey; }
+    @media screen and (max-width: 1180px) {
+      .home__title {
+        font-size: 73px; } }
+    @media screen and (max-width: 687px) {
+      .home__title {
+        font-size: 65px; } }
+    @media screen and (max-width: 550px) {
+      .home__title {
+        font-size: 50px;
+        line-height: 76px; } }
+    @media screen and (max-width: 360px) {
+      .home__title {
+        font-size: 30px; } }
+  .home__letter {
+    color: #ff4522; }
   .home__title-block {
     display: flex;
     gap: 25px; }
@@ -2582,28 +2602,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         gap: 15px; } }
   .home__title-name, .home__title-surname {
     display: flex; }
-  .home__letter {
-    font-size: 88px;
-    line-height: 96px;
-    font-weight: 500;
-    color: dimgrey; }
-    .home__letter:hover {
-      transform: scale(1.2);
-      transition-duration: .3s;
-      color: #ff4522; }
-    @media screen and (max-width: 1180px) {
-      .home__letter {
-        font-size: 73px; } }
-    @media screen and (max-width: 687px) {
-      .home__letter {
-        font-size: 65px; } }
-    @media screen and (max-width: 550px) {
-      .home__letter {
-        font-size: 50px;
-        line-height: 76px; } }
-    @media screen and (max-width: 360px) {
-      .home__letter {
-        font-size: 30px; } }
   .home__text {
     font-size: 32px;
     line-height: 48px; }
@@ -2811,6 +2809,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transition: opacity .9s linear, font-size .2s linear, height .2s linear;
     position: absolute;
     bottom: 0; }
+    @media screen and (max-width: 768px) {
+      .portfolio__name-project {
+        opacity: 1; } }
   .portfolio__description {
     display: flex;
     flex-direction: column;
@@ -2820,18 +2821,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     @media screen and (max-width: 1024px) {
       .portfolio__description {
         margin-bottom: 30px; } }
-  .portfolio__paragraph {
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    word-break: break-word; }
   .portfolio__title {
     display: none; }
     @media screen and (max-width: 768px) {
       .portfolio__title {
         display: block; } }
   .portfolio__usePrograms {
-    list-style-type: square;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -2839,7 +2834,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     padding: 10px;
     gap: 20px; }
   .portfolio__usePrograms-link {
-    margin-right: 15px; }
+    padding: 0 10px;
+    border-radius: 15px;
+    background-color: #9e9e9e2e; }
   .portfolio__name, .portfolio__title {
     margin-bottom: 5px;
     color: #ff4522;
@@ -2852,7 +2849,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       transition: 0.2s; }
   .portfolio__git {
     width: 30px;
-    height: 30px; }
+    height: 30px;
+    margin-top: 20px; }
     .portfolio__git:hover {
       fill: #ff4522;
       transform: scale(1.5);

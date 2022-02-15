@@ -1115,7 +1115,7 @@ if(document.querySelector('.home')) {
       let interval = setTimeout(
         () => {
           result += text[line][count]
-          document.querySelector('span').innerHTML =result +'|';
+          document.querySelector('p').innerHTML =result +'|';
   
   
         count++;
@@ -1124,7 +1124,7 @@ if(document.querySelector('.home')) {
           line++;
           if (line == text.length) {
             clearTimeout(interval);
-            document.querySelector('span').innerHTML =result;
+            document.querySelector('p').innerHTML =result;
             return true;
           }
         }
@@ -1183,7 +1183,6 @@ const showMoreText = document.querySelector(".portfolio__link-text");
 
 showMore.addEventListener('click', () => {
     galleryHide()
-
     showMoreBtn()
     
 })
@@ -1203,10 +1202,6 @@ function showMoreBtn() {
     showMoreText.classList.toggle('btn--show');
     showMoreText.innerHTML = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects ' : 'View more';
   
-
-  
-    
-    
 }
 
 
