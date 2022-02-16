@@ -15,11 +15,10 @@
             align-items: center;
             justify-content: center;
             gap: 50px;
-
         }
     }
     &__avatar {
-        position: relative;        
+        position: relative;
         @media screen and (max-width: 972px) {
             margin: 0 auto;
             margin-top: 200px;
@@ -28,9 +27,8 @@
             margin: 0;
         }
     }
-    
+
     &__image {
-        // right: 0px;
         max-width: 100%;
         width: 300px;
         height: 300px;
@@ -39,11 +37,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         animation: border-user 8s ease-in-out infinite 1s;
-        -webkit-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
-        -moz-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
-        box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
-        // box-shadow: 10px 5px 5px black;
-        // box-shadow: 3px 3px red, -1em 0 .4em red;
+        -webkit-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+        -moz-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+        box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
         @media screen and (max-width: 972px) {
             width: 400px;
             height: 400px;
@@ -56,10 +52,6 @@
             width: 300px;
             height: 300px;
         }
-        // @media screen and (max-width: 370px) {
-        //     width: 200px;
-        //     height: 200px;
-        // }
         @media screen and (max-width: 360px) {
             width: 200px;
             height: 200px;
@@ -78,54 +70,31 @@
         @media screen and (max-width: 976px) {
             margin: 0 auto;
         }
-        
-        
     }
-    
+
     &__title {
         font-size: 88px;
-            line-height: 96px;
-            font-weight: 500;
-            color: dimgrey;
-            @media screen and (max-width: 1180px) {
-                    font-size: 73px;
-                }
-                @media screen and (max-width: 687px) {
-                    font-size: 65px;            
-                }
-                @media screen and (max-width: 550px) {
-                    font-size: 50px;
-                    line-height: 76px;
-                }
-                @media screen and (max-width: 360px) {
-                    font-size: 30px;
-                }    
-    }
-    &__letter {
-        color:#ff4522;
-
-    }
-
-    // test
-    &__title-block {
-        display:flex;
-        gap: 25px;
-        @media screen and (max-width: 440px) {
-            flex-direction: column;
-            gap: 0;           
+        line-height: 96px;
+        font-weight: 500;
+        color: dimgrey;
+        @media screen and (max-width: 1180px) {
+            font-size: 73px;
+        }
+        @media screen and (max-width: 687px) {
+            font-size: 65px;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 50px;
+            line-height: 76px;
         }
         @media screen and (max-width: 360px) {
-            flex-direction: row;
-            gap: 15px;
+            font-size: 30px;
         }
-
     }
-    &__title-name,
-    &__title-surname {
-        display: flex;
-
+    &__letter {
+        color: #ff4522;
     }
-    
+
     &__text {
         font-size: 32px;
         line-height: 48px;

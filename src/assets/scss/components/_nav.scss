@@ -8,12 +8,10 @@
         list-style-type: none;
     }
     &__link {
-        // font-size: 20px;
-        // font-weight: 500;
         &:hover {
             color: #ff4522;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
             transform: scale(1.5);
-        } 
+        }
     }
 }

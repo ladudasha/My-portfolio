@@ -2391,7 +2391,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .nav__link:hover {
   color: #ff4522;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1.5); }
 
 .text {
@@ -2432,7 +2432,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   right: 0px;
   z-index: 10;
   background-color: #f9f9f9;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   z-index: 9999; }
   .header__inner {
     width: 100%;
@@ -2441,7 +2441,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     align-items: center;
     justify-content: space-between;
     padding: 30px 37px 30px 50px;
-    transition: all .3s ease; }
+    transition: all 0.3s ease; }
   .header__left, .header__logo {
     width: 40px;
     height: 40px; }
@@ -2473,7 +2473,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   top: 0;
   right: -420px;
   z-index: 999;
-  transition: .3s;
+  transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -2589,19 +2589,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         font-size: 30px; } }
   .home__letter {
     color: #ff4522; }
-  .home__title-block {
-    display: flex;
-    gap: 25px; }
-    @media screen and (max-width: 440px) {
-      .home__title-block {
-        flex-direction: column;
-        gap: 0; } }
-    @media screen and (max-width: 360px) {
-      .home__title-block {
-        flex-direction: row;
-        gap: 15px; } }
-  .home__title-name, .home__title-surname {
-    display: flex; }
   .home__text {
     font-size: 32px;
     line-height: 48px; }
@@ -2760,7 +2747,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 0px;
     opacity: 0;
     visibility: hidden;
-    transition: .55s opacity, .55s visibility; }
+    transition: 0.55s opacity, 0.55s visibility; }
   .portfolio__project {
     display: block;
     margin: 20px; }
@@ -2768,7 +2755,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 100%;
     max-height: 400px;
     margin: 0;
-    transition: margin .5s linear, width .5s linear, height .5s linear, box-shadow .5s linear;
+    transition: margin 0.5s linear, width 0.5s linear, height 0.5s linear, box-shadow 0.5s linear;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative; }
@@ -2782,9 +2769,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .portfolio__wrap:hover .portfolio__img--slow {
       top: -50%; }
       @media screen and (max-width: 1440px) {
-        .portfolio__wrap:hover .portfolio__img--slow {
-          top: -0%; } }
-      @media screen and (max-width: 570px) {
         .portfolio__wrap:hover .portfolio__img--slow {
           top: -0%; } }
     .portfolio__wrap:hover .portfolio__name-project {
@@ -2806,7 +2790,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 0;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    transition: opacity .9s linear, font-size .2s linear, height .2s linear;
+    transition: opacity 0.9s linear, font-size 0.2s linear, height 0.2s linear;
     position: absolute;
     bottom: 0; }
     @media screen and (max-width: 768px) {
@@ -2830,7 +2814,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
     padding: 10px;
     gap: 20px; }
   .portfolio__usePrograms-link {
@@ -2843,6 +2826,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-size: 20px;
     line-height: 34px;
     font-weight: 400;
+    text-align: center;
     opacity: 1; }
     .portfolio__name:hover, .portfolio__title:hover {
       opacity: 0.6;
@@ -2854,7 +2838,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .portfolio__git:hover {
       fill: #ff4522;
       transform: scale(1.5);
-      transition: all .3s ease; }
+      transition: all 0.3s ease; }
   .portfolio__link-more {
     width: 200px;
     margin: 0 auto;
@@ -2871,7 +2855,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     padding: 10px;
     background: #ff4522;
     transform: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -2900,30 +2884,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 100%; }
   .connection__list {
     margin: 0px 0px 23px 0px;
-    width: 100%;
-    float: left; }
+    width: 100%; }
   .connection__link {
     width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-    position: relative;
-    padding-left: 30px; }
+    display: flex;
+    align-items: center; }
   .connection__icon1, .connection__icon2, .connection__icon3 {
     fill: #ff4522;
     width: 18px;
     height: 18px;
-    position: absolute;
-    left: 0px;
-    width: 18px;
-    height: 18px;
-    top: 50%;
-    margin-top: -1px;
-    transform: translateY(-50%); }
+    margin-right: 20px; }
+    @media screen and (max-width: 420px) {
+      .connection__icon1, .connection__icon2, .connection__icon3 {
+        width: 15px;
+        height: 15px; } }
   .connection__text {
     font-size: 20px;
     font-weight: 500;
     color: #000; }
+    @media screen and (max-width: 420px) {
+      .connection__text {
+        font-size: 18px; } }
+    @media screen and (max-width: 350px) {
+      .connection__text {
+        font-size: 15px; } }
 
 .form__name, .form__email, .form__message {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
@@ -2964,7 +2948,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute; }
   .form__submit:hover::after {
     transform: rotate(-50deg);
-    transition: all .5s ease; }
+    transition: all 0.5s ease; }
 
 .form__btn {
   width: 100%;
@@ -2981,7 +2965,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding: 10px;
   background: #ff4522;
   transform: none;
-  transition: all .3s ease; }
+  transition: all 0.3s ease; }
   .form__btn:hover {
     color: #fff;
     background-color: #000; }
@@ -2989,12 +2973,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .skills {
   background-color: #1d1d1d;
   color: #fff;
-  height: auto;
   position: relative;
   padding: 140px 0px 150px 0px; }
-  @media screen and (max-width: 360px) {
-    .skills {
-      padding: 70px 0px 70px 0px; } }
   .skills::after {
     content: "<body>";
     display: block;
@@ -3067,6 +3047,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       top: 38px;
       left: -20px;
       font-size: 15px; }
+      @media screen and (max-width: 463px) {
+        .skills__subtitle::after {
+          top: 67px; } }
   .skills__text {
     margin-bottom: 30px; }
     .skills__text::before {
@@ -3143,6 +3126,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation: progress3 3s forwards; }
   .skills__progress-line4 {
     animation: progress4 3s forwards; }
+  .skills__progress-line5 {
+    animation: progress5 3s forwards; }
+  .skills__progress-line6 {
+    animation: progress6 3s forwards; }
   .skills__right {
     width: 360px;
     position: relative; }
@@ -3212,25 +3199,37 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   0% {
     width: 0%; }
   100% {
-    width: 90%; } }
+    width: 80%; } }
 
 @keyframes progress2 {
   0% {
     width: 0%; }
   100% {
-    width: 60%; } }
+    width: 40%; } }
 
 @keyframes progress3 {
   0% {
     width: 0%; }
   100% {
-    width: 50%; } }
+    width: 80%; } }
 
 @keyframes progress4 {
   0% {
     width: 0%; }
   100% {
-    width: 40%; } }
+    width: 30%; } }
+
+@keyframes progress5 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 60%; } }
+
+@keyframes progress6 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 20%; } }
 
 .footer {
   width: 100%;

@@ -1,68 +1,68 @@
-            .form {
-                &__name,
-                &__email,
-                &__message {
-                    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-                    width: 100%;
-                    border: 1px solid rgba(0, 0, 0, .1);
-                    background-color: transparent;
-                    height: 44px;
-                    border-radius: 0;
-                    font-size: 13px;
-                    min-width: auto;
-                    letter-spacing: 1.4px;
-                    line-height: 1.6;
-                    padding: 10px;
-                    margin: 0px 0px 30px 0px;
-                }
-                &__message {
-                    min-height: 100px;
-                    height: 137px;
-                    resize: vertical;
-                }
-                &__name:focus,
-                &__email:focus,
-                &__message:focus {
-                    outline: none;
-                    border: 1px solid rgba(0, 0, 0, .3);
-                }
-                &__submit {
-                    position: relative;
-                    &::after {
-                        @include pseudo ();
-                        background-image: url(../images/form/row-btn.svg);
-                        top: 2px;
-                        left: 75px;
-                        width: 17px;
-                        height: 17px;
-                        background-size: contain;
-                        display: block;
-                        position: absolute;    
-                    }
-                    &:hover::after {
-                            transform: rotate(-50deg);
-                            transition: all .5s ease;
-                        }
-                }
-                &__btn {
-                    width: 100%;
-                    height: auto;
-                    position: relative;
-                    border: none;
-                    cursor: pointer;
-                    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-                    text-decoration: none;
-                    color: #fff;
-                    font-size: 17px;
-                    display: block;
-                    text-align: center;
-                    padding: 10px;
-                    background: #ff4522;
-                    transform: none;
-                    transition: all .3s ease;
-                    &:hover {
-                        color: #fff;
-                        background-color: #000;
-                    }
-                }
-            }
+.form {
+    &__name,
+    &__email,
+    &__message {
+        font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: transparent;
+        height: 44px;
+        border-radius: 0;
+        font-size: 13px;
+        min-width: auto;
+        letter-spacing: 1.4px;
+        line-height: 1.6;
+        padding: 10px;
+        margin: 0px 0px 30px 0px;
+    }
+    &__message {
+        min-height: 100px;
+        height: 137px;
+        resize: vertical;
+    }
+    &__name:focus,
+    &__email:focus,
+    &__message:focus {
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    &__submit {
+        position: relative;
+        &::after {
+            @include pseudo();
+            background-image: url(../images/form/row-btn.svg);
+            top: 2px;
+            left: 75px;
+            width: 17px;
+            height: 17px;
+            background-size: contain;
+            display: block;
+            position: absolute;
+        }
+        &:hover::after {
+            transform: rotate(-50deg);
+            transition: all 0.5s ease;
+        }
+    }
+    &__btn {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background: #ff4522;
+        transform: none;
+        transition: all 0.3s ease;
+        &:hover {
+            color: #fff;
+            background-color: #000;
+        }
+    }
+}

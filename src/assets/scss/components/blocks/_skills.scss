@@ -1,12 +1,8 @@
 .skills {
     background-color: #1d1d1d;
     color: #fff;
-    height: auto;
     position: relative;
     padding: 140px 0px 150px 0px;
-    @media screen and (max-width: 360px) {
-        padding: 70px 0px 70px 0px;
-    }
     &::after {
         @include pseudo($content: '<body>');
         font-family: 'La Belle Aurore', cursive;
@@ -28,11 +24,6 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        // gap: 60px;
-        // @media screen and (max-width: 360px) {
-        //     gap: 0;
-        // }
-
     }
     &__left {
         width:55%;
@@ -82,6 +73,9 @@
             top: 38px;
             left: -20px;
             font-size: 15px;
+            @media screen and (max-width: 463px) {
+                top: 67px;
+            }
         }                        
     }                    
     &__text {
@@ -168,6 +162,12 @@
     &__progress-line4 {
         animation: progress4 3s forwards;
     }
+    &__progress-line5 {
+        animation: progress5 3s forwards;
+    }
+    &__progress-line6 {
+        animation: progress6 3s forwards;
+    }
     &__right {
         width: 360px;
         position: relative;
@@ -248,7 +248,7 @@
         width: 0%;
     }
     100% {
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -257,7 +257,7 @@
         width: 0%;
     }
     100% {
-        width: 60%;
+        width: 40%;
     }
 }
 
@@ -266,7 +266,7 @@
         width: 0%;
     }
     100% {
-        width: 50%;
+        width: 80%;
     }
 }
 
@@ -275,6 +275,24 @@
         width: 0%;
     }
     100% {
-        width: 40%;
+        width: 30%;
     }
-}            
+}   
+
+@keyframes progress5 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes progress6 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%;
+    }
+}
