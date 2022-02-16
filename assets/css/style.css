@@ -3251,70 +3251,40 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
-.home__title-block {
-    display: -ms-flexbox;
-    display: flex;
-    gap: 25px;
-}
-
-@media screen and (max-width: 440px) {
-    .home__title-block {
-        -ms-flex-direction: column;
-        flex-direction: column;
-        gap: 0;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .home__title-block {
-        -ms-flex-direction: row;
-        flex-direction: row;
-        gap: 15px;
-    }
-}
-
-.home__title-name, .home__title-surname {
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.home__letter {
+.home__title {
     font-size: 88px;
     line-height: 96px;
     font-weight: 500;
     color: dimgrey;
 }
 
-.home__letter:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    transition-duration: .3s;
-    color: #ff4522;
-}
-
 @media screen and (max-width: 1180px) {
-    .home__letter {
+    .home__title {
         font-size: 73px;
     }
 }
 
 @media screen and (max-width: 687px) {
-    .home__letter {
+    .home__title {
         font-size: 65px;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .home__letter {
+    .home__title {
         font-size: 50px;
         line-height: 76px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .home__letter {
+    .home__title {
         font-size: 30px;
     }
+}
+
+.home__letter {
+    color: #ff4522;
 }
 
 .home__text {
@@ -3638,12 +3608,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
-@media screen and (max-width: 570px) {
-    .portfolio__wrap:hover .portfolio__img--slow {
-        top: -0%;
-    }
-}
-
 .portfolio__wrap:hover .portfolio__name-project {
     font-size: 20px;
     height: 35px;
@@ -3674,6 +3638,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     bottom: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .portfolio__name-project {
+        opacity: 1;
+    }
+}
+
 .portfolio__description {
     display: -ms-flexbox;
     display: flex;
@@ -3692,15 +3662,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
-.portfolio__paragraph {
-    min-height: 100px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    word-break: break-word;
-}
-
 .portfolio__title {
     display: none;
 }
@@ -3712,20 +3673,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .portfolio__usePrograms {
-    list-style-type: square;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
-    /* align-items: center; */
     padding: 10px;
     gap: 20px;
 }
 
 .portfolio__usePrograms-link {
-    margin-right: 15px;
+    padding: 0 10px;
+    border-radius: 15px;
+    background-color: #9e9e9e2e;
 }
 
 .portfolio__name, .portfolio__title {
@@ -3734,6 +3695,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-size: 20px;
     line-height: 34px;
     font-weight: 400;
+    text-align: center;
     opacity: 1;
 }
 
@@ -3745,6 +3707,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .portfolio__git {
     width: 30px;
     height: 30px;
+    margin-top: 20px;
 }
 
 .portfolio__git:hover {
@@ -3816,36 +3779,46 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .connection__list {
     margin: 0px 0px 23px 0px;
     width: 100%;
-    float: left;
 }
 
 .connection__link {
     width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-    position: relative;
-    padding-left: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .connection__icon1, .connection__icon2, .connection__icon3 {
     fill: #ff4522;
     width: 18px;
     height: 18px;
-    position: absolute;
-    left: 0px;
-    width: 18px;
-    height: 18px;
-    top: 50%;
-    margin-top: -1px;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .connection__icon1, .connection__icon2, .connection__icon3 {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 .connection__text {
     font-size: 20px;
     font-weight: 500;
     color: #000;
+}
+
+@media screen and (max-width: 420px) {
+    .connection__text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .connection__text {
+        font-size: 15px;
+    }
 }
 
 .form__name, .form__email, .form__message {
@@ -3895,7 +3868,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .form__submit:hover::after {
     -webkit-transform: rotate(-50deg);
     transform: rotate(-50deg);
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 .form__btn {
@@ -3914,7 +3887,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background: #ff4522;
     -webkit-transform: none;
     transform: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 .form__btn:hover {
@@ -3925,15 +3898,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .skills {
     background-color: #1d1d1d;
     color: #fff;
-    height: auto;
     position: relative;
     padding: 140px 0px 150px 0px;
-}
-
-@media screen and (max-width: 360px) {
-    .skills {
-        padding: 70px 0px 70px 0px;
-    }
 }
 
 .skills::after {
@@ -4036,6 +4002,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     top: 38px;
     left: -20px;
     font-size: 15px;
+}
+
+@media screen and (max-width: 463px) {
+    .skills__subtitle::after {
+        top: 67px;
+    }
 }
 
 .skills__text {
@@ -4158,6 +4130,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation: progress4 3s forwards;
 }
 
+.skills__progress-line5 {
+    -webkit-animation: progress5 3s forwards;
+    animation: progress5 3s forwards;
+}
+
+.skills__progress-line6 {
+    -webkit-animation: progress6 3s forwards;
+    animation: progress6 3s forwards;
+}
+
 .skills__right {
     width: 360px;
     position: relative;
@@ -4260,7 +4242,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -4270,7 +4252,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -4280,7 +4262,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 60%;
+        width: 40%;
     }
 }
 
@@ -4290,7 +4272,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 60%;
+        width: 40%;
     }
 }
 
@@ -4300,7 +4282,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 50%;
+        width: 80%;
     }
 }
 
@@ -4310,7 +4292,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 50%;
+        width: 80%;
     }
 }
 
@@ -4320,7 +4302,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 40%;
+        width: 30%;
     }
 }
 
@@ -4330,7 +4312,47 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 40%;
+        width: 30%;
+    }
+}
+
+@-webkit-keyframes progress5 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes progress5 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@-webkit-keyframes progress6 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes progress6 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
     }
 }
 
