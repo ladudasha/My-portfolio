@@ -11,7 +11,7 @@
     
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.min.css">    
-    <title>My portfolio</title>
+    <title>PortfolioDarya</title>
 </head>
 
 <body>
@@ -22,24 +22,30 @@
             <div class="header__inner">
                 <div class="header__left">
                     <img class="header__logo" src="./assets/images/logo/logo2.png" alt="">
+<!-- мультиязычность -->
+<select class="change-lang">
+    <option value="ru" selected>RU</option>
+    <option value="en">EN</option>
+</select>
+
                 </div>
                 <div class="header__menu">
                     <div class="header__list">
                         <ul class="header__nav nav">
-                            <li class="nav__item">
-                                <a class="nav__link" href="#home">HOME</a>
+                            <li class="nav__item ">
+                                <a class="nav__link home--lng" href="#home">HOME</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#portfolio">PORTFOLIO</a>
+                                <a class="nav__link portfolio--lng" href="#portfolio">PORTFOLIO</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#skills">SKILLS</a>
+                                <a class="nav__link skills--lng" href="#skills">SKILLS</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#about">ABOUT ME</a>
+                                <a class="nav__link aboutMe--lng" href="#about">ABOUT ME</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#contact">CONTACT</a>
+                                <a class="nav__link contacts--lng" href="#contact">CONTACT</a>
                             </li>
                         </ul>
                     </div>
@@ -126,7 +132,7 @@
                     </div>
                 </div>
                 <div class="home__details">
-                    <h1 class="home__title"> <span class="home__letter">D</span>arya Ladudo</h1>
+                    <h1 class="home__title home__title--lng"> <span class="home__letter letter--lng">D</span>arya Ladudo</h1>
                     <p class="home__text"></p>
                     <div class="home__social social">
                         <ul class="social__list">
@@ -204,8 +210,8 @@
                 
 
                             <ul class="portfolio__usePrograms">
-                                <li class="portfolio__usePrograms-link">Layout of a one-page site</li>
-                                <li class="portfolio__usePrograms-link"> Gulp</li>
+                                <li class="portfolio__one">Layout of a one-page site</li>
+                                <li class="portfolio__second">Gulp</li>
                                 <li class="portfolio__usePrograms-link">SCSS(Sass)</li>
                                 <li class="portfolio__usePrograms-link">BEM</li>
                                 <li class="portfolio__usePrograms-link">JS</li>
@@ -774,7 +780,8 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vanilla-tilt.js"></script>
-    <script src="./assets/js/script.js "></script>
+    <script src="./assets/js/lang.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script>
         new WOW().init();
     </script>

@@ -1046,6 +1046,55 @@ var VanillaTilt = (function () {
     return VanillaTilt;
     
     }());
+const langArr = {
+    "test" : {
+        "ru": "Веб разработчик из Минска. Иногда работаю фрилансером",
+        "en": "Web developer from Minsk. Sometimes works as a freelancer."
+
+    },
+    "title-site" :  {
+        "ru": "ПортфолиоДарья",
+        "en": "PortfolioDarya",
+    },
+    "home" :  {
+        "ru": "ДОМОЙ",
+        "en": "HOME",
+    }, 
+    "portfolio" :  {
+        "ru": "ПОРТФОЛИО",
+        "en": "PORTFOLIO",
+    }, 
+    "skills" :  {
+        "ru": "НАВЫКИ",
+        "en": "SKILLS",
+    }, 
+    "aboutMe" :  {
+        "ru": "ОБО МНЕ",
+        "en": "ABOUT ME",
+    }, 
+    "contacts" :  {
+        "ru": "КОНТАКТЫ",
+        "en": "CONTACT",
+    }, 
+    "letter" :  {
+        "ru": "Д",
+        "en": "D",
+    }, 
+    "home__title" :  {
+        "ru": "арья Ладудо",
+        "en": "arya Ladudo",
+    }, 
+    "contacts" :  {
+        "ru": "КОНТАКТЫ",
+        "en": "CONTACT",
+    }, 
+    "contacts" :  {
+        "ru": "КОНТАКТЫ",
+        "en": "CONTACT",
+    }, 
+    
+
+}
 var swiper = new Swiper(".slider-my", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -1101,41 +1150,6 @@ window.addEventListener("scroll", function () {
 })
 
 
-// печатная машинка
-if(document.querySelector('.home')) {
-  const text = [
-    // 'Darya Ladudo\n',
-    'Web developer from Minsk. Sometimes works as a freelancer.\n',
-  ];
-  
-  let line = 0;
-    let count = 0;
-    let result = '';
-    function typeLine() {
-      let interval = setTimeout(
-        () => {
-          result += text[line][count]
-          document.querySelector('p').innerHTML =result +'|';
-  
-  
-        count++;
-        if (count >= text[line].length) {
-          count = 0;
-          line++;
-          if (line == text.length) {
-            clearTimeout(interval);
-            document.querySelector('p').innerHTML =result;
-            return true;
-          }
-        }
-        typeLine();
-      }, getRandomInt(getRandomInt(250*2.5)))
-    }
-    typeLine();
-    function getRandomInt(max) {
-      return Math.floor(Math.random() * Math.floor(max));
-    }
-}
 
 
 
@@ -1202,6 +1216,87 @@ function showMoreBtn() {
     showMoreText.classList.toggle('btn--show');
     showMoreText.innerHTML = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects ' : 'View more';
   
+}
+
+
+
+// мультиязычность
+const select = document.querySelector('select');
+const allLang = ['en', 'ru'];
+
+select.addEventListener('change', changeURLLaguage);
+// перенаправить на url с указанием языка
+function changeURLLaguage(){
+  let lang = select.value;
+  location.href = window.location.pathname + '#' + lang;
+  location.reload();
+}
+let hash;
+function changeLanguage() {
+  hash = window.location.hash;
+  hash = hash.substr(1);
+
+  console.log(hash);
+  if (!allLang.includes(hash)) {
+    location.href = window.location.pathname + '#en';
+    location.reload();
+
+  }
+  select.value = hash;
+  // document.querySelector('.nav__link-home--lng').innerHTML = langArr['nav__link-home--lng'][hash];
+  document.querySelector('title').innerHTML = langArr['title-site'][hash];
+  // let elem = document.querySelector(`.${key}--lng`); // => document.querySelector('nav__link-home--lng')
+  for (let key in langArr) {
+    let elem = document.querySelector(`.${key}--lng`);
+    if (elem) {
+        elem.innerHTML = langArr[key][hash];
+    }
+
+}
+  
+
+
+}
+changeLanguage();
+
+
+
+
+// печатная машинка
+if(document.querySelector('.home')) {
+  const text = [
+    // 'Darya Ladudo\n',
+    // 'Web developer from Minsk. Sometimes works as a freelancer.\n',
+    langArr["test"][hash]
+  ];
+  
+  let line = 0;
+    let count = 0;
+    let result = '';
+    function typeLine() {
+      let interval = setTimeout(
+        () => {
+          result += text[line][count]
+          document.querySelector('p').innerHTML =result +'|';
+  
+  
+        count++;
+        if (count >= text[line].length) {
+          count = 0;
+          line++;
+          if (line == text.length) {
+            clearTimeout(interval);
+            document.querySelector('p').innerHTML =result;
+            return true;
+          }
+        }
+        typeLine();
+      }, getRandomInt(getRandomInt(250*2.5)))
+    }
+    typeLine();
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
 }
 
 
