@@ -3683,7 +3683,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     gap: 20px;
 }
 
-.portfolio__usePrograms-link {
+.portfolio__usePrograms > li {
     padding: 0 10px;
     border-radius: 15px;
     background-color: #9e9e9e2e;
