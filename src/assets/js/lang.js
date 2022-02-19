@@ -32,7 +32,7 @@ const langArr = {
         "ru": "Д",
         "en": "D",
     },
-    "home__title": {
+    "home-title": {
         "ru": "арья Ладудо",
         "en": "arya Ladudo",
     },
@@ -47,32 +47,37 @@ const langArr = {
 
     // SECTION PORTFOLIO
 
-    "title__portfolio": {
+    "portfolio-title": {
         "ru": "ПОРТФОЛИО",
         "en": "PORTFOLIO",
     },
-    "subtitle__portfolio": {
+    "portfolio-subtitle": {
         "ru": "ПРОЕКТЫ",
         "en": "SELECTED WORKS",
     },
     // block1
 
-    "project__one": {
+    "project-one": {
         "ru": "Проект 1",
         "en": "Project 1",
     },
-    "block1__view": {
+    "block1-view": {
         "ru": "Посмотреть проект Helicopter flight",
         "en": "View project Helicopter flight",
     },
-    "portfolio__onePage": {
+    "portfolio-onePage": {
         "ru": "Разработка одностраничного сайта",
         "en": "Layout of a one-page site",
     },
-    "portfolio__bem": {
+    "portfolio-bem": {
         "ru": "БЭМ",
         "en": "BEM",
     },
+    "portfolio-responsive": {
+        "ru": "Отзывчивый",
+        "en": "Responsive",
+    },
+    
 
     // block2
     "project__two": {

@@ -146,11 +146,11 @@ function changeLanguage() {
 
   }
   select.value = hash;
-  // document.querySelector('.nav__link-home--lng').innerHTML = langArr['nav__link-home--lng'][hash];
+
   document.querySelector('title').innerHTML = langArr['title-site'][hash];
-  // let elem = document.querySelector(`.${key}--lng`); // => document.querySelector('nav__link-home--lng')
   for (let key in langArr) {
-    let elem = document.querySelector(`.${key}--lng`);
+    let elem = document.querySelector('.lng-' + key);
+    // let elem = document.querySelector(`.${key}--lng`);
     if (elem) {
         elem.innerHTML = langArr[key][hash];
     }
