@@ -1113,166 +1113,160 @@ const langArr = {
         "ru": "Посмотреть проект Helicopter flight",
         "en": "View project Helicopter flight",
     },
-    "portfolio-onePage": {
+    "proj1-onePage": {
         "ru": "Разработка одностраничного сайта",
         "en": "Layout of a one-page site",
     },
-    "portfolio-bem": {
+    "proj1-bem": {
         "ru": "БЭМ",
         "en": "BEM",
     },
-    "portfolio-responsive": {
+    "proj1-responsive": {
         "ru": "Отзывчивый",
         "en": "Responsive",
     },
     
 
     // block2
-    "project__two": {
+    "project-two": {
         "ru": "Проект 2",
         "en": "Project 2",
     },
-    "block2__view": {
+    "block2-view": {
         "ru": "Посмотреть проект Shop-catalog",
         "en": "View project Shop-catalog",
     },
-    "portfolio__group": {
+    "proj2-group": {
         "ru": "Групповая работа",
         "en": "Group work",
     },
-    "portfolio__multi": {
+    "proj2-multi": {
         "ru": "многостраничный сайт",
         "en": "multi-page site",
     },
+
     // block3
-    "project__three": {
+    "project-three": {
         "ru": "Проект 3",
         "en": "Project 3",
     },
-    "block3__view": {
+    "block3-view": {
         "ru": "Посмотреть проект Productivities",
         "en": "View project Productivities",
     },
-    "portfolio__onePage": {
+    "proj3-onePage": {
         "ru": "Разработка одностраничного сайта",
         "en": "Layout of a one-page site",
+    },
+    "proj3-bem": {
+        "ru": "БЭМ",
+        "en": "BEM",
+    },
+    "proj3-responsive": {
+        "ru": "Отзывчивый",
+        "en": "Responsive",
     },
 
 
 
 
     // block4
-    "project__four": {
+    "project-four": {
         "ru": "Проект 4",
         "en": "Project 4",
     },
-    "block4__view": {
+    "block4-view": {
         "ru": "Посмотреть проект ThriveTalk",
         "en": "View project ThriveTalk",
     },
-
-
-
-
-
+    "proj4-onePage": {
+        "ru": "Разработка одностраничного сайта",
+        "en": "Development of a one-page site",
+    },
+    "proj4-bem": {
+        "ru": "БЭМ",
+        "en": "BEM",
+    },
+    "proj4-responsive": {
+        "ru": "Отзывчивый",
+        "en": "Responsive",
+    },
 
     // block5
-    "project__five": {
+    "project-five": {
         "ru": "Проект 5",
         "en": "Project 5",
     },
-    "block5__view": {
+    "block5-view": {
         "ru": "Посмотреть проект Explore channels",
         "en": "View project Explore channels",
     },
-
-
-
+    "proj5-component": {
+        "ru": "компонентный подход",
+        "en": "component approach",
+    },
 
     // block6
-    "project__six": {
+    "project-six": {
         "ru": "Проект 6",
         "en": "Project 6",
     },
-    "block6__view": {
+    "block6-view": {
         "ru": "Посмотреть проект Cards",
         "en": "View project Cards",
+    },
+    "proj6-multiPage": {
+        "ru": "Разработка многостраничного сайта",
+        "en": "Layout of a multi-page site",
+    },
+    "proj6-group": {
+        "ru": "Групповая работа",
+        "en": "Group work",
+    },
+    "proj6-bem": {
+        "ru": "БЭМ",
+        "en": "BEM",
     },
 
 
     // block7
-    "project__seven": {
+    "project-seven": {
         "ru": "Проект 7 для WordPress",
         "en": "Project 7 Project for WordPress",
     },
-    "block7__view": {
+    "block7-view": {
         "ru": "Посмотреть проект Archmove",
         "en": "View project Archmove",
     },
-
-
+    "proj7-onePage": {
+        "ru": "Разработка одностраничного сайта",
+        "en": "Layout of a one-page site",
+    },
+    "proj7-responsive": {
+        "ru": "Отзывчивый",
+        "en": "Responsive",
+    },
 
 
     // block8
-    "project__eight": {
+    "project-eight": {
         "ru": "Проект 8",
         "en": "Project 8",
     },
-    "block8__view": {
+    "block8-view": {
         "ru": "Посмотреть проект Smoothies",
         "en": "View project Smoothies",
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    "subtitle__portfolio": {
-        "ru": "ПРОЕКТЫ",
-        "en": "SELECTED WORKS",
+    "proj8-onePage": {
+        "ru": "Разработка одностраничного сайта",
+        "en": "Development of a one-page site",
     },
-    "subtitle__portfolio": {
-        "ru": "ПРОЕКТЫ",
-        "en": "SELECTED WORKS",
+    "proj8-bem": {
+        "ru": "БЭМ",
+        "en": "BEM",
     },
-    "subtitle__portfolio": {
-        "ru": "ПРОЕКТЫ",
-        "en": "SELECTED WORKS",
-    },
-    "subtitle__portfolio": {
-        "ru": "ПРОЕКТЫ",
-        "en": "SELECTED WORKS",
-    },
-    "subtitle__portfolio": {
-        "ru": "ПРОЕКТЫ",
-        "en": "SELECTED WORKS",
-    },
-    "subtitle__portfolio": {
-        "ru": "ПРОЕКТЫ",
-        "en": "SELECTED WORKS",
-    },
-    "subtitle__portfolio": {
-        "ru": "ПРОЕКТЫ",
-        "en": "SELECTED WORKS",
-    },
-    "subtitle__portfolio": {
-        "ru": "ПРОЕКТЫ",
-        "en": "SELECTED WORKS",
-    },
-
-
 }
+
 var swiper = new Swiper(".slider-my", {
   navigation: {
     nextEl: ".swiper-button-next",
