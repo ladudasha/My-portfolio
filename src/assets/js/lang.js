@@ -28,6 +28,27 @@ const langArr = {
         "ru": "КОНТАКТЫ",
         "en": "CONTACT",
     },
+    // burger-menu
+    "burger-home": {
+        "ru": "ДОМОЙ",
+        "en": "HOME",
+    },
+    "burger-portfolio": {
+        "ru": "ПОРТФОЛИО",
+        "en": "PORTFOLIO",
+    },
+    "burger-skills": {
+        "ru": "НАВЫКИ",
+        "en": "SKILLS",
+    },
+    "burger-aboutMe": {
+        "ru": "ОБО МНЕ",
+        "en": "ABOUT ME",
+    },
+    "burger-contacts": {
+        "ru": "КОНТАКТЫ",
+        "en": "CONTACT",
+    },
     "letter": {
         "ru": "Д",
         "en": "D",
@@ -217,4 +238,92 @@ const langArr = {
         "ru": "БЭМ",
         "en": "BEM",
     },
+       // portfolio BTN
+    // "portfolio-btn": {
+    //     "ru": "Показать больше",
+    //     "en": "View more",
+    // },
+
+    // "Hide projects": {
+    //     "ru": "Скрыть проекты",
+    //     "en": "Hide projects",
+    // },
+    // "View more": {
+    //     "ru": "Показать больше",
+    //     "en": "View more",
+    // },
+
+
+
+    // skills
+
+    "skills-title": {
+        "ru": "НАВЫКИ",
+        "en": "SKILLS",
+    },
+    "skills-title": {
+        "ru": "НАВЫКИ",
+        "en": "SKILLS",
+    },
+    "programmingSkills": {
+        "ru": "НАВЫКИ ПРОГРАММИРОВАНИЯ",
+        "en": "PROGRAMMING SKILLS",
+    },
+    "skills-text": {
+        "ru": "Моя основная область знаний — HTML CSS. В своей работе я использую такие программы, как Gulp, Sass, React, Bootstrap и другие программы. Использую графитовые редакторы Figma, Photoshop. Делаю адаптивную, кроссбраузерную, смысловую, валидную верстку. Mobile first, Pixel perfect, создание анимации. Я продолжаю учиться каждый день, приобретая новые навыки, поднимая свой уровень. В будущем я хочу продолжить изучение Java Script и двигаться в направлении Front-end разработки.",
+        "en": "My main area of ​​expertise is HTML CSS.In my work I use programs such as Gulp, Sass, React, Bootstrap and others. I use graphite editors Figma, Photoshop.I make adaptive, crossbrowser, semantic, valid layout. Mobile first, Pixel perfect, animation creation. I continue to learn every day, acquiring new skills, raising my level. In the future I want to continue learning Java Script and move towards Front-end development.",
+    },
+
+    // about me
+
+    "about-title": {
+        "ru": "ОБО МНЕ",
+        "en": "ABOUT ME",
+    },
+    "about-text": {
+        "ru": "Здравствуйте, меня зовут Дарья, я HTML CSS разработчик. Проживаю и ищу работу в Минске. Моя основная область знаний — HTML CSS/SCSS. В своей работе я использую такие программы, как Gulp, Sass, React, Bootstrap и другие программы. Ищу проект/постоянную работу в творческой компании с интересными заданиями и дружной командой! Мне нравится работать с новыми людьми.Буду рад стать частью вашей команды. Работала в группе и занимался групповыми проектами. Обладаю такими личными качествами как",
+        "en": "Hello, my name is Darya, I'm an HTML CSS developer. I live and look for work in Minsk, Republic of Belarus. My main area of ​​expertise is HTML CSS/SCSS. In my work I use programs such as Gulp, Sass, React, Bootstrap and others. I am looking for a project/permanent job in a creative company with interesting tasks and a community team! I like work with new people. I would be happy to be part of your team. Worked in a group and was engaged in group projects. I have such personal qualities as",
+    },
+    "slide1": {
+        "ru": "Умение эффективно распоряжаться временем",
+        "en": "Ability to manage time effectively",
+    },
+    "slide2": {
+        "ru": "Внимание к деталям",
+        "en": "Attention to detail",
+    },
+    "slide3": {
+        "ru": "Хорошо обучаема",
+        "en": "Well trained",
+    },
+    "slide4": {
+        "ru": "Организована",
+        "en": "Organized",
+    },
+
+    // contacts
+
+    "contacts-title": {
+        "ru": "КОНТАКТЫ",
+        "en": "CONTACTS",
+    },
+    "contacts-subtitle": {
+        "ru": "Связаться",
+        "en": "Get in Touch",
+    },
+    "contacts-text": {
+        "ru": "Меня интересует работа веб-разработчика — особенно интересные и креативные проекты. Однако, если у вас есть другой запрос или вопрос, пожалуйста, заполните форму в этом разделе.",
+        "en": "I am interested in the work of a web developer - especially interesting and creative projects. However, if you have another request or question, please fill out the form in this section.",
+    },
+    "address": {
+        "ru": "Беларусь, Минск",
+        "en": "Belarus, Minsk",
+    },
+    "form-btn": {
+        "ru": "Отправить",
+        "en": "Submit",
+    },
+
+
+
 }

@@ -117,7 +117,7 @@ function showMoreBtn() {
     },1000)
   } 
     showMoreText.classList.toggle('btn--show');
-    showMoreText.innerHTML = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects ' : 'View more';
+    showMoreText.innerHTML = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects' : 'View more';
   
 }
 

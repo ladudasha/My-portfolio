@@ -6,123 +6,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/logo/logo2.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./assets/css/style.min.css">    
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css">
     <title>PortfolioDarya</title>
 </head>
 
 <body>
 
-<!-- HEADER -->
+    <!-- HEADER -->
 
     <header class="header" id="header">
-            <div class="header__inner">
-                <div class="header__left">
-                    <img class="header__logo" src="./assets/images/logo/logo2.png" alt="">
-<!-- мультиязычность -->
-<select class="change-lang">
-    <option value="ru" selected>RU</option>
-    <option value="en">EN</option>
-</select>
+        <div class="header__inner">
+            <div class="header__left">
+                <img class="header__logo" src="./assets/images/logo/logo2.png" alt="">
 
+                <!-- мультиязычность -->
+                <div class="select">
+                    <select class="select__change-lng">
+                        <option value="ru" selected>RU</option>
+                        <option value="en">EN</option>
+                    </select>
                 </div>
-                <div class="header__menu">
-                    <div class="header__list">
-                        <ul class="header__nav nav">
-                            <li class="nav__item ">
-                                <a class="nav__link lng-home" href="#home">HOME</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link lng-portfolio" href="#portfolio">PORTFOLIO</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link lng-skills" href="#skills">SKILLS</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link lng-aboutMe" href="#about">ABOUT ME</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link lng-contacts" href="#contact">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- burger -->
-                <div class="burger__icon" id="burger__icon"></div>
-                <div class="burger__menu" id="burger__menu">
-                    <div class="burger__list">
-                        <ul class="burger__nav nav">
-                            <li class="nav__item">
-                                <a class="nav__link" href="#home">HOME</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#portfolio">PORTFOLIO</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#skills">SKILLS</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#about">ABOUT ME</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#contact">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="burger__social social">
-                            <ul class="social__list ">
-                                <li class="social__item ">
-                                    <a href="https://github.com/ladudasha">
-                                        <svg class="social__icon">
-                                                <use xlink:href="./assets/images/social/sprite.svg#git"/>
-                                            </svg>
-                                        </a>
-                                </li>
-    
-                                <li class="social__item">
-                                    <a href="https://www.linkedin.com/in/darya-ladudo-260539217">
-                                        <svg class="social__icon">
-                                                <use xlink:href="./assets/images/social/sprite.svg#in"/>
-                                            </svg>
-                                    </a>
-                                </li>
-    
-                                <li class="social__item">
-                                    <a href="https://www.facebook.com/dasha.gameza">
-                                        <svg class="social__icon">
-                                                <use xlink:href="./assets/images/social/sprite.svg#fb "/>
-                                            </svg>
-                                    </a>
-                                </li>
-    
-                                <li class="social__item ">
-                                    <a href="https://instagram.com/dashagameza?utm_medium=copy_link">
-                                    <svg class="social__icon">
-                                            <use xlink:href="./assets/images/social/sprite.svg#insta "/>
-                                        </svg>
-                                    </a>
-                                </li>
-    
-                                <li class="social__item">
-                                    <a target="blank" href="https://vk.com/id19914886">
-                                        <svg class="social__icon">
-                                                <use xlink:href="./assets/images/social/sprite.svg#vk"/>
-                                            </svg>
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                    </div>
-                    <div class="burger__close" id="burger__close"></div>
+
+
+            </div>
+            <div class="header__menu">
+                <div class="header__list">
+                    <ul class="header__nav nav">
+                        <li class="nav__item ">
+                            <a class="nav__link lng-home" href="#home">HOME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lng-portfolio" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lng-skills" href="#skills">SKILLS</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lng-aboutMe" href="#about">ABOUT ME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lng-contacts" href="#contact">CONTACTS</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
+            <!-- burger -->
+            <div class="burger__icon" id="burger__icon"></div>
+            <div class="burger__menu" id="burger__menu">
+                <div class="burger__list">
+                    <ul class="burger__nav nav">
+                        <li class="nav__item">
+                            <a class="nav__link lng-burger-home" href="#home">HOME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lng-burger-portfolio" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lng-burger-skills" href="#skills">SKILLS</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lng-burger-aboutMe" href="#about">ABOUT ME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lng-burger-contacts" href="#contact">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger__social social">
+                    <ul class="social__list ">
+                        <li class="social__item ">
+                            <a href="https://github.com/ladudasha">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/images/social/sprite.svg#git" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com/in/darya-ladudo-260539217">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/images/social/sprite.svg#in" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a href="https://www.facebook.com/dasha.gameza">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/images/social/sprite.svg#fb " />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social__item ">
+                            <a href="https://instagram.com/dashagameza?utm_medium=copy_link">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/images/social/sprite.svg#insta " />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a target="blank" href="https://vk.com/id19914886">
+                                <svg class="social__icon">
+                                    <use xlink:href="./assets/images/social/sprite.svg#vk" />
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="burger__close" id="burger__close"></div>
+            </div>
+        </div>
+
     </header>
 
-<!-- HOME -->
+    <!-- HOME -->
 
     <section class="home" id="home">
         <div class="container">
@@ -132,38 +138,39 @@
                     </div>
                 </div>
                 <div class="home__details">
-                    <h1 class="home__title lng-home-title"> <span class="home__letter lng-letter">D</span>arya Ladudo</h1>
+                    <h1 class="home__title lng-home-title"> <span class="home__letter lng-letter">D</span>arya Ladudo
+                    </h1>
                     <p class="home__text"></p>
                     <div class="home__social social">
                         <ul class="social__list">
                             <li class="social__item">
                                 <a target="_blank" href="https://github.com/ladudasha">
                                     <svg class="social__icon">
-                                            <use xlink:href="./assets/images/social/sprite.svg#git"/>
-                                        </svg>
-                                    </a>
+                                        <use xlink:href="./assets/images/social/sprite.svg#git" />
+                                    </svg>
+                                </a>
                             </li>
 
                             <li class="social__item">
                                 <a target="_blank" href="https://www.linkedin.com/in/darya-ladudo-260539217">
                                     <svg class="social__icon">
-                                            <use xlink:href="./assets/images/social/sprite.svg#in"/>
-                                        </svg>
+                                        <use xlink:href="./assets/images/social/sprite.svg#in" />
+                                    </svg>
                                 </a>
                             </li>
 
                             <li class="social__item">
                                 <a target="_blank" href="https://www.facebook.com/dasha.gameza">
                                     <svg class="social__icon">
-                                            <use xlink:href="./assets/images/social/sprite.svg#fb "/>
-                                        </svg>
+                                        <use xlink:href="./assets/images/social/sprite.svg#fb " />
+                                    </svg>
                                 </a>
                             </li>
 
                             <li class="social__item ">
                                 <a target="_blank" href="https://instagram.com/dashagameza?utm_medium=copy_link">
-                                <svg class="social__icon">
-                                        <use xlink:href="./assets/images/social/sprite.svg#insta "/>
+                                    <svg class="social__icon">
+                                        <use xlink:href="./assets/images/social/sprite.svg#insta " />
                                     </svg>
                                 </a>
                             </li>
@@ -171,11 +178,11 @@
                             <li class="social__item">
                                 <a target="_blank" href="https://vk.com/id19914886">
                                     <svg class="social__icon">
-                                            <use xlink:href="./assets/images/social/sprite.svg#vk"/>
-                                        </svg>
+                                        <use xlink:href="./assets/images/social/sprite.svg#vk" />
+                                    </svg>
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -184,7 +191,7 @@
         </div>
     </section>
 
-<!-- PORTFOLIO -->
+    <!-- PORTFOLIO -->
 
     <section class="portfolio" id="portfolio">
         <div class="container">
@@ -192,54 +199,59 @@
                 <h2 class="title lng-portfolio-title">PORTFOLIO</h2>
                 <h3 class="subtitle lng-portfolio-subtitle">SELECTED WORKS</h3>
             </div>
-        
-            <div class="portfolio__gallery">                
-<!-- block1 -->
+
+            <div class="portfolio__gallery">
+                <!-- block1 -->
                 <div class="portfolio__block1">
                     <a target="_blanck" class="portfolio__project" href="https://ladudasha.github.io/HelyFly/">
                         <div class="portfolio__wrap">
-                            <img class="portfolio__img" title="Click to open project" src="./assets/images/portfolio/fly.png" alt="">
-                            <div  class="portfolio__name-project  lng-block1-view">View project "Helicopter flights"</div>
+                            <img class="portfolio__img" title="Click to open project"
+                                src="./assets/images/portfolio/fly.png" alt="">
+                            <div class="portfolio__name-project  lng-block1-view">View project "Helicopter flights"
+                            </div>
                         </div>
                     </a>
 
                     <div class="portfolio__description">
                         <p class="portfolio__name lng-project-one">Project 1</p>
                         <!-- link on mobile -->
-                        <a class="portfolio__title"  href="https://ladudasha.github.io/HelyFly/" target="_blanck">View project "Helicopter flights"</a>
-                
+                        <a class="portfolio__title" href="https://ladudasha.github.io/HelyFly/" target="_blanck">View
+                            project "Helicopter flights"</a>
 
-                            <ul class="portfolio__usePrograms">
-                                <li class="portfolio__usePrograms-link lng-proj1-onePage">Layout of a one-page site</li>
-                                <li class="portfolio__usePrograms-link">Gulp</li>
-                                <li class="portfolio__usePrograms-link">SCSS(Sass)</li>
-                                <li class="portfolio__usePrograms-link lng-proj1-bem">BEM</li>
-                                <li class="portfolio__usePrograms-link">JS</li>
-                                <li class="portfolio__usePrograms-link">Swiper slider</li>
-                                <li class="portfolio__usePrograms-link">Grid system</li>
-                                <li class="portfolio__usePrograms-link">Flex</li>
-                                <li class="portfolio__usePrograms-link">Mobile first</li>
-                                <li class="portfolio__usePrograms-link lng-proj1-responsive">Responsive</li>
-                                <li class="">Pixel perfect</li>
-                                
-                            </ul>
+
+                        <ul class="portfolio__usePrograms">
+                            <li class="portfolio__usePrograms-link lng-proj1-onePage">Layout of a one-page site</li>
+                            <li class="portfolio__usePrograms-link">Gulp</li>
+                            <li class="portfolio__usePrograms-link">SCSS(Sass)</li>
+                            <li class="portfolio__usePrograms-link lng-proj1-bem">BEM</li>
+                            <li class="portfolio__usePrograms-link">JS</li>
+                            <li class="portfolio__usePrograms-link">Swiper slider</li>
+                            <li class="portfolio__usePrograms-link">Grid system</li>
+                            <li class="portfolio__usePrograms-link">Flex</li>
+                            <li class="portfolio__usePrograms-link">Mobile first</li>
+                            <li class="portfolio__usePrograms-link lng-proj1-responsive">Responsive</li>
+                            <li class="">Pixel perfect</li>
+
+                        </ul>
 
                         <a target="_blank" href="https://github.com/ladudasha/HelyFly">
                             <svg class="portfolio__git">
-                                    <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                <use xlink:href="./assets/images/social/sprite.svg#git" />
                             </svg>
                         </a>
                     </div>
                 </div>
 
-<!-- block2 -->
+                <!-- block2 -->
                 <div class="portfolio__block2">
 
                     <a target="_blank" class="portfolio__project" href="https://ladudasha.github.io/Group-shops/">
                         <div class="portfolio__wrap">
-                            <img class="portfolio__img" title="Click to open project" src="./assets/images/portfolio/ReactProjectGroup.png" alt="">
-                            <img class="portfolio__img" title="Click to open project" src="./assets/images/portfolio/Catalog.png" alt="">
-                            <div  class="portfolio__name-project lng-block2-view">View project "Shop-catalog" </div>
+                            <img class="portfolio__img" title="Click to open project"
+                                src="./assets/images/portfolio/ReactProjectGroup.png" alt="">
+                            <img class="portfolio__img" title="Click to open project"
+                                src="./assets/images/portfolio/Catalog.png" alt="">
+                            <div class="portfolio__name-project lng-block2-view">View project "Shop-catalog" </div>
                         </div>
                     </a>
 
@@ -248,78 +260,83 @@
                         <p class="portfolio__name lng-project-two">Project 2</p>
 
                         <!-- link on mobile -->
-                        <a class="portfolio__title"  href="https://ladudasha.github.io/Group-shops/" target="_blanck">View project "Shop-catalog"</a>
+                        <a class="portfolio__title" href="https://ladudasha.github.io/Group-shops/"
+                            target="_blanck">View project "Shop-catalog"</a>
 
 
-                    <ul class="portfolio__usePrograms">
-                        <li class="portfolio__usePrograms-link lng-proj2-group">Group work</li>
-                        <li class="portfolio__usePrograms-link lng-proj2-multi">multi-page site</li>
-                        <li class="portfolio__usePrograms-link">React</li>
-                        <li class="portfolio__usePrograms-link">Gulp</li>
-                        <li class="portfolio__usePrograms-link">SCSS(Sass)</li>
-                        <li class="portfolio__usePrograms-link">MUI</li>
-                        <li class="portfolio__usePrograms-link">Swiper slider</li>
-                        <li class="portfolio__usePrograms-link">Pixel perfect</li>  
-                    </ul>
+                        <ul class="portfolio__usePrograms">
+                            <li class="portfolio__usePrograms-link lng-proj2-group">Group work</li>
+                            <li class="portfolio__usePrograms-link lng-proj2-multi">multi-page site</li>
+                            <li class="portfolio__usePrograms-link">React</li>
+                            <li class="portfolio__usePrograms-link">Gulp</li>
+                            <li class="portfolio__usePrograms-link">SCSS(Sass)</li>
+                            <li class="portfolio__usePrograms-link">MUI</li>
+                            <li class="portfolio__usePrograms-link">Swiper slider</li>
+                            <li class="portfolio__usePrograms-link">Pixel perfect</li>
+                        </ul>
 
                         <!-- <p class="portfolio__paragraph">
                             Group work.Layout of a multi-page site using programs such as React,Gulp,MUI,Swiper slider,Pixel perfect.</p> -->
 
                         <a target="_blank" href="https://github.com/ladudasha/Group-shops">
                             <svg class="portfolio__git">
-                                    <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                <use xlink:href="./assets/images/social/sprite.svg#git" />
                             </svg>
                         </a>
                     </div>
                 </div>
 
-<!-- block3 -->
+                <!-- block3 -->
                 <div class="portfolio__block3">
 
                     <a target="_blank" class="portfolio__project" href="https://ladudasha.github.io/Productivity/">
                         <div class="portfolio__wrap">
-                            <img class="portfolio__img" title="Click to open project" src="./assets/images/portfolio/Desktop-productivity.png" alt="">
-                            <div  class="portfolio__name-project lng-block3-view">View project "Productivities"</div>
+                            <img class="portfolio__img" title="Click to open project"
+                                src="./assets/images/portfolio/Desktop-productivity.png" alt="">
+                            <div class="portfolio__name-project lng-block3-view">View project "Productivities"</div>
                         </div>
                     </a>
 
                     <div class="portfolio__description">
                         <p class="portfolio__name lng-project-three">Project 3</p>
                         <!-- link on mobile -->
-                        <a class="portfolio__title"  href="https://ladudasha.github.io/Productivity/" target="_blanck">View project "Productivities"</a>
+                        <a class="portfolio__title" href="https://ladudasha.github.io/Productivity/"
+                            target="_blanck">View project "Productivities"</a>
 
 
                         <ul class="portfolio__usePrograms">
-                            <li class="portfolio__usePrograms-link lng-proj3-onePage">Development of a one-page site</li>
+                            <li class="portfolio__usePrograms-link lng-proj3-onePage">Development of a one-page site
+                            </li>
                             <li class="portfolio__usePrograms-link">Bootstrap</li>
                             <li class="portfolio__usePrograms-link">Gulp</li>
                             <li class="portfolio__usePrograms-link">SCSS(Sass)</li>
                             <li class="portfolio__usePrograms-link lng-proj3-bem">BEM</li>
                             <li class="portfolio__usePrograms-link">JS</li>
                             <li class="portfolio__usePrograms-link">Grid system</li>
-                            <li class="portfolio__usePrograms-link">Flex</li>  
-                            <li class="portfolio__usePrograms-link">Swiper slider</li>  
-                            <li class="portfolio__usePrograms-link">SVG</li>  
-                            <li class="portfolio__usePrograms-link">Sprite.svg</li>  
-                            <li class="portfolio__usePrograms-link">Pixel perfect</li>  
-                            <li class="portfolio__usePrograms-link lng-proj3-responsive">Responsive</li>    
+                            <li class="portfolio__usePrograms-link">Flex</li>
+                            <li class="portfolio__usePrograms-link">Swiper slider</li>
+                            <li class="portfolio__usePrograms-link">SVG</li>
+                            <li class="portfolio__usePrograms-link">Sprite.svg</li>
+                            <li class="portfolio__usePrograms-link">Pixel perfect</li>
+                            <li class="portfolio__usePrograms-link lng-proj3-responsive">Responsive</li>
                         </ul>
 
                         <a target="_blank" href="https://github.com/ladudasha/Productivity">
                             <svg class="portfolio__git">
-                                    <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                <use xlink:href="./assets/images/social/sprite.svg#git" />
                             </svg>
                         </a>
                     </div>
                 </div>
 
-<!-- block4 -->
+                <!-- block4 -->
                 <div class="portfolio__block4">
 
                     <a target="_blank" class="portfolio__project" href="https://ladudasha.github.io/thrivetalk/">
                         <div class="portfolio__wrap">
-                            <img class="portfolio__img" title="Click to open project" src="./assets/images/portfolio/ThriveTalk Landing Page.png" alt="">
-                            <div  class="portfolio__name-project lng-block4-view">View project "ThriveTalk"</div>
+                            <img class="portfolio__img" title="Click to open project"
+                                src="./assets/images/portfolio/ThriveTalk Landing Page.png" alt="">
+                            <div class="portfolio__name-project lng-block4-view">View project "ThriveTalk"</div>
                         </div>
                     </a>
 
@@ -328,35 +345,38 @@
                         <p class="portfolio__name lng-project-four">Project 4</p>
 
                         <!-- link on mobile -->
-                        <a class="portfolio__title"  href="https://ladudasha.github.io/thrivetalk/" target="_blanck">View project "ThriveTalk"</a>
+                        <a class="portfolio__title" href="https://ladudasha.github.io/thrivetalk/" target="_blanck">View
+                            project "ThriveTalk"</a>
 
                         <ul class="portfolio__usePrograms">
-                            <li class="portfolio__usePrograms-link lng-proj4-onePage">Development of a one-page site</li>
+                            <li class="portfolio__usePrograms-link lng-proj4-onePage">Development of a one-page site
+                            </li>
                             <li class="portfolio__usePrograms-link">Grid system</li>
                             <li class="portfolio__usePrograms-link">Gulp</li>
                             <li class="portfolio__usePrograms-link">SCSS(Sass)</li>
                             <li class="portfolio__usePrograms-link lng-proj4-bem">BEM</li>
                             <li class="portfolio__usePrograms-link">Flex</li>
-                            <li class="portfolio__usePrograms-link">JS</li>     
-                            <li class="portfolio__usePrograms-link">Pixel perfect</li>  
-                            <li class="portfolio__usePrograms-link lng-proj4-responsive">Responsive</li>    
+                            <li class="portfolio__usePrograms-link">JS</li>
+                            <li class="portfolio__usePrograms-link">Pixel perfect</li>
+                            <li class="portfolio__usePrograms-link lng-proj4-responsive">Responsive</li>
                         </ul>
 
                         <a target="_blank" href="https://github.com/ladudasha/thrivetalk">
                             <svg class="portfolio__git">
-                                    <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                <use xlink:href="./assets/images/social/sprite.svg#git" />
                             </svg>
                         </a>
                     </div>
                 </div>
 
-<!-- block5 -->
+                <!-- block5 -->
                 <div class="portfolio__block5 portfolio--hide">
 
                     <a target="_blank" class="portfolio__project" href="https://ladudasha.github.io/react-project/">
                         <div class="portfolio__wrap">
-                            <img class="portfolio__img portfolio__img--slow" title="Click to open project" src="./assets/images/portfolio/desctopReact.png" alt="">
-                            <div  class="portfolio__name-project lng-block5-view">View project "Explore channels"</div>
+                            <img class="portfolio__img portfolio__img--slow" title="Click to open project"
+                                src="./assets/images/portfolio/desctopReact.png" alt="">
+                            <div class="portfolio__name-project lng-block5-view">View project "Explore channels"</div>
                         </div>
                     </a>
 
@@ -364,7 +384,8 @@
                         <p class="portfolio__name lng-project-five">Project 5</p>
 
                         <!-- link on mobile -->
-                        <a class="portfolio__title"  href="https://ladudasha.github.io/react-project/" target="_blanck">View project "Explore channels"</a>
+                        <a class="portfolio__title" href="https://ladudasha.github.io/react-project/"
+                            target="_blanck">View project "Explore channels"</a>
 
                         <ul class="portfolio__usePrograms">
                             <li class="portfolio__usePrograms-link">Desktop development</li>
@@ -372,25 +393,28 @@
                             <li class="portfolio__usePrograms-link lng-proj5-component">component approach</li>
                             <li class="portfolio__usePrograms-link">SVG</li>
                             <li class="portfolio__usePrograms-link">Sprite.svg</li>
-                            <li class="portfolio__usePrograms-link">Pixel perfect</li>  
+                            <li class="portfolio__usePrograms-link">Pixel perfect</li>
                         </ul>
 
                         <a target="_blank" href="https://github.com/ladudasha/react-project">
                             <svg class="portfolio__git">
-                                    <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                <use xlink:href="./assets/images/social/sprite.svg#git" />
                             </svg>
                         </a>
                     </div>
                 </div>
 
-<!-- block6 -->
+                <!-- block6 -->
                 <div class="portfolio__block6 portfolio--hide">
 
-                    <a target="_blank" title="Click to open project" class="portfolio__project" href="https://aleksandrdemidovich.github.io/friday-project/">
+                    <a target="_blank" title="Click to open project" class="portfolio__project"
+                        href="https://aleksandrdemidovich.github.io/friday-project/">
                         <div class="portfolio__wrap">
-                            <img class="portfolio__img portfolio__img--slow" title="Click to open project " src="./assets/images/portfolio/Main - Packs List.png" alt="">
-                            <img class="portfolio__img portfolio__img--slow" src="./assets/images/portfolio/Main - Pack Name.png" alt="">
-                            <div  class="portfolio__name-project lng-block6-view">View project "Cards"</div>
+                            <img class="portfolio__img portfolio__img--slow" title="Click to open project "
+                                src="./assets/images/portfolio/Main - Packs List.png" alt="">
+                            <img class="portfolio__img portfolio__img--slow"
+                                src="./assets/images/portfolio/Main - Pack Name.png" alt="">
+                            <div class="portfolio__name-project lng-block6-view">View project "Cards"</div>
                         </div>
                     </a>
 
@@ -399,7 +423,8 @@
                         <p class="portfolio__name lng-project-six">Project 6</p>
 
                         <!-- link on mobile -->
-                        <a class="portfolio__title"  href="https://aleksandrdemidovich.github.io/friday-project/" target="_blanck">View project "Cards"</a>
+                        <a class="portfolio__title" href="https://aleksandrdemidovich.github.io/friday-project/"
+                            target="_blanck">View project "Cards"</a>
 
                         <ul class="portfolio__usePrograms">
                             <li class="portfolio__usePrograms-link lng-proj6-multiPage">Layout of a multi-page site</li>
@@ -407,25 +432,27 @@
                             <li class="portfolio__usePrograms-link">React</li>
                             <li class="portfolio__usePrograms-link">SCSS(Sass)</li>
                             <li class="portfolio__usePrograms-link lng-proj6-bem">BEM</li>
-                            <li class="portfolio__usePrograms-link">Flex</li>    
-                            <li class="portfolio__usePrograms-link">Pixel perfect</li>      
+                            <li class="portfolio__usePrograms-link">Flex</li>
+                            <li class="portfolio__usePrograms-link">Pixel perfect</li>
                         </ul>
 
                         <a target="_blank" href="https://github.com/aleksandrdemidovich/friday-project">
                             <svg class="portfolio__git">
-                                    <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                <use xlink:href="./assets/images/social/sprite.svg#git" />
                             </svg>
                         </a>
-    </div>
+                    </div>
                 </div>
 
-<!-- block7 -->
+                <!-- block7 -->
                 <div class="portfolio__block7 portfolio--hide">
 
-                    <a target="_blank" class="portfolio__project" href="https://ladudasha.github.io/Dream-House-WORD-PRESS/">
+                    <a target="_blank" class="portfolio__project"
+                        href="https://ladudasha.github.io/Dream-House-WORD-PRESS/">
                         <div class="portfolio__wrap">
-                            <img class="portfolio__img" title="Click to open project" src="./assets/images/portfolio/BuildYourDreamHourse.png" alt="">
-                            <div  class="portfolio__name-project lng-block7-view">View project "Archmove"</div>
+                            <img class="portfolio__img" title="Click to open project"
+                                src="./assets/images/portfolio/BuildYourDreamHourse.png" alt="">
+                            <div class="portfolio__name-project lng-block7-view">View project "Archmove"</div>
                         </div>
                     </a>
 
@@ -434,34 +461,37 @@
                         <p class="portfolio__name lng-project-seven">Project 7 Project for WordPress</p>
 
                         <!-- link on mobile -->
-                        <a class="portfolio__title"  href="https://ladudasha.github.io/Dream-House-WORD-PRESS/" target="_blanck">View project "Archmove"</a>
+                        <a class="portfolio__title" href="https://ladudasha.github.io/Dream-House-WORD-PRESS/"
+                            target="_blanck">View project "Archmove"</a>
 
                         <ul class="portfolio__usePrograms">
-                            <li class="portfolio__usePrograms-link lng-proj7-onePage">Layout of a one-page site for Word-Press</li>
+                            <li class="portfolio__usePrograms-link lng-proj7-onePage">Layout of a one-page site for
+                                Word-Press</li>
                             <li class="portfolio__usePrograms-link">Magnific-popup</li>
                             <li class="portfolio__usePrograms-link">React</li>
                             <li class="portfolio__usePrograms-link">Swiper slider</li>
                             <li class="portfolio__usePrograms-link">JS</li>
                             <li class="portfolio__usePrograms-link lng-proj7-responsive">Responsive</li>
                             <li class="portfolio__usePrograms-link">Pixel perfect.</li>
- 
+
                         </ul>
 
                         <a target="_blank" href="https://github.com/ladudasha/Dream-House-WORD-PRESS">
                             <svg class="portfolio__git">
-                                    <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                <use xlink:href="./assets/images/social/sprite.svg#git" />
                             </svg>
                         </a>
                     </div>
                 </div>
 
-<!-- block8 -->
+                <!-- block8 -->
                 <div class="portfolio__block8 portfolio--hide">
 
                     <a target="_blank" class="portfolio__project" href="https://ladudasha.github.io/smoothies/">
                         <div class="portfolio__wrap">
-                            <img class="portfolio__img" title="Click to open project" src="./assets/images/portfolio/Smoothie-Webpage.png" alt="">
-                            <div  class="portfolio__name-project lng-block8-view">View project "Smoothies"</div>
+                            <img class="portfolio__img" title="Click to open project"
+                                src="./assets/images/portfolio/Smoothie-Webpage.png" alt="">
+                            <div class="portfolio__name-project lng-block8-view">View project "Smoothies"</div>
                         </div>
                     </a>
 
@@ -469,22 +499,24 @@
                         <p target="_blank" class="portfolio__name lng-project-eight">Project 8</p>
 
                         <!-- link on mobile -->
-                        <a class="portfolio__title"  href="https://ladudasha.github.io/smoothies/" target="_blanck">View project "Smoothies"</a>
+                        <a class="portfolio__title" href="https://ladudasha.github.io/smoothies/" target="_blanck">View
+                            project "Smoothies"</a>
 
                         <ul class="portfolio__usePrograms">
-                            <li class="portfolio__usePrograms-link lng-proj8-onePage">Development of a one-page site</li>
+                            <li class="portfolio__usePrograms-link lng-proj8-onePage">Development of a one-page site
+                            </li>
                             <li class="portfolio__usePrograms-link">SCSS(Sass)</li>
                             <li class="portfolio__usePrograms-link">Gulp</li>
                             <li class="portfolio__usePrograms-link lng-proj8-bem">BEM</li>
                             <li class="portfolio__usePrograms-link">WOW.js</li>
                             <li class="portfolio__usePrograms-link">Animate.css</li>
                             <li class="portfolio__usePrograms-link">Tilt.js</li>
-                            <li class="portfolio__usePrograms-link">Pixel perfect</li>  
+                            <li class="portfolio__usePrograms-link">Pixel perfect</li>
                         </ul>
 
                         <a target="_blank" href="https://github.com/ladudasha/smoothies">
                             <svg class="portfolio__git">
-                                    <use xlink:href="./assets/images/social/sprite.svg#git"/>
+                                <use xlink:href="./assets/images/social/sprite.svg#git" />
                             </svg>
                         </a>
                     </div>
@@ -492,31 +524,35 @@
 
             </div>
 
-<!-- btn -->
+            <!-- btn -->
 
             <a class="portfolio__link-more" id="link-more">
-                <span class="portfolio__link-text">View more</span>
+                <span class="portfolio__link-text ">View more</span>
             </a>
 
         </div>
     </section>
 
-<!-- SKILLS -->
+    <!-- SKILLS -->
 
     <section class="skills" id="skills">
         <div class="container">
             <div class="skills__wrap">
                 <div class="skills__left">
-                    <h2 class="skills__title title">SKILLS</h2>
-                    <h3 class="skills__subtitle subtitle">PROGRAMMING SKILLS</h3>
-                        
-                        <p  class="wow fadeInRight animated skills__text text">Starting my journey into the world of programming in 2020, I studied every day, acquiring new skills. My main area of ​​expertise is HTML CSS. Having become a student of the best IT school in Minsk, I created web products that raised my level.
-                        </p>
-                        <!-- <p>Начав свой путь в мир программирования в 2020 году, я училась каждый день, приобретая новые навыки. Моя основная область знаний — HTML CSS. Став студентом лучшей IT-школы Минска, я создавал веб-продукты, которые подняли мой уровень.
-                        </p> -->
+                    <h2 class="skills__title title lng-skills-title">SKILLS</h2>
+                    <h3 class="skills__subtitle subtitle lng-programmingSkills">PROGRAMMING SKILLS</h3>
 
+                    <p class="wow fadeInRight animated skills__text text lng-skills-text">
+                        My main area of ​​expertise is HTML CSS.
+                        In my work I use programs such as Gulp, Sass, React, Bootstrap and
+                        others. I use graphite editors Figma, Photoshop.I make adaptive, crossbrowser, semantic, valid
+                        layout. Mobile first,
+                        Pixel perfect, animation creation. I continue to learn every day, acquiring new skills, raising
+                        my level. In the future I want to continue learning Java Script and move towards
+                        Front-end development.
+                    </p>
                     <div class="skills__diagramm-block">
-<!-- Block HTML CSS -->
+                        <!-- Block HTML CSS -->
                         <div class="skills__block-text ">
                             <span class="skills__label ">HTML & CSS</span>
                             <span class="skills__number ">80%</span>
@@ -527,7 +563,7 @@
                                 <div class="wow animated skills__progress-line1 skills__fill "></div>
                             </div>
                         </div>
-<!-- Block  REACT -->
+                        <!-- Block  REACT -->
                         <div class="skills__block-text ">
                             <span class="skills__label ">REACT</span>
                             <span class="skills__number ">40%</span>
@@ -538,7 +574,7 @@
                                 <div class="wow animated skills__progress-line2 skills__fill "></div>
                             </div>
                         </div>
-<!-- Block BOOTSTRAP -->
+                        <!-- Block BOOTSTRAP -->
                         <div class="skills__block-text ">
                             <span class="skills__label ">BOOTSTRAP</span>
                             <span class="skills__number ">80%</span>
@@ -549,7 +585,7 @@
                                 <div class="wow animated skills__progress-line3 skills__fill "></div>
                             </div>
                         </div>
-<!-- Block JAVASCRIPT -->
+                        <!-- Block JAVASCRIPT -->
                         <div class="skills__block-text">
                             <span class="skills__label">JAVASCRIPT</span>
                             <span class="skills__number">30%</span>
@@ -561,7 +597,7 @@
                             </div>
                         </div>
 
-<!-- Block GULP -->
+                        <!-- Block GULP -->
                         <div class="skills__block-text">
                             <span class="skills__label">GULP</span>
                             <span class="skills__number">60%</span>
@@ -572,7 +608,7 @@
                                 <div class="wow animated skills__progress-line5 skills__fill"></div>
                             </div>
                         </div>
-<!-- Block WORDPRESS -->
+                        <!-- Block WORDPRESS -->
                         <div class="skills__block-text">
                             <span class="skills__label">WORDPRESS</span>
                             <span class="skills__number">20%</span>
@@ -593,71 +629,61 @@
             </div>
         </div>
         <div class="skills__tegs" id="tegs"></div>
-    
-</section>
 
-<!-- ABOUT -->
+    </section>
+
+    <!-- ABOUT -->
 
     <section class="about" id="about">
         <div class="container ">
-            <h2 class="animated wow backInUp about__title title">ABOUT ME</h2>
-            <p class="about__text text ">
-                Hello, I am a web developer based in Minsk, Belarus. I code and create web elements....... I like work with new people. I will gladly become a part of your team New people are new experiences. Well-organised person, problem solver, independent employee with high attention to detail. A family person and mather of two good boys.</p>
-                <!-- <p>Здравствуйте, я веб-разработчик из Минска, Беларусь. Я кодирую и создаю веб-элементы ....... Мне нравится работать с новыми людьми. Я с удовольствием стану частью вашей команды. Новые люди – это новый опыт. Хорошо организованный человек, решающий проблемы, независимый сотрудник с большим вниманием к деталям. Семейный человек и мать двух хороших мальчиков</p> -->
-
-            <div class="animated wow bounceInUp about__slider-block" data-wow-offset='100'
-            >
+            <h2 class="animated wow backInUp about__title title lng-about-title">ABOUT ME</h2>
+            <p class="about__text text lng-about-text">
+                Hello, my name is Darya, I'm an HTML CSS developer from Minsk. My main area of ​​expertise is HTML
+                CSS/SCSS. In my work I use programs such as Gulp, Sass, React, Bootstrap and others.
+                I am looking for a project/permanent job in a creative company with
+                interesting tasks and a community team! I like work with new people.
+                I would be happy to be part of your team.
+                Worked in a group and was engaged in group projects. </p>
+            <div class="animated wow bounceInUp about__slider-block" data-wow-offset='100'>
                 <div class="slider-my mySwiper">
                     <div class="slider-my__wrapper swiper-wrapper">
-                        <div class="slider-my__slide swiper-slide">
-                            <!-- <p class="slider-my__text">Умение эффективно распоряжаться временем</p> -->
-                            <p class="slider-my__text">Ability to manage time effectively</p>
+                        <div class="slider-my__slide swiper-slide ">
+                            <p class="slider-my__text lng-slide1">Ability to manage time effectively</p>
                             <span class="slider-my_bg">01</span>
                         </div>
-                        <div class="slider-my__slide swiper-slide">
-                            <!-- <p class="slider-my__text">Внимание к деталям</p> -->
-                            <p class="slider-my__text">Attention to detail</p>
+                        <div class="slider-my__slide swiper-slide ">
+                            <p class="slider-my__text lng-slide2">Attention to detail</p>
                             <span class="slider-my_bg">02</span>
                         </div>
                         <div class="slider-my__slide swiper-slide">
-                            <!-- <p class="slider-my__text">Хорошо обучаема</p> -->
-                            <p class="slider-my__text">Well trained</p>
+                            <p class="slider-my__text lng-slide3">Well trained</p>
                             <span class="slider-my_bg">03</span>
                         </div>
                         <div class="slider-my__slide swiper-slide">
-                            <!-- <p class="slider-my__text">Организована</p> -->
-                            <p class="slider-my__text">Organized</p>
+                            <p class="slider-my__text lng-slide4">Organized</p>
                             <span class="slider-my_bg">04</span>
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                </div> 
                 </div>
+            </div>
         </div>
     </section>
 
-<!-- CONTACT -->
+    <!-- CONTACTS -->
 
     <section class="contacts" id="contact">
         <div class="container ">
 
-            <h2 class="contacts__title title">CONTACT</h2>
-            <h3 class="contacts__subtitle subtitle">Get in Touch</h3>
+            <h2 class="contacts__title title lng-contacts-title">CONTACTS</h2>
+            <h3 class="contacts__subtitle subtitle lng-contacts-subtitle">Get in Touch</h3>
             <div class="contacts__wrapper">
                 <div data-wow-offset="100" class="contacts__left wow animated fadeInLeftBig">
                     <div class="contacts__text-block">
-                        <p class="contacts__text text">I’m interested in web developer opportunities – especially interesnyye i kreativnyye interesting and creative (ambitious or large) projects. However, if you have other request or question, please fill out the form on this sectio
-                            to contact with me. Want to get in touch? Drop me a line!</p>
-
-                            <!-- <p>Меня интересуют возможности веб-разработчика — особенно интересные и креативные интересные и креативные (амбициозные или крупные) проекты. Однако, если у вас есть другой запрос или вопрос, пожалуйста, заполните форму в этом разделе.
-                                связаться со мной. Хотите связаться? Напишите мне! </p> -->
-
-                            <!-- Я начинающий верстальщик. В 2020 г. закончила Базовый интенсив по HTML и CSS в HTML Academy а также Практический
-                онлайн-курс по основам верстки и разработки сайтов в Way up. Весь 2021 год посвятила изучению верстки в IT-INCUBATOR. В дальнейшем планирую развиваться в профессии Frontend Developer. Проживаю и ищу работу в Минске, Республика Беларусь. 
-                Буду рада стать стажером в вашей компании. Также готова бесплатно сверстать ваш проект при условии добавления его в мое портфолио. Верстаю с учетом современных стандартов: валидно, семантично, кроссбрузерно. Применяю PixelPerfect.Сделаю
-                Ваш сайт адаптивным, применяя базовую оптимизацию, JS-скрипты для оживления сайта. -->
-                        
+                        <p class="contacts__text text lng-contacts-text">I am interested in the work of a web developer
+                            - especially interesting and creative projects. However, if you have another request or
+                            question, please fill out the form in this section.</p>
                     </div>
 
                     <div class="contacts__connection connection">
@@ -666,16 +692,16 @@
                                 <li class="connection__list">
                                     <a class="connection__link">
                                         <svg class="connection__icon1">
-                                            <use xlink:href="./assets/images/social/sprite.svg#icon1"/>
+                                            <use xlink:href="./assets/images/social/sprite.svg#icon1" />
                                         </svg>
-                                        <p class="connection__text">Belarus, Minsk</p>
+                                        <p class="connection__text lng-address">Belarus, Minsk</p>
                                     </a>
                                 </li>
 
                                 <li class="connection__list">
                                     <a class="connection__link">
                                         <svg class="connection__icon2">
-                                            <use xlink:href="./assets/images/social/sprite.svg#icon2 "/>
+                                            <use xlink:href="./assets/images/social/sprite.svg#icon2 " />
                                         </svg>
                                         <p class="connection__text">+375 (29) 653 15 40</p>
                                     </a>
@@ -684,7 +710,7 @@
                                 <li class="connection__list">
                                     <a class="connection__link">
                                         <svg class="connection__icon3">
-                                            <use xlink:href="./assets/images/social/sprite.svg#icon3"/>
+                                            <use xlink:href="./assets/images/social/sprite.svg#icon3" />
                                         </svg>
                                         <p class="connection__text">darya.gameza@gmail.com</p>
                                     </a>
@@ -702,9 +728,10 @@
                         <input type="text" placeholder="Name" name="name" class="form__name" required>
                         <input type="text" placeholder="E-mail" name="email" class="form__email" required>
                         <textarea id="message" name="message" placeholder="Message" class="form__message"></textarea>
-                        <button  type="submit" class="form__btn"><span class="form__submit">Submit</span> </button>
+                        <button type="submit" class="form__btn"><span class="form__submit lng-form-btn">Submit</span>
+                        </button>
                     </form>
-                
+
                 </div>
             </div>
         </div>
@@ -712,7 +739,7 @@
         </div>
     </section>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
     <footer class="footer ">
         <div class="container ">
@@ -721,43 +748,43 @@
                     <li class="social__item ">
                         <a target="_blank" href="https://github.com/ladudasha">
                             <svg class="social__icon">
-                                    <use fill="white" xlink:href="./assets/images/social/sprite.svg#git"/>
-                                </svg>
-                            </a>
+                                <use fill="white" xlink:href="./assets/images/social/sprite.svg#git" />
+                            </svg>
+                        </a>
                     </li>
 
                     <li class="social__item">
                         <a target="_blank" href="https://www.linkedin.com/in/darya-ladudo-260539217">
                             <svg class="social__icon">
-                                    <use fill="white" xlink:href="./assets/images/social/sprite.svg#in"/>
-                                </svg>
+                                <use fill="white" xlink:href="./assets/images/social/sprite.svg#in" />
+                            </svg>
                         </a>
                     </li>
 
                     <li class="social__item">
                         <a target="_blank" href="https://www.facebook.com/dasha.gameza">
                             <svg class="social__icon">
-                                    <use fill="white" xlink:href="./assets/images/social/sprite.svg#fb "/>
-                                </svg>
+                                <use fill="white" xlink:href="./assets/images/social/sprite.svg#fb " />
+                            </svg>
                         </a>
                     </li>
 
                     <li class="social__item ">
                         <a target="_blank" href="https://instagram.com/dashagameza?utm_medium=copy_link">
-                        <svg class="social__icon">
-                                <use fill="white" xlink:href="./assets/images/social/sprite.svg#insta "/>
+                            <svg class="social__icon">
+                                <use fill="white" xlink:href="./assets/images/social/sprite.svg#insta " />
                             </svg>
                         </a>
                     </li>
 
                     <li class="social__item">
                         <a target="_blank" href="https://vk.com/id19914886">
-                            <svg  class="social__icon">
-                                    <use fill="white" xlink:href="./assets/images/social/sprite.svg#vk"/>
-                                </svg>
+                            <svg class="social__icon">
+                                <use fill="white" xlink:href="./assets/images/social/sprite.svg#vk" />
+                            </svg>
                         </a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -775,4 +802,3 @@
 </body>
 
 </html>
-

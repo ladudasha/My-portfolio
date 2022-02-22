@@ -36,8 +36,6 @@
             width: 17px;
             height: 17px;
             background-size: contain;
-            display: block;
-            position: absolute;
         }
         &:hover::after {
             transform: rotate(-50deg);

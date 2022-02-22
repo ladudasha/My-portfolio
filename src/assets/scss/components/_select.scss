@@ -1,0 +1,31 @@
+.select {
+    position: relative;
+    &__change-lng {
+        display: block;
+        width: 100%;
+        background:none;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 7px 20px 7px 10px;
+        appearance: none;
+        font-family: inherit;
+        &:focus {
+            outline: 0;
+            border-color: rgb(92, 92, 92);
+        }
+    }
+    &::after {
+        content:"";
+        display: block;
+        border-style: solid;
+        border-width: 6px 5px 0 5px;
+        border-color: #000 transparent transparent transparent;
+        position: absolute;
+        top: 15px;
+        right: 6px;
+        
+
+
+    }
+    
+}
