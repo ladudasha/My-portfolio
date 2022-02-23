@@ -1,7 +1,7 @@
 const langArr = {
     "test": {
-        "ru": "Веб разработчик из Минска. Иногда работаю фрилансером",
-        "en": "Web developer from Minsk. Sometimes works as a freelancer."
+        "ru": "Веб разработчик из Минска.",
+        "en": "Web developer from Minsk."
 
     },
     "title-site": {
@@ -83,8 +83,8 @@ const langArr = {
         "en": "Project 1",
     },
     "block1-view": {
-        "ru": "Посмотреть проект Helicopter flight",
-        "en": "View project Helicopter flight",
+        "ru": "Посмотреть проект 'Helicopter flight'",
+        "en": "View project 'Helicopter flight'",
     },
     "proj1-onePage": {
         "ru": "Разработка одностраничного сайта",
@@ -106,8 +106,8 @@ const langArr = {
         "en": "Project 2",
     },
     "block2-view": {
-        "ru": "Посмотреть проект Shop-catalog",
-        "en": "View project Shop-catalog",
+        "ru": "Посмотреть проект 'Shop-catalog'",
+        "en": "View project 'Shop-catalog'",
     },
     "proj2-group": {
         "ru": "Групповая работа",
@@ -124,8 +124,8 @@ const langArr = {
         "en": "Project 3",
     },
     "block3-view": {
-        "ru": "Посмотреть проект Productivities",
-        "en": "View project Productivities",
+        "ru": "Посмотреть проект 'Productivities'",
+        "en": "View project 'Productivities'",
     },
     "proj3-onePage": {
         "ru": "Разработка одностраничного сайта",
@@ -149,8 +149,8 @@ const langArr = {
         "en": "Project 4",
     },
     "block4-view": {
-        "ru": "Посмотреть проект ThriveTalk",
-        "en": "View project ThriveTalk",
+        "ru": "Посмотреть проект 'ThriveTalk'",
+        "en": "View project 'ThriveTalk'",
     },
     "proj4-onePage": {
         "ru": "Разработка одностраничного сайта",
@@ -171,8 +171,12 @@ const langArr = {
         "en": "Project 5",
     },
     "block5-view": {
-        "ru": "Посмотреть проект Explore channels",
-        "en": "View project Explore channels",
+        "ru": "Посмотреть проект 'Explore channels'",
+        "en": "View project 'Explore channels'",
+    },
+    "proj5-desctop": {
+        "ru": "Desktop версия",
+        "en": "Desktop development",
     },
     "proj5-component": {
         "ru": "компонентный подход",
@@ -185,8 +189,8 @@ const langArr = {
         "en": "Project 6",
     },
     "block6-view": {
-        "ru": "Посмотреть проект Cards",
-        "en": "View project Cards",
+        "ru": "Посмотреть проект 'Cards'",
+        "en": "View project 'Cards'",
     },
     "proj6-multiPage": {
         "ru": "Разработка многостраничного сайта",
@@ -208,8 +212,8 @@ const langArr = {
         "en": "Project 7 Project for WordPress",
     },
     "block7-view": {
-        "ru": "Посмотреть проект Archmove",
-        "en": "View project Archmove",
+        "ru": "Посмотреть проект 'Archmove'",
+        "en": "View project 'Archmove'",
     },
     "proj7-onePage": {
         "ru": "Разработка одностраничного сайта",
@@ -227,7 +231,7 @@ const langArr = {
         "en": "Project 8",
     },
     "block8-view": {
-        "ru": "Посмотреть проект Smoothies",
+        "ru": "Посмотреть проект 'Smoothies'",
         "en": "View project Smoothies",
     },
     "proj8-onePage": {
@@ -270,7 +274,7 @@ const langArr = {
         "en": "PROGRAMMING SKILLS",
     },
     "skills-text": {
-        "ru": "Моя основная область знаний — HTML CSS. В своей работе я использую такие программы, как Gulp, Sass, React, Bootstrap и другие программы. Использую графитовые редакторы Figma, Photoshop. Делаю адаптивную, кроссбраузерную, смысловую, валидную верстку. Mobile first, Pixel perfect, создание анимации. Я продолжаю учиться каждый день, приобретая новые навыки, поднимая свой уровень. В будущем я хочу продолжить изучение Java Script и двигаться в направлении Front-end разработки.",
+        "ru": "Моя основная область знаний — HTML CSS. В своей работе я использую такие программы, как Gulp, Sass, React,Material-UI, Bootstrap и другие программы. Использую графитовые редакторы Figma, Photoshop. Делаю адаптивную, кроссбраузерную, смысловую, валидную верстку. Mobile first, Pixel perfect, создание анимации. Я продолжаю учиться каждый день, приобретая новые навыки, поднимая свой уровень. В будущем я хочу продолжить изучение Java Script и двигаться в направлении Front-end разработки.",
         "en": "My main area of ​​expertise is HTML CSS.In my work I use programs such as Gulp, Sass, React, Bootstrap and others. I use graphite editors Figma, Photoshop.I make adaptive, crossbrowser, semantic, valid layout. Mobile first, Pixel perfect, animation creation. I continue to learn every day, acquiring new skills, raising my level. In the future I want to continue learning Java Script and move towards Front-end development.",
     },
 
@@ -281,7 +285,7 @@ const langArr = {
         "en": "ABOUT ME",
     },
     "about-text": {
-        "ru": "Здравствуйте, меня зовут Дарья, я HTML CSS разработчик. Проживаю и ищу работу в Минске. Моя основная область знаний — HTML CSS/SCSS. В своей работе я использую такие программы, как Gulp, Sass, React, Bootstrap и другие программы. Ищу проект/постоянную работу в творческой компании с интересными заданиями и дружной командой! Мне нравится работать с новыми людьми.Буду рад стать частью вашей команды. Работала в группе и занимался групповыми проектами. Обладаю такими личными качествами как",
+        "ru": "Здравствуйте, меня зовут Дарья, я HTML CSS разработчик. Несколько лет назад я решила координально поменять профессию и уйти со сцены в IT. Остаюсь творческим человеком, в свободное время преподаю балет, воспитываю 2 сыновей. Проживаю и ищу работу в Минске. Моя основная область знаний — HTML CSS/SCSS. В своей работе я использую такие программы, как Gulp, Sass, React,Material-UI, Bootstrap и другие программы. Ищу проект/постоянную работу в творческой компании с интересными заданиями и дружной командой! Мне нравится работать с новыми людьми.Буду рад стать частью вашей команды. Работала в группе и занимался групповыми проектами. Обладаю такими личными качествами как",
         "en": "Hello, my name is Darya, I'm an HTML CSS developer. I live and look for work in Minsk, Republic of Belarus. My main area of ​​expertise is HTML CSS/SCSS. In my work I use programs such as Gulp, Sass, React, Bootstrap and others. I am looking for a project/permanent job in a creative company with interesting tasks and a community team! I like work with new people. I would be happy to be part of your team. Worked in a group and was engaged in group projects. I have such personal qualities as",
     },
     "slide1": {

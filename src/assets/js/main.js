@@ -169,7 +169,7 @@ changeLanguage();
 if(document.querySelector('.home')) {
   const text = [
     // 'Darya Ladudo\n',
-    // 'Web developer from Minsk. Sometimes works as a freelancer.\n',
+    // 'Web developer from Minsk.\n',
     langArr["test"][hash]
   ];
   
@@ -180,7 +180,7 @@ if(document.querySelector('.home')) {
       let interval = setTimeout(
         () => {
           result += text[line][count]
-          document.querySelector('p').innerHTML =result +'|';
+          document.querySelector('h1').innerHTML =result +'|';
   
   
         count++;
@@ -189,7 +189,7 @@ if(document.querySelector('.home')) {
           line++;
           if (line == text.length) {
             clearTimeout(interval);
-            document.querySelector('p').innerHTML =result;
+            document.querySelector('h1').innerHTML =result;
             return true;
           }
         }

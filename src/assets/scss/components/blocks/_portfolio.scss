@@ -134,7 +134,10 @@
         position: absolute;
         bottom: 0;
         @media screen and (max-width: 768px) {
+            font-size: 20px;
+            height: 35px;
             opacity: 1;
+        
         }
     }
 
@@ -150,13 +153,7 @@
             margin-bottom: 30px;
         }
     }
-    // link on mobile
-    &__title {
-        display: none;
-        @media screen and (max-width: 768px) {
-            display: block;
-        }
-    }
+
     &__usePrograms {
         display: flex;
         flex-wrap: wrap;

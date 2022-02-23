@@ -2981,6 +2981,39 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: scale(1.5);
 }
 
+.select {
+    position: relative;
+}
+
+.select__change-lng {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 7px 20px 7px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+}
+
+.select__change-lng:focus {
+    outline: 0;
+    border-color: #5c5c5c;
+}
+
+.select::after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    top: 15px;
+    right: 6px;
+}
+
 .text {
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
     margin: 0;
@@ -3048,9 +3081,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transition: all 0.3s ease;
 }
 
-.header__left, .header__logo {
+.header__left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.header__logo {
     width: 40px;
     height: 40px;
+    margin-right: 20px;
 }
 
 .header__menu {
@@ -3862,8 +3905,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 17px;
     height: 17px;
     background-size: contain;
-    display: block;
-    position: absolute;
 }
 
 .form__submit:hover::after {
