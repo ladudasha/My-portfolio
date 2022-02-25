@@ -3683,6 +3683,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media screen and (max-width: 768px) {
     .portfolio__name-project {
+        font-size: 20px;
+        height: 35px;
         opacity: 1;
     }
 }
@@ -3702,16 +3704,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media screen and (max-width: 1024px) {
     .portfolio__description {
         margin-bottom: 30px;
-    }
-}
-
-.portfolio__title {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-    .portfolio__title {
-        display: block;
     }
 }
 
@@ -3901,7 +3893,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     background-image: url(../images/form/row-btn.svg);
     top: 2px;
-    left: 75px;
+    right: -28px;
     width: 17px;
     height: 17px;
     background-size: contain;
@@ -4284,7 +4276,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -4294,7 +4286,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -4324,7 +4316,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -4334,7 +4326,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 

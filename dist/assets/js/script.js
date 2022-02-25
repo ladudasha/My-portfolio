@@ -1047,7 +1047,7 @@ var VanillaTilt = (function () {
     
     }());
 const langArr = {
-    "test": {
+    "h1": {
         "ru": "Веб разработчик из Минска.",
         "en": "Web developer from Minsk."
 
@@ -1291,20 +1291,10 @@ const langArr = {
         "en": "BEM",
     },
        // portfolio BTN
-    // "portfolio-btn": {
-    //     "ru": "Показать больше",
-    //     "en": "View more",
-    // },
-
-    // "Hide projects": {
-    //     "ru": "Скрыть проекты",
-    //     "en": "Hide projects",
-    // },
-    // "View more": {
-    //     "ru": "Показать больше",
-    //     "en": "View more",
-    // },
-
+    "portfolio-btn": {
+        "ru": "Показать больше",
+        "en": "View more",
+    },
 
 
     // skills
@@ -1333,8 +1323,8 @@ const langArr = {
         "en": "ABOUT ME",
     },
     "about-text": {
-        "ru": "Здравствуйте, меня зовут Дарья, я HTML CSS разработчик. Несколько лет назад я решила координально поменять профессию и уйти со сцены в IT. Остаюсь творческим человеком, в свободное время преподаю балет, воспитываю 2 сыновей. Проживаю и ищу работу в Минске. Моя основная область знаний — HTML CSS/SCSS. В своей работе я использую такие программы, как Gulp, Sass, React,Material-UI, Bootstrap и другие программы. Ищу проект/постоянную работу в творческой компании с интересными заданиями и дружной командой! Мне нравится работать с новыми людьми.Буду рад стать частью вашей команды. Работала в группе и занимался групповыми проектами. Обладаю такими личными качествами как",
-        "en": "Hello, my name is Darya, I'm an HTML CSS developer. I live and look for work in Minsk, Republic of Belarus. My main area of ​​expertise is HTML CSS/SCSS. In my work I use programs such as Gulp, Sass, React, Bootstrap and others. I am looking for a project/permanent job in a creative company with interesting tasks and a community team! I like work with new people. I would be happy to be part of your team. Worked in a group and was engaged in group projects. I have such personal qualities as",
+        "ru": "Здравствуйте, меня зовут Дарья, я HTML CSS разработчик. Проживаю и ищу работу в Минске. Моя основная область знаний — HTML CSS/SCSS. В своей работе я использую такие программы, как Gulp, Sass, React,Material-UI, Bootstrap и другие программы. Ищу постоянную работу в творческой компании с интересными задачами и дружным коллективом! Мне нравится работать с новыми людьми.Буду рада стать частью вашей команды. Работала в команде и занимался групповыми проектами.  Несколько лет назад я решила координально поменять профессию и уйти 'со сцены' в IT. Остаюсь творческим человеком, в свободное время преподаю балет, воспитываю 2 сыновей. Обладаю такими личными качествами как",
+        "en": "Hello, my name is Darya, I'm an HTML CSS developer. I live and look for work in Minsk, Republic of Belarus. My main area of ​​expertise is HTML CSS/SCSS. In my work I use programs such as Gulp, Sass, React, Bootstrap and others. I am looking for a permanent job in a creative company with interesting tasks and a friendly team! I like work with new people. I would be happy to be part of your team. Worked in a team and was engaged in group projects. I have such personal qualities as",
     },
     "slide1": {
         "ru": "Умение эффективно распоряжаться временем",
@@ -1474,7 +1464,7 @@ toggleBurgerMenu()
 
 
 
-// GALLERY
+// // GALLERY
 
 const gallery = document.querySelectorAll(".portfolio--hide");
 const showMore = document.querySelector(".portfolio__link-more");
@@ -1498,10 +1488,20 @@ function showMoreBtn() {
       showMore.removeAttribute('href')
     },1000)
   } 
+
     showMoreText.classList.toggle('btn--show');
-    showMoreText.innerHTML = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects' : 'View more';
-  
-}
+    if(showMoreText.classList.contains('btn--show')) {
+      showMoreText.innerHTML = hash === 'en'? 
+      'Hide projects': 
+      'Скрыть проекты'
+    } 
+    else {
+      showMoreText.innerHTML =  hash === 'en' ?
+      'View more':
+      'Показать больше'
+    }
+  }
+
 
 
 
@@ -1521,7 +1521,6 @@ function changeLanguage() {
   hash = window.location.hash;
   hash = hash.substr(1);
 
-  console.log(hash);
   if (!allLang.includes(hash)) {
     location.href = window.location.pathname + '#en';
     location.reload();
@@ -1539,8 +1538,6 @@ function changeLanguage() {
 
 }
   
-
-
 }
 changeLanguage();
 
@@ -1548,11 +1545,10 @@ changeLanguage();
 
 
 // печатная машинка
-if(document.querySelector('.home')) {
+
   const text = [
-    // 'Darya Ladudo\n',
     // 'Web developer from Minsk.\n',
-    langArr["test"][hash]
+    langArr["h1"][hash]
   ];
   
   let line = 0;
@@ -1582,8 +1578,6 @@ if(document.querySelector('.home')) {
     function getRandomInt(max) {
       return Math.floor(Math.random() * Math.floor(max));
     }
-}
-
 
 
 //# sourceMappingURL=script.js.map

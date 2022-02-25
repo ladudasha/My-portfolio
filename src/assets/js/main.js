@@ -92,7 +92,7 @@ toggleBurgerMenu()
 
 
 
-// GALLERY
+// // GALLERY
 
 const gallery = document.querySelectorAll(".portfolio--hide");
 const showMore = document.querySelector(".portfolio__link-more");
@@ -116,10 +116,20 @@ function showMoreBtn() {
       showMore.removeAttribute('href')
     },1000)
   } 
+
     showMoreText.classList.toggle('btn--show');
-    showMoreText.innerHTML = (showMoreText.className == 'portfolio__link-text btn--show') ? 'Hide projects' : 'View more';
-  
-}
+    if(showMoreText.classList.contains('btn--show')) {
+      showMoreText.innerHTML = hash === 'en'? 
+      'Hide projects': 
+      'Скрыть проекты'
+    } 
+    else {
+      showMoreText.innerHTML =  hash === 'en' ?
+      'View more':
+      'Показать больше'
+    }
+  }
+
 
 
 
@@ -139,7 +149,6 @@ function changeLanguage() {
   hash = window.location.hash;
   hash = hash.substr(1);
 
-  console.log(hash);
   if (!allLang.includes(hash)) {
     location.href = window.location.pathname + '#en';
     location.reload();
@@ -157,8 +166,6 @@ function changeLanguage() {
 
 }
   
-
-
 }
 changeLanguage();
 
@@ -166,11 +173,10 @@ changeLanguage();
 
 
 // печатная машинка
-if(document.querySelector('.home')) {
+
   const text = [
-    // 'Darya Ladudo\n',
     // 'Web developer from Minsk.\n',
-    langArr["test"][hash]
+    langArr["h1"][hash]
   ];
   
   let line = 0;
@@ -200,6 +206,4 @@ if(document.querySelector('.home')) {
     function getRandomInt(max) {
       return Math.floor(Math.random() * Math.floor(max));
     }
-}
-
 
