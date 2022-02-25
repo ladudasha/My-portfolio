@@ -1047,6 +1047,10 @@ var VanillaTilt = (function () {
     
     }());
 const langArr = {
+    "letter": {
+        "ru": "Д",
+        "en": "D",
+    },
     "h1": {
         "ru": "Веб разработчик из Минска.",
         "en": "Web developer from Minsk."
@@ -1097,10 +1101,7 @@ const langArr = {
         "ru": "КОНТАКТЫ",
         "en": "CONTACT",
     },
-    "letter": {
-        "ru": "Д",
-        "en": "D",
-    },
+   
     "home-title": {
         "ru": "арья Ладудо",
         "en": "arya Ladudo",
@@ -1312,7 +1313,7 @@ const langArr = {
         "en": "PROGRAMMING SKILLS",
     },
     "skills-text": {
-        "ru": "Моя основная область знаний — HTML CSS. В своей работе я использую такие программы, как Gulp, Sass, React,Material-UI, Bootstrap и другие программы. Использую графитовые редакторы Figma, Photoshop. Делаю адаптивную, кроссбраузерную, смысловую, валидную верстку. Mobile first, Pixel perfect, создание анимации. Я продолжаю учиться каждый день, приобретая новые навыки, поднимая свой уровень. В будущем я хочу продолжить изучение Java Script и двигаться в направлении Front-end разработки.",
+        "ru": "Моя основная область знаний — HTML CSS. Владею Gulp, Sass, React, Material-UI, Bootstrap и др. Использую графические редакторы Figma, Photoshop. Делаю адаптивную, кроссбраузерную,семантическую, валидную (W3C) верстку. Mobile first, Pixel perfect, создание анимации. Я продолжаю учиться каждый день, приобретая новые навыки, поднимая свой уровень. В будущем я хочу продолжить изучение Java Script и двигаться в направлении Front-end разработки.",
         "en": "My main area of ​​expertise is HTML CSS.In my work I use programs such as Gulp, Sass, React, Bootstrap and others. I use graphite editors Figma, Photoshop.I make adaptive, crossbrowser, semantic, valid layout. Mobile first, Pixel perfect, animation creation. I continue to learn every day, acquiring new skills, raising my level. In the future I want to continue learning Java Script and move towards Front-end development.",
     },
 
@@ -1323,7 +1324,7 @@ const langArr = {
         "en": "ABOUT ME",
     },
     "about-text": {
-        "ru": "Здравствуйте, меня зовут Дарья, я HTML CSS разработчик. Проживаю и ищу работу в Минске. Моя основная область знаний — HTML CSS/SCSS. В своей работе я использую такие программы, как Gulp, Sass, React,Material-UI, Bootstrap и другие программы. Ищу постоянную работу в творческой компании с интересными задачами и дружным коллективом! Мне нравится работать с новыми людьми.Буду рада стать частью вашей команды. Работала в команде и занимался групповыми проектами.  Несколько лет назад я решила координально поменять профессию и уйти 'со сцены' в IT. Остаюсь творческим человеком, в свободное время преподаю балет, воспитываю 2 сыновей. Обладаю такими личными качествами как",
+        "ru": "Здравствуйте, меня зовут Дарья, я HTML CSS разработчик. Проживаю и ищу работу в Минске. Моя основная область знаний — HTML и CSS. В своей работе я использую такие инстументы и технологии, как Gulp, Sass, React, Material-UI, Bootstrap и другие. Ищу постоянную работу (можно удалённо) с интересными задачами и дружным коллективом. Мне нравится работать с новыми людьми. Буду рада стать частью вашей команды. Несколько лет назад я решила координально поменять профессию и уйти 'со сцены' в IT. Остаюсь творческим человеком, в свободное время преподаю балет, воспитываю 2 сыновей. Обладаю такими личными качествами как:",
         "en": "Hello, my name is Darya, I'm an HTML CSS developer. I live and look for work in Minsk, Republic of Belarus. My main area of ​​expertise is HTML CSS/SCSS. In my work I use programs such as Gulp, Sass, React, Bootstrap and others. I am looking for a permanent job in a creative company with interesting tasks and a friendly team! I like work with new people. I would be happy to be part of your team. Worked in a team and was engaged in group projects. I have such personal qualities as",
     },
     "slide1": {
