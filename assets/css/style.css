@@ -2976,9 +2976,42 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .nav__link:hover {
     color: #ff4522;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
+}
+
+.select {
+    position: relative;
+}
+
+.select__change-lng {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 7px 20px 7px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+}
+
+.select__change-lng:focus {
+    outline: 0;
+    border-color: #5c5c5c;
+}
+
+.select::after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    top: 15px;
+    right: 6px;
 }
 
 .text {
@@ -3031,7 +3064,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     right: 0px;
     z-index: 10;
     background-color: #f9f9f9;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     z-index: 9999;
 }
 
@@ -3045,12 +3078,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 30px 37px 30px 50px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
-.header__left, .header__logo {
+.header__left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.header__logo {
     width: 40px;
     height: 40px;
+    margin-right: 20px;
 }
 
 .header__menu {
@@ -3093,7 +3136,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     top: 0;
     right: -420px;
     z-index: 999;
-    transition: .3s;
+    transition: 0.3s;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -3569,7 +3612,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 0px;
     opacity: 0;
     visibility: hidden;
-    transition: .55s opacity, .55s visibility;
+    transition: 0.55s opacity, 0.55s visibility;
 }
 
 .portfolio__project {
@@ -3581,7 +3624,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 100%;
     max-height: 400px;
     margin: 0;
-    transition: margin .5s linear, width .5s linear, height .5s linear, box-shadow .5s linear;
+    transition: margin 0.5s linear, width 0.5s linear, height 0.5s linear, box-shadow 0.5s linear;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -3633,13 +3676,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 0;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    transition: opacity .9s linear, font-size .2s linear, height .2s linear;
+    transition: opacity 0.9s linear, font-size 0.2s linear, height 0.2s linear;
     position: absolute;
     bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
     .portfolio__name-project {
+        font-size: 20px;
+        height: 35px;
         opacity: 1;
     }
 }
@@ -3662,16 +3707,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 }
 
-.portfolio__title {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-    .portfolio__title {
-        display: block;
-    }
-}
-
 .portfolio__usePrograms {
     display: -ms-flexbox;
     display: flex;
@@ -3683,7 +3718,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     gap: 20px;
 }
 
-.portfolio__usePrograms-link {
+.portfolio__usePrograms > li {
     padding: 0 10px;
     border-radius: 15px;
     background-color: #9e9e9e2e;
@@ -3714,7 +3749,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     fill: #ff4522;
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 .portfolio__link-more {
@@ -3731,10 +3766,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
     text-align: center;
     padding: 10px;
+    padding-right: 33px;
     background: #ff4522;
     -webkit-transform: none;
     transform: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -3857,12 +3893,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: absolute;
     background-image: url(../images/form/row-btn.svg);
     top: 2px;
-    left: 75px;
+    right: -28px;
     width: 17px;
     height: 17px;
     background-size: contain;
-    display: block;
-    position: absolute;
 }
 
 .form__submit:hover::after {
@@ -4242,7 +4276,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -4252,7 +4286,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -4282,7 +4316,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -4292,7 +4326,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
