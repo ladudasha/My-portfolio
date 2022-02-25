@@ -1313,7 +1313,7 @@ const langArr = {
         "en": "PROGRAMMING SKILLS",
     },
     "skills-text": {
-        "ru": "Моя основная область знаний — HTML CSS. Владею Gulp, Sass, React, Material-UI, Bootstrap и др. Использую графические редакторы Figma, Photoshop. Делаю адаптивную, кроссбраузерную,семантическую, валидную (W3C) верстку. Mobile first, Pixel perfect, создание анимации. Я продолжаю учиться каждый день, приобретая новые навыки, поднимая свой уровень. В будущем я хочу продолжить изучение Java Script и двигаться в направлении Front-end разработки.",
+        "ru": "Моя основная область знаний — HTML CSS. Владею Gulp, Sass, React, Material-UI, Bootstrap и др. Использую графические редакторы Figma, Photoshop. Делаю адаптивную, кроссбраузерную, семантическую, валидную (W3C) верстку. Mobile first, Pixel perfect, создание анимации. Я продолжаю учиться каждый день, приобретая новые навыки, поднимая свой уровень. В будущем я хочу продолжить изучение Java Script и двигаться в направлении Front-end разработки.",
 
         "en":"My main area of ​​expertise is HTML/CSS. I know Gulp, Sass, React, Material-UI, Bootstrap, etc. I use Figma, Photoshop graphic editors. I make adaptive, cross-browser, semantic, valid layout (W3C) layout. Mobile first, Pixel perfect, animation creation. I continue to learn every day, acquiring new skills, raising my level. In the future, I want to continue learning Java Script and move towards Front-end development."
 
