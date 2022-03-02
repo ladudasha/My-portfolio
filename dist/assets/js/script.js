@@ -1101,7 +1101,7 @@ const langArr = {
         "ru": "КОНТАКТЫ",
         "en": "CONTACTS",
     },
-   
+
     "home-title": {
         "ru": "арья Ладудо",
         "en": "arya Ladudo",
@@ -1147,7 +1147,7 @@ const langArr = {
         "ru": "Отзывчивый",
         "en": "Responsive",
     },
-    
+
 
     // block2
     "project-two": {
@@ -1291,7 +1291,7 @@ const langArr = {
         "ru": "БЭМ",
         "en": "BEM",
     },
-       // portfolio BTN
+    // portfolio BTN
     "portfolio-btn": {
         "ru": "Показать больше",
         "en": "View more",
@@ -1313,11 +1313,9 @@ const langArr = {
         "en": "PROGRAMMING SKILLS",
     },
     "skills-text": {
-        "ru": "Моя основная область знаний — HTML CSS. Владею Gulp, Sass, React, Material-UI, Bootstrap и др. Использую графические редакторы Figma, Photoshop. Делаю адаптивную, кроссбраузерную, семантическую, валидную (W3C) верстку. Mobile first, Pixel perfect, создание анимации. Я продолжаю учиться каждый день, приобретая новые навыки, поднимая свой уровень. В будущем я хочу продолжить изучение Java Script и двигаться в направлении Front-end разработки.",
+        "ru": "Моя основная область знаний — HTML и CSS. В своих проектах я использую Gulp, Sass, React, Material-UI, Bootstrap и другие. Использую графические редакторы Figma, Photoshop. Делаю адаптивную, кроссбраузерную, семантическую, валидную (W3C) верстку. Mobile first, Pixel perfect, создание анимации. Я продолжаю учиться каждый день, приобретая новые навыки, поднимая свой уровень. В будущем я хочу продолжить изучение Java Script и двигаться в направлении Front-end разработки.",
 
-        "en":"My main area of ​​expertise is HTML/CSS. I know Gulp, Sass, React, Material-UI, Bootstrap, etc. I use Figma, Photoshop graphic editors. I make adaptive, cross-browser, semantic, valid layout (W3C) layout. Mobile first, Pixel perfect, animation creation. I continue to learn every day, acquiring new skills, raising my level. In the future, I want to continue learning Java Script and move towards Front-end development."
-
-        // "en": "My main area of ​​expertise is HTML/CSS.I know Gulp, Sass, React, Bootstrap and others. I use graphite editors Figma, Photoshop.I make adaptive, crossbrowser, semantic, valid layout. Mobile first, Pixel perfect, animation creation. I continue to learn every day, acquiring new skills, raising my level. In the future I want to continue learning Java Script and move towards Front-end development.",
+        "en": "My main area of ​​expertise is HTML and CSS. In my projects i use Gulp, Sass, React, Material-UI, Bootstrap, etc. I use Figma, Photoshop graphic editors. I make adaptive, cross-browser, semantic, valid layout (W3C) layout. Mobile first, Pixel perfect, animation creation. I continue to learn every day, acquiring new skills, raising my level. In the future, I want to continue learning Java Script and move towards Front-end development."
     },
 
     // about me
@@ -1327,28 +1325,24 @@ const langArr = {
         "en": "ABOUT ME",
     },
     "about-text": {
-        "ru": "Здравствуйте, меня зовут Дарья, я HTML/CSS разработчик. Проживаю и ищу работу в Минске. Моя основная область знаний — HTML и CSS. В своей работе я использую такие инстументы и технологии, как Gulp, Sass, React, Material-UI, Bootstrap и другие. Ищу постоянную работу (можно удалённо) с интересными задачами и дружным коллективом. Мне нравится работать с новыми людьми. Буду рада стать частью вашей команды. Несколько лет назад я решила координально поменять профессию и уйти 'со сцены' в IT. Остаюсь творческим человеком, в свободное время преподаю балет, воспитываю 2 сыновей. Обладаю такими личными качествами как:",
-
-        "en":"Hello, my name is Darya, I'm an HTML CSS developer. I live looking for a job in Minsk. My main area of ​​expertise is HTML and CSS. In my work, I use tools and technologies such as Gulp, Sass, React, Material-UI, Bootstrap and others. I am looking for a permanent job (can be remotely) with interesting tasks and a friendly team. I like working with new people. I would be happy to be part of your team. A few years ago, I decided to radically change my profession and leave the “stage” in IT. I remain a creative person, in my free time I teach ballet, raising 2 sons. I have personal qualities like:"
-        
-        
-        // "en":"Hello, my name is Darya, I'm an HTML/CSS developer. I live and look for work in Minsk, Republic of Belarus. My main area of ​​expertise is HTML CSS/SCSS. In my work I use programs such as Gulp, Sass, React, Bootstrap and others. I am looking for a permanent job with interesting tasks and a friendly team. I like work with new people. I would be happy to be part of your team. A few years ago, I decided to radically change my profession and leave the “stage” in IT. I remain a creative person, in my free time I teach ballet, raising 2 sons. I have such personal qualities as",
+        "ru": " Меня зовут Даша, я веб-разработчик из Минска. В основном работаю с HTML и CSS. В своих проектах я использую Gulp, Sass, React, Material-UI, Bootstrap и другие. Сейчас я ищу работу в Минске или удаленно по всему миру, с интересными задачами и дружным коллективом. Мне нравится знакомиться с новыми людьми, буду рада стать частью вашей команды. Я бывший профессиональный танцор. Будучи мамой двоих мальчиков, в 2020 году я решила сменить профессиональную сферу на IT, хотя в свободное время по-прежнему даю уроки балета. Мои «гибкие навыки»:",
+        "en": "My name is Dasha, I am a web developer from Minsk. I mostly work with HTML and CSS. In my projects i use Gulp, Sass, React, Material-UI, Bootstrap and more. I’m currently looking for a job in Minsk or remotely worldwide, with great people and challenging tasks. I enjoy meeting new people, and I am a team player. I am a former professional dancer. Being a mom of two boys, in 2020 I decided to change my professional sphere to IT, though I still give ballet classes in my spare time. My soft skills are:",
     },
     "slide1": {
-        "ru": "Умение эффективно распоряжаться временем",
-        "en": "Ability to manage time effectively",
+        "ru": "Ответственность",
+        "en": "Responsibility",
     },
     "slide2": {
-        "ru": "Внимание к деталям",
-        "en": "Attention to detail",
+        "ru": "Самостоятельность",
+        "en": "Independence",
     },
     "slide3": {
-        "ru": "Хорошо обучаема",
-        "en": "Well trained",
+        "ru": "Инициативность",
+        "en": "Initiative",
     },
     "slide4": {
-        "ru": "Организована",
-        "en": "Organized",
+        "ru": "Многозадачность",
+        "en": "Multitasking",
     },
 
     // contacts
@@ -1393,6 +1387,7 @@ const homePageScroll = document.querySelector(".home");
 if( homePageScroll ) {
   let anchors = document.querySelectorAll("a[href*='#']")
   console.log(anchors);
+  // остановим привычное поведение якорных ссылок 
   for(let anchor of anchors) {
     anchor.addEventListener("click", function(event) {
       event.preventDefault()
@@ -1537,6 +1532,7 @@ function changeLanguage() {
   select.value = hash;
 
   document.querySelector('title').innerHTML = langArr['title-site'][hash];
+
   for (let key in langArr) {
     let elem = document.querySelector('.lng-' + key);
     // let elem = document.querySelector(`.${key}--lng`);

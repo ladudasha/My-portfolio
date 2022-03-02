@@ -13,6 +13,7 @@ const homePageScroll = document.querySelector(".home");
 if( homePageScroll ) {
   let anchors = document.querySelectorAll("a[href*='#']")
   console.log(anchors);
+  // остановим привычное поведение якорных ссылок 
   for(let anchor of anchors) {
     anchor.addEventListener("click", function(event) {
       event.preventDefault()
@@ -157,6 +158,7 @@ function changeLanguage() {
   select.value = hash;
 
   document.querySelector('title').innerHTML = langArr['title-site'][hash];
+
   for (let key in langArr) {
     let elem = document.querySelector('.lng-' + key);
     // let elem = document.querySelector(`.${key}--lng`);
