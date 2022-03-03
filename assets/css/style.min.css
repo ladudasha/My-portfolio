@@ -2635,21 +2635,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     line-height: 96px;
     font-weight: 500;
     color: dimgrey; }
+    .home__title:first-letter {
+      color: #ff4522; }
     @media screen and (max-width: 1180px) {
       .home__title {
         font-size: 73px; } }
     @media screen and (max-width: 687px) {
       .home__title {
-        font-size: 65px; } }
+        font-size: 50px; } }
     @media screen and (max-width: 550px) {
       .home__title {
-        font-size: 50px;
+        font-size: 40px;
         line-height: 76px; } }
     @media screen and (max-width: 360px) {
       .home__title {
         font-size: 30px; } }
-  .home__letter {
-    color: #ff4522; }
   .home__text {
     font-size: 32px;
     line-height: 48px; }
