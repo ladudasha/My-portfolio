@@ -1,7 +1,9 @@
 @import "./abstracts/normalize.scss";
 @import "./abstracts/vars";
 @import './abstracts/mixins';
-@import './animate.scss ';
+@import './animate.scss';
+@import './components/preloader';
+
 .container {
     max-width: 1400px;
     width: 100%;

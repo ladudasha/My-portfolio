@@ -1051,10 +1051,13 @@ const langArr = {
         "ru": "Д",
         "en": "D",
     },
+    "home-title": {
+        "ru": "арья Ладудо",
+        "en": "arya Ladudo",
+    },
     "h1": {
         "ru": "Веб разработчик из Минска.",
         "en": "Web developer from Minsk."
-
     },
     "title-site": {
         "ru": "ПортфолиоДарья",
@@ -1100,11 +1103,6 @@ const langArr = {
     "burger-contacts": {
         "ru": "КОНТАКТЫ",
         "en": "CONTACTS",
-    },
-
-    "home-title": {
-        "ru": "арья Ладудо",
-        "en": "arya Ladudo",
     },
     "contacts": {
         "ru": "КОНТАКТЫ",
@@ -1372,6 +1370,18 @@ const langArr = {
 
 }
 
+// preloader
+
+window.onload = function () {
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+  }, 500);
+}
+
+
+
 var swiper = new Swiper(".slider-my", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -1519,7 +1529,7 @@ function changeURLLaguage(){
   location.href = window.location.pathname + '#' + lang;
   location.reload();
 }
-let hash;
+let hash = '#en';
 function changeLanguage() {
   hash = window.location.hash;
   hash = hash.substr(1);

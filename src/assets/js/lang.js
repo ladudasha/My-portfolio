@@ -3,10 +3,13 @@ const langArr = {
         "ru": "Д",
         "en": "D",
     },
+    "home-title": {
+        "ru": "арья Ладудо",
+        "en": "arya Ladudo",
+    },
     "h1": {
         "ru": "Веб разработчик из Минска.",
         "en": "Web developer from Minsk."
-
     },
     "title-site": {
         "ru": "ПортфолиоДарья",
@@ -52,11 +55,6 @@ const langArr = {
     "burger-contacts": {
         "ru": "КОНТАКТЫ",
         "en": "CONTACTS",
-    },
-
-    "home-title": {
-        "ru": "арья Ладудо",
-        "en": "arya Ladudo",
     },
     "contacts": {
         "ru": "КОНТАКТЫ",
