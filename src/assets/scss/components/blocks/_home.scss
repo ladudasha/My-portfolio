@@ -77,22 +77,22 @@
         line-height: 96px;
         font-weight: 500;
         color: dimgrey;
+        &:first-letter {
+            color: #ff4522;
+        }
         @media screen and (max-width: 1180px) {
             font-size: 73px;
         }
         @media screen and (max-width: 687px) {
-            font-size: 65px;
+            font-size: 50px;
         }
         @media screen and (max-width: 550px) {
-            font-size: 50px;
+            font-size: 40px;
             line-height: 76px;
         }
         @media screen and (max-width: 360px) {
             font-size: 30px;
         }
-    }
-    &__letter {
-        color: #ff4522;
     }
 
     &__text {
