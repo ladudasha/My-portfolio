@@ -1319,7 +1319,7 @@ const langArr = {
         "en": "ABOUT ME",
     },
     "about-text": {
-        "ru": " Меня зовут Даша, я веб-разработчик из Минска. В основном работаю с HTML и CSS. В своих проектах я использую Gulp, Sass, React, Material-UI, Bootstrap и другие инструменты. Сейчас я ищу работу в Минске или удаленно по всему Миру, с интересными задачами и дружным коллективом. Мне нравится знакомиться с новыми людьми, имею опыт работы в команде. Я бывший профессиональный танцор. Будучи мамой двоих мальчиков, в 2020 году я решила сменить профессиональную сферу на IT. В свободное время по-прежнему даю уроки балета. Мои soft skills:",
+        "ru": "Меня зовут Даша, я веб-разработчик из Минска. В основном работаю с HTML и CSS. В своих проектах я использую Gulp, Sass, React, Material-UI, Bootstrap и другие инструменты. Сейчас я ищу работу в Минске или удаленно по всему Миру, с интересными задачами и дружным коллективом. Мне нравится знакомиться с новыми людьми, имею опыт работы в команде. Я бывший профессиональный танцор. Будучи мамой двоих мальчиков, в 2020 году я решила сменить профессиональную сферу на IT. В свободное время по-прежнему даю уроки балета. Мои soft skills:",
         "en": "My name is Dasha, I am a web developer from Minsk. I mostly work with HTML and CSS. In my projects i use Gulp, Sass, React, Material-UI, Bootstrap and more. I’m currently looking for a job in Minsk or remotely worldwide, with great people and challenging tasks. I enjoy meeting new people, and I am a team player. I am a former professional dancer. Being a mom of two boys, in 2020 I decided to change my professional sphere to IT, though I still give ballet classes in my spare time. My soft skills are:",
     },
     "slide1": {
